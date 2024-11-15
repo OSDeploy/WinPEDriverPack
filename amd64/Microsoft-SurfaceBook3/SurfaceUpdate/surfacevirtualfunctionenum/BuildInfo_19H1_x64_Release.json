@@ -1,0 +1,45 @@
+{
+    "ComputerName":  "bldewdk0021",
+    "PoolName":  "SW Build EWDK Agents",
+    "RepoUrl":  "https://MSFTDEVICES@dev.azure.com/MSFTDEVICES/Drivers/_git/SurfaceVirtualFunctionEnumDriver",
+    "RepoName":  "SurfaceVirtualFunctionEnumDriver",
+    "Worktree":  "C:\\w\\102\\s",
+    "CommitId":  "5f6b07eb72955207ce356d85f49f8af689765cda",
+    "SourceBranch":  "refs/heads/master",
+    "ProjectName":  "Drivers",
+    "BuildId":  2339440,
+    "BuildParameters":  {
+
+                        },
+    "DefinitionId":  8370,
+    "DefinitionName":  "CI_SurfaceVirtualFunctionEnumDriver",
+    "DefinitionVariables":  {
+
+                            },
+    "Packages":  [
+                     {
+                         "Id":  "Devices.Build.Scripts",
+                         "Version":  "1.5.8"
+                     },
+                     {
+                         "Id":  "Devices.Library.SurfaceLibrary.19H1",
+                         "Version":  "6.279.0"
+                     },
+                     {
+                         "Id":  "Devices.Tool.SignTool",
+                         "Version":  "10.0.16299.64"
+                     },
+                     {
+                         "Id":  "Devices.Tool.AutoSignConsole",
+                         "Version":  "1.5.129"
+                     },
+                     {
+                         "Id":  "Devices.Driver.BuildConfiguration",
+                         "Version":  "1.5.0"
+                     },
+                     {
+                         "Id":  "Devices.Certificate.OEMTest",
+                         "Version":  "1.0.2"
+                     }
+                 ]
+}

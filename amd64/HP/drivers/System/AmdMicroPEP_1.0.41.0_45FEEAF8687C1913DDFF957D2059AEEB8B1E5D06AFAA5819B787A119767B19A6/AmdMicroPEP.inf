@@ -1,0 +1,155 @@
+;
+; AmdMicroPEP.INF - INF file for installing PEP
+;
+; Copyright (c) 2023 Advanced Micro Devices, Inc. (AMD)
+;
+
+[Version] 
+Signature = "$Windows NT$" 
+Class=System
+ClassGuid={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%AMD% 
+CatalogFile=AmdMicroPEP.cat
+DriverVer=06/05/2023,1.0.41.0
+
+[SourceDisksNames.x86]
+0=%DiskDescription%
+
+[SourceDisksNames.amd64]
+0=%DiskDescription%
+
+[DestinationDirs] 
+AmdMicroPEP.CopyFiles.x86 = 12 
+AmdMicroPEP.CopyFiles.x64 = 12 
+AmdMicroPEP.CoInstaller.CopyFiles = 11
+
+[Manufacturer] 
+%AMD.Mfg%=AmdMicroPEP,NTamd64
+
+[AmdMicroPEP]
+%AmdMicroPEP.DeviceDesc%=AmdMicroPEP.Install,ACPI\AMD0004
+%AmdMicroPEP.DeviceDesc%=AmdMicroPEP.Install,ACPI\AMD0005
+%AmdMicroPEP.DeviceDesc%=AmdMicroPEP.Install,ACPI\AMDI0005
+%AmdMicroPEP.DeviceDesc%=AmdMicroPEP.Install,ACPI\AMDI0006
+%AmdMicroPEP.DeviceDesc%=AmdMicroPEP.Install,ACPI\AMDI0007
+%AmdMicroPEP.DeviceDesc%=AmdMicroPEP.Install,ACPI\AMDI0008
+%AmdMicroPEP.DeviceDesc%=AmdMicroPEP.Install,ACPI\AMDI0009
+%AmdMicroPEP.DeviceDesc%=AmdMicroPEP.Install,ACPI\AMDI000A
+
+[AmdMicroPEP.NTamd64]
+%AmdMicroPEP.DeviceDesc%=AmdMicroPEP.Install,ACPI\AMD0004
+%AmdMicroPEP.DeviceDesc%=AmdMicroPEP.Install,ACPI\AMD0005
+%AmdMicroPEP.DeviceDesc%=AmdMicroPEP.Install,ACPI\AMDI0005
+%AmdMicroPEP.DeviceDesc%=AmdMicroPEP.Install,ACPI\AMDI0006
+%AmdMicroPEP.DeviceDesc%=AmdMicroPEP.Install,ACPI\AMDI0007
+%AmdMicroPEP.DeviceDesc%=AmdMicroPEP.Install,ACPI\AMDI0008
+%AmdMicroPEP.DeviceDesc%=AmdMicroPEP.Install,ACPI\AMDI0009
+%AmdMicroPEP.DeviceDesc%=AmdMicroPEP.Install,ACPI\AMDI000A
+
+[AmdMicroPEP.Install.ntx86] 
+CopyFiles = AmdMicroPEP.CopyFiles.x86
+AddProperty=PEP_WDTFSocDeviceCategory
+
+[AmdMicroPEP.Install.NTamd64] 
+CopyFiles = AmdMicroPEP.CopyFiles.x64
+AddProperty=PEP_WDTFSocDeviceCategory
+CopyINF=.\amdlog\amdlog.inf
+
+[PEP_WDTFSocDeviceCategory]
+{5D078032-6378-437B-8DA5-9B32B7CA3FDD},2,7,,2
+
+[AmdMicroPEP.Install.ntx86.Services] 
+AddService = AmdMicroPEP,%SERVICE_FLAGS%,AmdMicroPEP.AddService.x86
+
+[AmdMicroPEP.Install.ntamd64.Services] 
+AddService = AmdMicroPEP,%SERVICE_FLAGS%,AmdMicroPEP.AddService.x64
+
+[AmdMicroPEP.AddService.x86] 
+DisplayName = %AmdMicroPEP.DeviceDesc%
+ServiceType = %SERVICE_KERNEL_DRIVER% 
+StartType = %SERVICE_BOOT_START% 
+ErrorControl = %SERVICE_ERROR_NORMAL% 
+ServiceBinary = %12%\AmdMicroPEP.sys 
+LoadOrderGroup = Boot Bus Extender
+AddReg = AmdMicroPEP.AddReg
+
+[AmdMicroPEP.AddService.x64] 
+DisplayName = %AmdMicroPEP.DeviceDesc%
+ServiceType = %SERVICE_KERNEL_DRIVER% 
+StartType = %SERVICE_BOOT_START% 
+ErrorControl = %SERVICE_ERROR_NORMAL% 
+ServiceBinary = %12%\AmdMicroPEP.sys 
+LoadOrderGroup = Boot Bus Extender
+AddReg = AmdMicroPEP.AddReg
+
+[AmdMicroPEP.CopyFiles.x86]
+AmdMicroPEP.sys,,,%COPYFLG_REPLACE_BOOT_FILE%
+
+[AmdMicroPEP.CopyFiles.x64]
+AmdMicroPEP.sys,,,%COPYFLG_REPLACE_BOOT_FILE%
+
+[amdpep_Device.ntx86.CoInstallers]
+AddReg=AmdMicroPEP.CoInstaller.AddReg
+CopyFiles=AmdMicroPEP.CoInstaller.CopyFiles.x86
+
+[amdpep_Device.NTamd64.CoInstallers]
+AddReg=AmdMicroPEP.CoInstaller.AddReg
+CopyFiles=AmdMicroPEP.CoInstaller.CopyFiles.x64
+
+[AmdMicroPEP.CoInstaller.AddReg]
+
+[AmdMicroPEP.AddReg]
+HKR, "Parameters","ExtUSB3AsDebug",%REG_DWORD%, 0
+HKR, "Parameters","ForceDebuggerPciSaveRestore",%REG_DWORD%, 1
+HKLM,System\CurrentControlSet\Services\AmdMicroPep\PowerSettings\v1\Audio\Default, "platformIdleStateIndex", 0x10001, 0x00000000
+HKLM,System\CurrentControlSet\Services\AmdMicroPep\PowerSettings\v1\CS\Default, "platformIdleStateIndex", 0x10001, 0x00000002
+HKLM,System\CurrentControlSet\Services\AmdMicroPep\PowerSettings\v1\FSVP\Default, "procthrottlemin", 0x10001, 0x00000014
+HKLM,System\CurrentControlSet\Services\AmdMicroPep\PowerSettings\v1\VideoBatching\Default, "platformIdleStateIndex", 0x10001, 0x00000014
+
+[AmdMicroPEP.CoInstaller.CopyFiles.x86]
+
+[AmdMicroPEP.CoInstaller.CopyFiles.x64]
+
+[SourceDisksFiles.x86]
+AmdMicroPEP.sys=0
+
+[SourceDisksFiles.amd64]
+AmdMicroPEP.sys=0
+
+[AmdMicroPEP.ntx86.Wdf]
+KmdfService =  AmdMicroPEP, AmdMicroPEP.wdfsect
+
+[AmdMicroPEP.NTamd64.Wdf]
+KmdfService =  AmdMicroPEP, AmdMicroPEP.wdfsect
+
+[AmdMicroPEP.wdfsect]
+KmdfLibraryVersion = 1.11
+
+[Strings] 
+;  *******Localizable Strings******* 
+AMD="Advanced Micro Devices, Inc."
+AMD.Mfg="Advanced Micro Devices, Inc." 
+DiskDescription="AMD PEP Installation Disk"
+AmdMicroPEP.DeviceDesc="AMD Micro PEP Device" 
+
+;  *******Non Localizable Strings******* 
+SPSVCINST_TAGTOFRONT = 0x00000001
+SPSVCINST_ASSOCSERVICE = 0x00000002
+SERVICE_FLAGS = 0x00000003      ; SPSVCINST_ASSOCSERVICE | SPSVCINST_TAGTOFRONT
+
+COPYFLG_REPLACE_BOOT_FILE = 0x1000
+
+SERVICE_BOOT_START = 0x0 
+SERVICE_SYSTEM_START = 0x1 
+SERVICE_AUTO_START = 0x2 
+SERVICE_DEMAND_START = 0x3 
+SERVICE_DISABLED = 0x4 
+
+SERVICE_KERNEL_DRIVER = 0x1 
+SERVICE_ERROR_IGNORE = 0x0 
+SERVICE_ERROR_NORMAL = 0x1 
+SERVICE_ERROR_SEVERE = 0x2 
+SERVICE_ERROR_CRITICAL = 0x3 
+
+REG_EXPAND_SZ = 0x00020000 
+REG_DWORD = 0x00010001 

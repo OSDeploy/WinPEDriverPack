@@ -1,0 +1,337 @@
+; BHTPCR.INF, O2Micro/BHT Integrated MMC/SD Controller INF file
+; Copyright (c) 1997-2019 O2Micro/BHT Corp.
+
+[Version]
+Signature   = "$Windows NT$"
+Class       = SCSIAdapter
+ClassGuid   = {4D36E97B-E325-11CE-BFC1-08002BE10318}
+Provider    = %BayHubTech%
+DriverVer = 03/15/2019,1.3.101.1033
+Catalogfile = bhtpcrdr.cat
+
+[SourceDisksNames]
+1 = %BHTPCRDR.DriverDisk%
+
+[SourceDisksFiles]
+bhtpcrdr.sys = 1
+bhtv5Icon.dll = 1
+
+[DestinationDirs]
+DefaultDestDir = 12
+Copybhtv5Icon = 11
+Copybhtv5Icon_WoW64 = 10, sysWoW64
+
+[ControlFlags]
+ExcludeFromSelect = *
+
+[Manufacturer]
+%BayHubTech% = BHTPCRDR,NTamd64,NTx86
+
+
+[BHTPCRDR.NTx86]
+%BHTPCRDR.DeviceDesc% = DriverInstallx86, PCI\VEN_1217&DEV_8520		;Default for Fujin2
+%BHTPCRDR.DeviceDesc% = DriverInstallx86, PCI\VEN_1217&DEV_8620		;Default for Seabird
+%BHTPCRDR.DeviceDesc% = DriverInstallx86, PCI\VEN_1217&DEV_8621		;Default for Seabird
+%BHTPCRDR.DeviceDesc% = DriverInstallx86, PCI\VEN_1217&DEV_8720		;Default for SeaEagle2
+%BHTPCRDR.DeviceDesc% = DriverInstallx86, PCI\VEN_1217&DEV_8721		;Default for SeaEagle2
+%BHTPCRDR.DeviceDesc% = DriverInstallx86, PCI\VEN_1217&DEV_8722		;Default for SeaEagle2
+%BHTPCRDR.DeviceDesc% = DriverInstallx86, PCI\VEN_1217&DEV_8723		;Default for SeaEagle2
+
+%BHTPCRDR.DeviceDesc% = DriverInstallx86_08bb1028, PCI\VEN_1217&DEV_8620&SUBSYS_08bb1028 ;idx 1 for Pinehills
+%BHTPCRDR.DeviceDesc% = DriverInstallx86_87A41043, PCI\VEN_1217&DEV_8620&SUBSYS_87A41043 ;idx 2 for Asus PN30
+%BHTPCRDR.DeviceDesc% = DriverInstallx86_09441028, PCI\VEN_1217&DEV_8620&SUBSYS_09441028 ;idx 3 for Dell JEAN GREY
+
+
+[BHTPCRDR.NTamd64]
+%BHTPCRDR.DeviceDesc% = DriverInstallx64, PCI\VEN_1217&DEV_8520		;Default for Fujin2
+%BHTPCRDR.DeviceDesc% = DriverInstallx64, PCI\VEN_1217&DEV_8620		;Default for Seabird
+%BHTPCRDR.DeviceDesc% = DriverInstallx64, PCI\VEN_1217&DEV_8621		;Default for Seabird
+%BHTPCRDR.DeviceDesc% = DriverInstallx64, PCI\VEN_1217&DEV_8720		;Default for SeaEagle2
+%BHTPCRDR.DeviceDesc% = DriverInstallx64, PCI\VEN_1217&DEV_8721		;Default for SeaEagle2
+%BHTPCRDR.DeviceDesc% = DriverInstallx64, PCI\VEN_1217&DEV_8722		;Default for SeaEagle2
+%BHTPCRDR.DeviceDesc% = DriverInstallx64, PCI\VEN_1217&DEV_8723		;Default for SeaEagle2
+
+%BHTPCRDR.DeviceDesc% = DriverInstallx64_08bb1028, PCI\VEN_1217&DEV_8620&SUBSYS_08bb1028 ;idx 1 for Pinehills
+%BHTPCRDR.DeviceDesc% = DriverInstallx64_87A41043, PCI\VEN_1217&DEV_8620&SUBSYS_87A41043 ;idx 2 for Asus PN30
+%BHTPCRDR.DeviceDesc% = DriverInstallx64_09441028, PCI\VEN_1217&DEV_8620&SUBSYS_09441028 ;idx 3 for Dell JEAN GREY
+
+
+[DriverInstallx86.NT]
+CopyFiles = @bhtpcrdr.sys
+CopyFiles = Copybhtv5Icon,CopySDPA8220
+
+[DriverInstallx86.NT.HW]
+;Support Runtime D3 in Win8
+Include = machine.inf
+Needs = PciD3ColdSupported.HW
+;Add MSI support
+AddReg = InterruptMgmtValues
+
+[DriverInstallx86.NT.Services]
+AddService = BHTPCRDR, 0x00000002 , DriverServicex86;, EventLogService
+
+[DriverInstallx64.NT]
+CopyFiles = @bhtpcrdr.sys
+CopyFiles = Copybhtv5Icon,Copybhtv5Icon_WoW64,CopySDPA8220,CopySDPA8220_WoW64
+
+[DriverInstallx64.NT.HW]
+;Support Runtime D3 in Win8
+Include = machine.inf
+Needs = PciD3ColdSupported.HW
+;Add MSI support
+AddReg = InterruptMgmtValues
+
+[DriverInstallx64.NT.Services]
+AddService = BHTPCRDR, 0x00000002 , DriverServicex64;, EventLogService
+
+[DriverServicex64]
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 0                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  
+LoadOrderGroup = SCSI Miniport
+ServiceBinary  = %12%\bhtpcrdr.sys
+DelReg         = cfg_DelReg 
+;AddReg         = pnpsafe_pci_addreg
+AddReg         = bus_type
+AddReg         = autorun_addreg
+
+[DriverServicex86]
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 0                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  
+LoadOrderGroup = SCSI Miniport
+ServiceBinary  = %12%\bhtpcrdr.sys
+DelReg         = cfg_DelReg 
+;AddReg         = pnpsafe_pci_addreg
+AddReg         = bus_type
+AddReg         = autorun_addreg
+
+;cfg idx 1
+[DriverInstallx86_08bb1028.NT]
+CopyFiles = @bhtpcrdr.sys
+CopyFiles = Copybhtv5Icon,CopySDPA8220
+
+[DriverInstallx86_08bb1028.NT.HW]
+;Support Runtime D3 in Win8
+Include = machine.inf
+Needs = PciD3ColdSupported.HW
+;Add MSI support
+AddReg = InterruptMgmtValues
+
+[DriverInstallx86_08bb1028.NT.Services]
+AddService = BHTPCRDR, 0x00000002 , DriverServicex86_08bb1028;, EventLogService
+
+[DriverServicex86_08bb1028]
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 0                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  
+LoadOrderGroup = SCSI Miniport
+ServiceBinary  = %12%\bhtpcrdr.sys
+DelReg         = cfg_DelReg 
+;AddReg         = pnpsafe_pci_addreg
+AddReg         = bus_type
+AddReg         = 08bb1028_cfg
+AddReg         = autorun_addreg
+
+[DriverInstallx64_08bb1028.NT]
+CopyFiles = @bhtpcrdr.sys
+CopyFiles = Copybhtv5Icon,Copybhtv5Icon_WoW64,CopySDPA8220,CopySDPA8220_WoW64
+
+[DriverInstallx64_08bb1028.NT.HW]
+;Support Runtime D3 in Win8
+Include = machine.inf
+Needs = PciD3ColdSupported.HW
+;Add MSI support
+AddReg = InterruptMgmtValues
+
+[DriverInstallx64_08bb1028.NT.Services]
+AddService = BHTPCRDR, 0x00000002 , DriverServicex64_08bb1028;, EventLogService
+
+[DriverServicex64_08bb1028]
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 0                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  
+LoadOrderGroup = SCSI Miniport
+ServiceBinary  = %12%\bhtpcrdr.sys
+DelReg         = cfg_DelReg 
+;AddReg         = pnpsafe_pci_addreg
+AddReg         = bus_type
+AddReg         = 08bb1028_cfg
+AddReg         = autorun_addreg
+
+[08bb1028_cfg]
+HKR,"seabird", "psd_mode", 0x00010001, 0x80240a01
+HKR,"seabird", "driver_item", 0x00010001, 0x00008000
+
+;cfg idx 2
+[DriverInstallx86_87A41043.NT]
+CopyFiles = @bhtpcrdr.sys
+CopyFiles = Copybhtv5Icon,CopySDPA8220
+
+[DriverInstallx86_87A41043.NT.HW]
+;Support Runtime D3 in Win8
+Include = machine.inf
+Needs = PciD3ColdSupported.HW
+;Add MSI support
+AddReg = InterruptMgmtValues
+
+[DriverInstallx86_87A41043.NT.Services]
+AddService = BHTPCRDR, 0x00000002 , DriverServicex86_87A41043;, EventLogService
+
+[DriverServicex86_87A41043]
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 0                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  
+LoadOrderGroup = SCSI Miniport
+ServiceBinary  = %12%\bhtpcrdr.sys
+DelReg         = cfg_DelReg 
+;AddReg         = pnpsafe_pci_addreg
+AddReg         = bus_type
+AddReg         = 87A41043_cfg
+AddReg         = autorun_addreg
+
+[DriverInstallx64_87A41043.NT]
+CopyFiles = @bhtpcrdr.sys
+CopyFiles = Copybhtv5Icon,Copybhtv5Icon_WoW64,CopySDPA8220,CopySDPA8220_WoW64
+
+[DriverInstallx64_87A41043.NT.HW]
+;Support Runtime D3 in Win8
+Include = machine.inf
+Needs = PciD3ColdSupported.HW
+;Add MSI support
+AddReg = InterruptMgmtValues
+
+[DriverInstallx64_87A41043.NT.Services]
+AddService = BHTPCRDR, 0x00000002 , DriverServicex64_87A41043;, EventLogService
+
+[DriverServicex64_87A41043]
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 0                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  
+LoadOrderGroup = SCSI Miniport
+ServiceBinary  = %12%\bhtpcrdr.sys
+DelReg         = cfg_DelReg 
+;AddReg         = pnpsafe_pci_addreg
+AddReg         = bus_type
+AddReg         = 87A41043_cfg
+AddReg         = autorun_addreg
+
+[87A41043_cfg]
+HKR,"seabird", "psd_mode", 0x00010001, 0x80240a01
+HKR,"seabird", "driver_item", 0x00010001, 0x00000000
+
+;cfg idx 3
+[DriverInstallx86_09441028.NT]
+CopyFiles = @bhtpcrdr.sys
+CopyFiles = Copybhtv5Icon,CopySDPA8220
+
+[DriverInstallx86_09441028.NT.HW]
+;Support Runtime D3 in Win8
+Include = machine.inf
+Needs = PciD3ColdSupported.HW
+;Add MSI support
+AddReg = InterruptMgmtValues
+
+[DriverInstallx86_09441028.NT.Services]
+AddService = BHTPCRDR, 0x00000002 , DriverServicex86_09441028;, EventLogService
+
+[DriverServicex86_09441028]
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 0                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  
+LoadOrderGroup = SCSI Miniport
+ServiceBinary  = %12%\bhtpcrdr.sys
+DelReg         = cfg_DelReg 
+;AddReg         = pnpsafe_pci_addreg
+AddReg         = bus_type
+AddReg         = 09441028_cfg
+AddReg         = autorun_addreg
+
+[DriverInstallx64_09441028.NT]
+CopyFiles = @bhtpcrdr.sys
+CopyFiles = Copybhtv5Icon,Copybhtv5Icon_WoW64,CopySDPA8220,CopySDPA8220_WoW64
+
+[DriverInstallx64_09441028.NT.HW]
+;Support Runtime D3 in Win8
+Include = machine.inf
+Needs = PciD3ColdSupported.HW
+;Add MSI support
+AddReg = InterruptMgmtValues
+
+[DriverInstallx64_09441028.NT.Services]
+AddService = BHTPCRDR, 0x00000002 , DriverServicex64_09441028;, EventLogService
+
+[DriverServicex64_09441028]
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 0                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  
+LoadOrderGroup = SCSI Miniport
+ServiceBinary  = %12%\bhtpcrdr.sys
+DelReg         = cfg_DelReg 
+;AddReg         = pnpsafe_pci_addreg
+AddReg         = bus_type
+AddReg         = 09441028_cfg
+AddReg         = autorun_addreg
+
+[09441028_cfg]
+HKR,"seabird", "psd_mode", 0x00010001, 0x80240a01
+
+
+[Copybhtv5Icon]
+bhtv5Icon.dll
+
+[Copybhtv5Icon_WoW64]
+bhtv5Icon.dll
+
+
+[CopySDPA8220]
+
+
+[CopySDPA8220_WoW64]
+
+
+[InterruptMgmtValues]
+HKR, "Interrupt Management",0x00000010
+HKR, "Interrupt Management\MessageSignaledInterruptProperties",0x00000010
+HKR, "Interrupt Management\MessageSignaledInterruptProperties",MSISupported,0x00010001,1
+
+[EventLogService]
+AddReg = EventLogService_AddReg
+
+[EventLogService_AddReg]
+HKR,,EventMessageFile, 0x00020000, "%%SystemRoot%%\System32\IoLogMsg.dll"
+HKR,,TypesSupported,   0x00010001, 7
+
+[pnpsafe_pci_addreg]
+HKR, "Parameters\PnpInterface", "5", 0x00010001, 0x00000001
+
+[bus_type]
+HKR,"Parameters", "BusType", 0x00010001, 0x0000000C
+HKR,"seabird", "psd_mode", 0x00010001, 0x80240a01
+HKR,"seabird", "driver_item", 0x00010001, 0x00008000
+
+[cfg_DelReg]
+HKR, "seabird"
+;HKR, "seaeagle"
+;HKR, "fj2"
+;HKR, "sd"
+
+[autorun_addreg] 
+HKLM,"System\CurrentControlSet\Services\disk","AutoRunAlwaysDisable", 0x00010008,"SDHC"
+HKLM,"System\CurrentControlSet\Services\disk","AutoRunAlwaysDisable", 0x00010008,"SDXC"
+HKLM,"System\CurrentControlSet\Services\disk","AutoRunAlwaysDisable", 0x00010008,"SD"
+HKLM,"System\CurrentControlSet\Services\disk","AutoRunAlwaysDisable", 0x00010008,"MMC"
+;HKLM,"System\CurrentControlSet\Services\disk","AutoRunAlwaysDisable", 0x00010000,"Brother RemovableDisk(U)"
+
+
+[Strings]
+REG_SZ        = 0x00000000
+REG_MULTI_SZ  = 0x00010000
+REG_EXPAND_SZ = 0x00020000
+REG_BINARY    = 0x00000001
+REG_DWORD     = 0x00010001
+SERVICEROOT   = "System\CurrentControlSet\Services"
+
+BayHubTech          = "BayHubTech"
+BHTPCRDR.DeviceDesc = "BayHubTech Integrated MMC/SD controller"
+BHTPCRDR.DriverDisk = "BayHubTech Integrated MMC/SD controller Driver Disk"

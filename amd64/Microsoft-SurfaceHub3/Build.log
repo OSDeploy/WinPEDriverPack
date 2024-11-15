@@ -1,0 +1,841 @@
+**********************
+PowerShell transcript start
+Start time: 20241018130458
+Username: AzureAD\DavidSegura
+RunAs User: AzureAD\DavidSegura
+Configuration Name: 
+Machine: HPFIREFLY16P (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Program Files\PowerShell\7\pwsh.dll
+Process ID: 28232
+PSVersion: 7.4.5
+PSEdition: Core
+GitCommitId: 7.4.5
+OS: Microsoft Windows 10.0.26100
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+Transcript started, output file is C:\Temp\SurfaceHub2Sand3\Build.log
+DriverPack: C:\DATA\Surface\SurfaceHub3_Hub2S_Win11_22621_24.082.23093.0.msi
+Removed Content:
+SurfaceHub2Sand3\SurfaceUpdate\64Graphics".
+SurfaceHub2Sand3\SurfaceUpdate\64Graphics\DisplayAudio".
+SurfaceHub2Sand3\SurfaceUpdate\64Graphics\DisplayAudio\10.26".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\DisplayAudio\10.26\intcdaud.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\DisplayAudio\10.26\IntcDAud.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\DisplayAudio\10.26\IntcDAud.sys".
+SurfaceHub2Sand3\SurfaceUpdate\64Graphics\DisplayAudio\10.27".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\DisplayAudio\10.27\intcdaud.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\DisplayAudio\10.27\IntcDAud.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\DisplayAudio\10.27\IntcDAud.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\64jp1339.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\64jp1339.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\64kb1339.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\64kb1339.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\64on1339.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\64on1339.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\64zh1339.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\64zh1339.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\ColorImageEnhancement.wmv".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\ControlLib.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\ControlLib32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\cpa_32.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\cpa_64.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\cp_resources.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\c_32.cpa".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\c_64.cpa".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\dev_32.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\dev_64.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\difx64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\difx64.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\DnnlPlugin.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\FilmModeDetection.wmv".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\GfxDownloadWrapper.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\GfxResources.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\GfxUIEx.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\Gfxv4_0.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\h265e_32.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\h265e_64.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\hdbusext.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\HdBusExt.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\he_32.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\he_64.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\ig9icd32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\ig9icd64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\iga32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\iga64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igc32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igc64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igd10idpp32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igd10idpp64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igd10iumd32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igd10iumd64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igd10mg32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igd10mg64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igd11dxva32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igd11dxva64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igd12dxva32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igd12dxva64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igd12um32kbl.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igd12um64kbl.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igd12umd32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igd12umd64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igd9dxva32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igd9dxva64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igdail32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igdail64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igdde32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igdde64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igdext32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igdext64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igdfcl32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igdfcl64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igdgmm32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igdgmm64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igdinfo32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igdinfo64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igdkmd64.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igdlh.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igdlh64.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igdmd32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igdmd64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igdml32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igdml64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igdrcl32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igdrcl64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igdumdim32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igdumdim64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igfx11cmrt32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igfx11cmrt64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igfxcmrt32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igfxcmrt64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igfxCPL.cpl".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igfxCUIService.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igfxCUIServicePS.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igfxDH.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igfxDHLib.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igfxDI.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igfxDTCM.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igfxEM.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igfxexps.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igfxexps32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igfxext.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igfxLHM.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igfxLHMLib.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igfxSDK.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igfxSDKLib.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\iglhxa64.cpa".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\iglhxa64.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\iglhxc64.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\iglhxc64_dev.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\iglhxg64.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\iglhxg64_dev.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\iglhxo64.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\iglhxo64_dev.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\iglhxs64.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igvk32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igvk32.json".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igvk64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igvk64.json".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igxpco64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\igxpun.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\ImageStabilization.wmv".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\IntelControlLib.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\IntelControlLib32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\IntelCpHDCPSvc.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\IntelCpHeciSvc.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\IntelGpuCompiler32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\IntelGpuCompiler64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\intel_gfx_api-x64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\intel_gfx_api-x86.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\Intel_OpenCL_ICD32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\Intel_OpenCL_ICD64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\libigc.so".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\libigd12um64kbl.so".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\libigd12umd64.so".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\libigdfcl.so".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\libigdgmm.so.12".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\libLLVM-9.so".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\libmfxhw32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\libmfxhw64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\libopencl-clang.so.9".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\libUniversalAdapter64.so".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\libwsl_compute_helper.so".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\MetroIntelGenericUIFramework.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\mfxplugin32_av1e_gacc.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\mfxplugin32_hw.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\mfxplugin64_av1e_gacc.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\mfxplugin64_hw.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\mfx_loader_dll_hw32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\mfx_loader_dll_hw64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\mfx_mft_av1hve_32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\mfx_mft_av1hve_32.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\mfx_mft_av1hve_64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\mfx_mft_av1hve_64.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\mfx_mft_encrypt_32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\mfx_mft_encrypt_64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\mfx_mft_h264ve_32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\mfx_mft_h264ve_64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\mfx_mft_h265ve_32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\mfx_mft_h265ve_64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\mfx_mft_mjpgvd_32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\mfx_mft_mjpgvd_64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\mfx_mft_vp9ve_32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\mfx_mft_vp9ve_64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\mj_32.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\mj_64.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\opencl-clang32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\opencl-clang64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\OSSCOPYRIGHT.txt".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\UniversalAdapter32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\UniversalAdapter64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\vp9e_32.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\vp9e_64.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\vpl_dispatcher_32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\vpl_dispatcher_64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\vulkan-1-32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\vulkan-1-64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\vulkaninfo-32.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\vulkaninfo-64.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\VulkanRT-EULA.txt".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\ze_intel_gpu64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\ze_loader.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\ze_tracing_layer.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\64Graphics\ze_validation_layer.dll".
+SurfaceHub2Sand3\SurfaceUpdate\AcpiNotify".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\AcpiNotify\SurfaceAcpiNotifyDriver.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\AcpiNotify\SurfaceAcpiNotifyDriver.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\AcpiNotify\SurfaceAcpiNotifyDriver.sys".
+SurfaceHub2Sand3\SurfaceUpdate\Bluetooth".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\Bluetooth\ibtusb.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\Bluetooth\ibtusb.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\Bluetooth\ibtusb.sys".
+SurfaceHub2Sand3\SurfaceUpdate\Button".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\Button\SurfaceButton.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\Button\SurfaceButton.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\Button\SurfaceButton.sys".
+SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\HubCamera2_Firmware.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\HubCamera2_Firmware.srec.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\PenTouch2_Tcon0.1.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\PenTouch2_Tcon0.1.srec.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\PenTouch2_Tcon0.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\PenTouch2_Tcon0.srec.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\PenTouch2_Tcon1.1.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\PenTouch2_Tcon1.1.srec.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\PenTouch2_Tcon1.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\PenTouch2_Tcon1.srec.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\PenTouch_Tcon0.1.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\PenTouch_Tcon0.1.srec.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\PenTouch_Tcon0.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\PenTouch_Tcon0.srec.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\PenTouch_Tcon1.1.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\PenTouch_Tcon1.1.srec.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\PenTouch_Tcon1.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\PenTouch_Tcon1.srec.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\Pen_Bank0.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\Pen_Bank0.srec.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\Pen_Bank1.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\Pen_Bank1.srec.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\SMC_App1.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\SMC_App1.srec.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\SMC_App2.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\SMC_App2.srec.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\SMC_Dp.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\SMC_Dp.srec.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\SMC_Fpga0.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\SMC_Fpga0.srec.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\SMC_Fpga1.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\SMC_Fpga1.srec.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\SMC_Hdmi1.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\SMC_Hdmi1.srec.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\SMC_Hdmi2.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\SMC_Hdmi2.srec.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\SMC_Imu.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\SMC_Imu.srec.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\SMC_Osd.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\SMC_Osd.srec.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\SMC_TcpmBank1.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\SMC_TcpmBank1.srec.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\SMC_TcpmBank2.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\SMC_TcpmBank2.srec.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\SurfaceCFUOverHid.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\SurfaceCFUOverHid.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\SurfaceCFUOverHid.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\SurfaceUsbAudio_Firmware.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\cfuoverhid\SurfaceUsbAudio_Firmware.srec.bin".
+SurfaceHub2Sand3\SurfaceUpdate\dbtfacpi".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\dbtfacpi\dptf_acpi.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\dbtfacpi\dptf_acpi.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\dbtfacpi\dptf_acpi.sys".
+SurfaceHub2Sand3\SurfaceUpdate\dptfcpu".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\dptfcpu\Dptf.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\dptfcpu\DptfPolicyActive.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\dptfcpu\DptfPolicyActive2.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\dptfcpu\DptfPolicyAdaptivePerformance.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\dptfcpu\DptfPolicyConfigTdp.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\dptfcpu\DptfPolicyCritical.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\dptfcpu\DptfPolicyPassive.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\dptfcpu\DptfPolicyPassive2.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\dptfcpu\DptfPolicyPid.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\dptfcpu\DptfPolicyPowerBoss.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\dptfcpu\DptfPolicyPowerShare.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\dptfcpu\DptfPolicyRfim.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\dptfcpu\DptfPolicyVirtualSensor.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\dptfcpu\dptf_cpu.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\dptfcpu\dptf_cpu.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\dptfcpu\dptf_cpu.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\dptfcpu\dptf_helper.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\dptfcpu\dsp.dv".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\dptfcpu\esif_cmp.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\dptfcpu\esif_lf.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\dptfcpu\esif_uf.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\dptfcpu\esif_umdf2.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\dptfcpu\esif_ws.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\dptfcpu\upe_battery.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\dptfcpu\upe_nvme.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\dptfcpu\upe_socwc.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\dptfcpu\upe_wifi.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\dptfcpu\upe_wwan.dll".
+SurfaceHub2Sand3\SurfaceUpdate\Ethernet".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\Ethernet\e1d.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\Ethernet\e1d.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\Ethernet\e1d.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\Ethernet\e1dmsg.dll".
+SurfaceHub2Sand3\SurfaceUpdate\Fingerprint".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\Fingerprint\EngineAdapter.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\Fingerprint\WbfUsbDriver.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\Fingerprint\WbfUsbDriver.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\Fingerprint\WbfUsbDriver.inf".
+SurfaceHub2Sand3\SurfaceUpdate\fmapo".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\fmapo\FM1.gna".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\fmapo\FM2.gna".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\fmapo\FMAPO.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\fmapo\FMAPO.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\fmapo\fmapo64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\fmapo\fmaudva.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\fmapo\fmaudvb.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\fmapo\fmaudvc.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\fmapo\fmaudvd.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\fmapo\fmaudve.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\fmapo\fmaudvf.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\fmapo\fmaudvfa.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\fmapo\fmov.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\fmapo\FMPCHAPO64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\fmapo\FM_Speech_PP64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\fmapo\gna.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\fmapo\GNAPlugin.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\fmapo\inference_engine.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\fmapo\inference_engine_c_api.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\fmapo\inference_engine_ir_reader.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\fmapo\inference_engine_legacy.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\fmapo\inference_engine_lp_transformations.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\fmapo\inference_engine_onnx_reader.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\fmapo\inference_engine_preproc.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\fmapo\inference_engine_transformations.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\fmapo\msvcp140.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\fmapo\ngraph.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\fmapo\plugins.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\fmapo\tbb.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\fmapo\vcruntime140.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\fmapo\vcruntime140_1.dll".
+SurfaceHub2Sand3\SurfaceUpdate\fmservice".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\fmservice\FMAPP.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\fmservice\FMService.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\fmservice\FMService64.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\fmservice\FMSRV.cat".
+SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase".
+SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\CtaChildDriver".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\CtaChildDriver\ctachilddriver.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\CtaChildDriver\CtaChildDriver.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\CtaChildDriver\CtaChildDriver.sys".
+SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\DisplayAudio".
+SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\DisplayAudio\11.2".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\DisplayAudio\11.2\IntcDAud.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\DisplayAudio\11.2\intcdaudup.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\DisplayAudio\11.2\IntcDAudUp.inf".
+SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\DisplayAudio\12.1".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\DisplayAudio\12.1\intcdaud.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\DisplayAudio\12.1\IntcDAud.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\DisplayAudio\12.1\IntcDAudD.sys".
+SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\fw".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\fw\dg1_gfx_fwupdate.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\fw\dg2_gfx_fwupdate_A0_SOC2.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\fw\dg2_gfx_fwupdate_B0_SOC1.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\fw\dg2_gfx_fwupdate_SOC1.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\fw\dg2_gfx_fwupdate_SOC2.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\fw\dg2_gfx_fwupdate_SOC3.bin".
+SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\I2CDriver".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\I2CDriver\intel_nf_i2c.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\I2CDriver\Intel_NF_I2C.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\I2CDriver\Intel_NF_I2C_Child.inf".
+SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\MiniCtaDriver".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\MiniCtaDriver\minictadriver.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\MiniCtaDriver\MiniCtaDriver.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\MiniCtaDriver\MiniCtaDriver.sys".
+SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\oprom".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\oprom\dg1_c_oprom.rom".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\oprom\dg2_c_oprom.rom".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\acxdac.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\AGS.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\AGSOfflinePackage.zip".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\clangFEWrapper.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\clangFEWrapper32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\ColorImageEnhancement.wmv".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\ControlLib.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\ControlLib32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\cpa_32.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\cpa_64.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\cp_resources.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\cui_dch.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\c_32.cpa".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\c_64.cpa".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\dev_32.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\dev_64.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\DnnlPlugin.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\enctools32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\enctools64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\FilmModeDetection.wmv".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\GfxDownloadWrapper.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\gscauxdriver.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\GSCAuxDriver.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\GSCAuxDriverx64.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\gscheci.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\gscheci.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\h265e_32.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\h265e_64.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\hdbusextup.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\HdBusExtUp.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\he_32.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\he_64.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\iga32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\iga64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igc32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igc64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igcc_dch.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igd10iumd32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igd10iumd64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igd10mg32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igd10mg64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igd10um32xe.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igd10um64xe.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igd11dxva32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igd11dxva64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igd12dxva32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igd12dxva64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igd12um32xeh.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igd12um32xel.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igd12um64xeh.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igd12um64xel.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igd12umd32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igd12umd64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igd9dxva32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igd9dxva64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igd9trinity32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igd9trinity64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igdail32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igdail64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igdde32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igdde64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igdext32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igdext64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igdfcl32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igdfcl64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igdgmm32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igdgmm64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igdinfo32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igdinfo64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igdkmdn64.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igdkmdnd64.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igdlh.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igdmd32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igdmd64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igdml32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igdml64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igdrcl32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igdrcl64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igdumdim32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igdumdim64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igfx11cmrt32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igfx11cmrt64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igfxcmrt32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igfxcmrt64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igfxCUIServiceN.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igfxCUIServicePSN.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igfxDHN.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igfxDIN.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igfxEMN.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igfxexps.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igfxexps32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igfxextN.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igfxLHM.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igfxSDK.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igfxSDKLib.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\iglhxa64.cpa".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\iglhxa64.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\iglhxc64.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\iglhxc64_dev.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\iglhxg64.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\iglhxg64_dev.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\iglhxo64.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\iglhxo64_dev.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\iglhxsn64.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\iglhxsnd64.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igmlsblob64xeh.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igmlsblob64xel.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igsc.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igvk32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igvk32.json".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igvk64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igvk64.json".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igvkMedia32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igvkMedia64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igxehpgicd32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igxehpgicd64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igxelpicd32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igxelpicd64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igxelpplusicd32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igxelpplusicd64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\igxess.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\iigd_dch.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\ImageStabilization.wmv".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\IntelControlLib.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\IntelControlLib32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\IntelCpHDCPSvc.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\IntelCpHeciSvc.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\IntelGFXFwUpdateTool.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\IntelGpuCompiler32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\IntelGpuCompiler64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\intel_gfx_api-x64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\intel_gfx_api-x86.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\Intel_OpenCL_ICD32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\Intel_OpenCL_ICD64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\libigc.so".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\libigd12dxva64.so".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\libigd12um64xeh.so".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\libigd12um64xel.so".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\libigd12umd64.so".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\libigdfcl.so".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\libigdgmm_w.so.12".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\libLLVM-9.so".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\libmfx32-gen.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\libmfx64-gen.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\libmfxhw32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\libmfxhw64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\libopencl-clang.so.9".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\libUniversalAdapter64.so".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\libwsl_compute_helper.so".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\LiteDB.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\memcntrl.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\mfxplugin32_av1e_gacc.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\mfxplugin32_hw.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\mfxplugin64_av1e_gacc.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\mfxplugin64_hw.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\mfx_loader_dll_hw32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\mfx_loader_dll_hw64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\mfx_mft_av1hve_32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\mfx_mft_av1hve_32.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\mfx_mft_av1hve_64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\mfx_mft_av1hve_64.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\mfx_mft_av1ve_32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\mfx_mft_av1ve_32.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\mfx_mft_av1ve_64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\mfx_mft_av1ve_64.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\mfx_mft_encrypt_32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\mfx_mft_encrypt_64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\mfx_mft_h264ve_32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\mfx_mft_h264ve_64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\mfx_mft_h265ve_32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\mfx_mft_h265ve_64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\mfx_mft_mjpgvd_32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\mfx_mft_mjpgvd_64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\mfx_mft_vp9ve_32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\mfx_mft_vp9ve_64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\mj_32.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\mj_64.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\MSHdaDac.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\Newtonsoft.Json.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\NLog.config".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\NLog.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\OneApp.IGCC.COMLibrary.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\OneApp.IGCC.CommunicationService.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\OneApp.IGCC.CoreLibrary.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\OneApp.IGCC.WinService.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\OneApp.IGCC.WinService.exe.config".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\opencl-clang32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\opencl-clang64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\OSSCOPYRIGHT.txt".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\TeeDriverGscW8x64.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\UMED.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\UniversalAdapter32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\UniversalAdapter64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\vp9e_32.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\vp9e_64.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\vpl_dispatcher_32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\vpl_dispatcher_64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\vulkan-1-32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\vulkan-1-64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\vulkaninfo-32.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\vulkaninfo-64.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\VulkanRT-EULA.txt".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\XeFX.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\ze_intel_gpu64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\ze_loader.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\ze_tracing_layer.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsBase\ze_validation_layer.dll".
+SurfaceHub2Sand3\SurfaceUpdate\GraphicsExt".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsExt\extinf.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\GraphicsExt\iigd_ext_up.inf".
+SurfaceHub2Sand3\SurfaceUpdate\iaLPSS2GPIO2TGL".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iaLPSS2GPIO2TGL\iaLPSS2_GPIO2_TGL.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iaLPSS2GPIO2TGL\iaLPSS2_GPIO2_TGL.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iaLPSS2GPIO2TGL\iaLPSS2_GPIO2_TGL.sys".
+SurfaceHub2Sand3\SurfaceUpdate\iaLPSS2I2CTGL".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iaLPSS2I2CTGL\iaLPSS2_I2C_TGL.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iaLPSS2I2CTGL\iaLPSS2_I2C_TGL.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iaLPSS2I2CTGL\iaLPSS2_I2C_TGL.sys".
+SurfaceHub2Sand3\SurfaceUpdate\iaLPSS2UART2TGL".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iaLPSS2UART2TGL\iaLPSS2_UART2_TGL.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iaLPSS2UART2TGL\iaLPSS2_UART2_TGL.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iaLPSS2UART2TGL\iaLPSS2_UART2_TGL.sys".
+SurfaceHub2Sand3\SurfaceUpdate\iclsClient".
+SurfaceHub2Sand3\SurfaceUpdate\iclsClient\conf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iclsClient\conf\cacert.pem".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iclsClient\conf\epid2_paramcert.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iclsClient\conf\EPIDGroupCertLegacy.cer".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iclsClient\conf\EPIDGroupCertX509.cer".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iclsClient\conf\epid_paramcert.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iclsClient\conf\iclsProxy.conf".
+SurfaceHub2Sand3\SurfaceUpdate\iclsClient\Documents".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iclsClient\Documents\development_tools.txt".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iclsClient\Documents\License.txt".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iclsClient\Documents\Readme.txt".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iclsClient\Documents\redist.txt".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iclsClient\Documents\Third Party Licenses.txt".
+SurfaceHub2Sand3\SurfaceUpdate\iclsClient\lib".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iclsClient\lib\concrt140.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iclsClient\lib\iclsClient.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iclsClient\lib\iclsClientInternal.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iclsClient\lib\iclsProxy.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iclsClient\lib\iclsProxyInternal.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iclsClient\lib\IntelPTTEKRecertification.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iclsClient\lib\libcrypto-3-x64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iclsClient\lib\libssl-3-x64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iclsClient\lib\msvcp140.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iclsClient\lib\PlatformLicenseManagerService.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iclsClient\lib\TPMProvisioningService.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iclsClient\lib\vcruntime140.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iclsClient\lib\vcruntime140_1.dll".
+SurfaceHub2Sand3\SurfaceUpdate\iclsClient\lib32".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iclsClient\lib32\concrt140.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iclsClient\lib32\iclsClient.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iclsClient\lib32\iclsClientInternal.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iclsClient\lib32\iclsProxy.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iclsClient\lib32\iclsProxyInternal.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iclsClient\lib32\IntelPTTEKRecertification.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iclsClient\lib32\libcrypto-3.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iclsClient\lib32\libssl-3.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iclsClient\lib32\msvcp140.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iclsClient\lib32\TPMProvisioningService.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iclsClient\lib32\vcruntime140.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iclsClient\iclsClient.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\iclsClient\iclsClient.inf".
+SurfaceHub2Sand3\SurfaceUpdate\KBLChipset".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\KBLChipset\Kabylake.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\KBLChipset\KabylakeSystem.inf".
+SurfaceHub2Sand3\SurfaceUpdate\p2pteamosup".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\p2pteamosup\p2pTeamOS_Up.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\p2pteamosup\p2pTeamOS_Up.inf".
+SurfaceHub2Sand3\SurfaceUpdate\SerialIOGPIO2skl".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SerialIOGPIO2skl\iaLPSS2_GPIO2.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SerialIOGPIO2skl\iaLPSS2_GPIO2_SKL.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SerialIOGPIO2skl\iaLPSS2_GPIO2_SKL.inf".
+SurfaceHub2Sand3\SurfaceUpdate\SerialIOI2Cskl".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SerialIOI2Cskl\iaLPSS2_I2C.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SerialIOI2Cskl\iaLPSS2_I2C_SKL.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SerialIOI2Cskl\iaLPSS2_I2C_SKL.inf".
+SurfaceHub2Sand3\SurfaceUpdate\SerialIOSPIskl".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SerialIOSPIskl\iaLPSS2_SPI.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SerialIOSPIskl\iaLPSS2_SPI_SKL.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SerialIOSPIskl\iaLPSS2_SPI_SKL.inf".
+SurfaceHub2Sand3\SurfaceUpdate\SerialIOUARTskl".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SerialIOUARTskl\iaLPSS2_UART2.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SerialIOUARTskl\iaLPSS2_UART2_SKL.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SerialIOUARTskl\iaLPSS2_UART2_SKL.inf".
+SurfaceHub2Sand3\SurfaceUpdate\SPChipset".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SPChipset\SunrisePoint-LP.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SPChipset\SunrisePoint-LPSystem.inf".
+SurfaceHub2Sand3\SurfaceUpdate\SPChipsetNorthpeak".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SPChipsetNorthpeak\SunrisePoint-LP.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SPChipsetNorthpeak\SunrisePoint-LPSystemNorthpeak.inf".
+SurfaceHub2Sand3\SurfaceUpdate\SPChipsetThermal".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SPChipsetThermal\SunrisePoint-LP.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SPChipsetThermal\SunrisePoint-LPSystemThermal.inf".
+SurfaceHub2Sand3\SurfaceUpdate\StorageFwUpdate".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\StorageFwUpdate\SurfaceStorageFwUpdate.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\StorageFwUpdate\SurfaceStorageFwUpdate.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\StorageFwUpdate\SurfaceStorageFwUpdate.sys".
+SurfaceHub2Sand3\SurfaceUpdate\StorageFwUpdateEnum".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\StorageFwUpdateEnum\SurfaceStorageFwUpdateEnum.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\StorageFwUpdateEnum\SurfaceStorageFwUpdateEnum.inf".
+SurfaceHub2Sand3\SurfaceUpdate\StorageFwUpdateKBG50ZNS512G".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\StorageFwUpdateKBG50ZNS512G\ANMS0103.sig".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\StorageFwUpdateKBG50ZNS512G\SurfaceStorageFwUpdateKBG50ZNS512G.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\StorageFwUpdateKBG50ZNS512G\SurfaceStorageFwUpdateKBG50ZNS512GPackage.cat".
+SurfaceHub2Sand3\SurfaceUpdate\StorageFwUpdateMZ9L4512HBLU00BMV".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\StorageFwUpdateMZ9L4512HBLU00BMV\HXC75M0Q_noFormat.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\StorageFwUpdateMZ9L4512HBLU00BMV\SurfaceStorageFwUpdateMZ9L4512HBLU00BMV.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\StorageFwUpdateMZ9L4512HBLU00BMV\SurfaceStorageFwUpdateMZ9L4512HBLU00BMVPackage.cat".
+SurfaceHub2Sand3\SurfaceUpdate\SurfaceAudioBridgeDriver".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceAudioBridgeDriver\SurfaceAudioBridgeDriver.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceAudioBridgeDriver\SurfaceAudioBridgeDriver.inf".
+SurfaceHub2Sand3\SurfaceUpdate\SurfaceDisplay".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceDisplay\SurfaceDisplay.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceDisplay\surfacedisplay.inf".
+SurfaceHub2Sand3\SurfaceUpdate\SurfaceHIDFriendlyNames".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceHIDFriendlyNames\SurfaceHIDFriendlyNames.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceHIDFriendlyNames\SurfaceHIDFriendlyNames.inf".
+SurfaceHub2Sand3\SurfaceUpdate\SurfaceHub2sIngestNullDriver".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceHub2sIngestNullDriver\SurfaceHub2sIngestNullDriver.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceHub2sIngestNullDriver\SurfaceHub2sIngestNullDriver.inf".
+SurfaceHub2Sand3\SurfaceUpdate\SurfaceHub2SME".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceHub2SME\SurfaceME.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceHub2SME\SurfaceME.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceHub2SME\SurfaceME_11.8.96.4657.bin".
+SurfaceHub2Sand3\SurfaceUpdate\SurfaceHub2SSAM".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceHub2SSAM\SurfaceHub2SSAM.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceHub2SSAM\SurfaceHub2SSAM.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceHub2SSAM\SurfaceSAM_4.14.139.bin".
+SurfaceHub2Sand3\SurfaceUpdate\SurfaceHub2SUEFI".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceHub2SUEFI\SurfaceUEFI.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceHub2SUEFI\SurfaceUEFI.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceHub2SUEFI\SurfaceUEFI_699.1205.768.bin".
+SurfaceHub2Sand3\SurfaceUpdate\surfacehub3me".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\surfacehub3me\SurfaceHub3ME.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\surfacehub3me\SurfaceHub3ME.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\surfacehub3me\SurfaceME_15.0.2573.1.bin".
+SurfaceHub2Sand3\SurfaceUpdate\surfacehub3uefi".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\surfacehub3uefi\SurfaceHub3UEFI.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\surfacehub3uefi\SurfaceHub3UEFI.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\surfacehub3uefi\SurfaceUEFI_7.100.143.bin".
+SurfaceHub2Sand3\SurfaceUpdate\SurfaceHubMonitor".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceHubMonitor\SurfaceHubMonitor.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceHubMonitor\SurfaceHubMonitor.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceHubMonitor\SurfaceHubMonitor.inf".
+SurfaceHub2Sand3\SurfaceUpdate\SurfaceHubPowerManagement".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceHubPowerManagement\SurfaceHubPowerManagement.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceHubPowerManagement\SurfaceHubPowerManagement.inf".
+SurfaceHub2Sand3\SurfaceUpdate\SurfaceIhvCpuSmfClient".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceIhvCpuSmfClient\SurfaceIhvCpuSmfClient.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceIhvCpuSmfClient\SurfaceIhvCpuSmfClient.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceIhvCpuSmfClient\SurfaceIhvCpuSmfClient.sys".
+SurfaceHub2Sand3\SurfaceUpdate\SurfacePen0993BleLcFwUpdate".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfacePen0993BleLcFwUpdate\SurfacePen0993BleLcFwUpdate.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfacePen0993BleLcFwUpdate\SurfacePen0993BleLcFwUpdate.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfacePen0993BleLcFwUpdate\SurfacePen0993BleLc_D_MCU_B0.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfacePen0993BleLcFwUpdate\SurfacePen0993BleLc_D_MCU_B0.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfacePen0993BleLcFwUpdate\SurfacePen0993BleLc_D_MCU_B1.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfacePen0993BleLcFwUpdate\SurfacePen0993BleLc_D_MCU_B1.payload.bin".
+SurfaceHub2Sand3\SurfaceUpdate\SurfacePenCfuOverBleLc".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfacePenCfuOverBleLc\SurfacePenCfuOverBleLc.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfacePenCfuOverBleLc\SurfacePenCfuOverBleLc.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfacePenCfuOverBleLc\SurfacePenCfuOverBleLc.inf".
+SurfaceHub2Sand3\SurfaceUpdate\SurfacePlatformLogs".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfacePlatformLogs\SurfacePlatformLogs.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfacePlatformLogs\SurfacePlatformLogsDriver.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfacePlatformLogs\SurfacePlatformLogsDriver.inf".
+SurfaceHub2Sand3\SurfaceUpdate\SurfacePowerMeter".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfacePowerMeter\SurfacePowerMeterDriver.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfacePowerMeter\SurfacePowerMeterDriver.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfacePowerMeter\SurfacePowerMeterDriver.sys".
+SurfaceHub2Sand3\SurfaceUpdate\SurfacePowerState".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfacePowerState\SurfacePowerState.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfacePowerState\SurfacePowerStateDriver.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfacePowerState\SurfacePowerStateDriver.sys".
+SurfaceHub2Sand3\SurfaceUpdate\SurfacePowerTrackerCore".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfacePowerTrackerCore\SurfacePowerTrackerCore.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfacePowerTrackerCore\SurfacePowerTrackerCore.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfacePowerTrackerCore\SurfacePowerTrackerCore.sys".
+SurfaceHub2Sand3\SurfaceUpdate\SurfaceProximityDriver".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceProximityDriver\DopplerDetection.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceProximityDriver\Surface.Poster.Policy.Defaults.ppkg".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceProximityDriver\SurfaceProximityDriver.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceProximityDriver\SurfaceProximityDriver.inf".
+SurfaceHub2Sand3\SurfaceUpdate\SurfaceSAM".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceSAM\SurfaceSAM.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceSAM\SurfaceSAM.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceSAM\SurfaceSAM_2.100.139.bin".
+SurfaceHub2Sand3\SurfaceUpdate\SurfaceSMF".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceSMF\Smf_94.0.0.13.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceSMF\SurfaceSMF.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceSMF\SurfaceSMF.inf".
+SurfaceHub2Sand3\SurfaceUpdate\SurfaceSystemManagementFrameworkDriver".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceSystemManagementFrameworkDriver\SurfaceSystemManagementFrameworkDriver.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceSystemManagementFrameworkDriver\SurfaceSystemManagementFrameworkDriver.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceSystemManagementFrameworkDriver\SurfaceSystemManagementFrameworkDriver.sys".
+SurfaceHub2Sand3\SurfaceUpdate\surfacesystemtelemetryusermode".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\surfacesystemtelemetryusermode\SurfaceSystemTelemetryDriverUserMode.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\surfacesystemtelemetryusermode\SurfaceSystemTelemetryDriverUserMode.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\surfacesystemtelemetryusermode\SurfaceSystemTelemetryDriverUserMode.inf".
+SurfaceHub2Sand3\SurfaceUpdate\SurfaceThermalPolicy".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceThermalPolicy\SurfaceThermalPolicy.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceThermalPolicy\SurfaceThermalPolicy.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceThermalPolicy\SurfaceThermalPolicy.sys".
+SurfaceHub2Sand3\SurfaceUpdate\SurfaceTouchPenProcessorUpdate50".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceTouchPenProcessorUpdate50\SurfaceTouchPenProcessorUpdate.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceTouchPenProcessorUpdate50\SurfaceTouchPenProcessorUpdate.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceTouchPenProcessorUpdate50\TouchPenProcessor096D.dll".
+SurfaceHub2Sand3\SurfaceUpdate\SurfaceTouchPenProcessorUpdate85".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceTouchPenProcessorUpdate85\SurfaceTouchPenProcessorUpdate85.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceTouchPenProcessorUpdate85\SurfaceTouchPenProcessorUpdate85.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceTouchPenProcessorUpdate85\TouchPenProcessor09B7.dll".
+SurfaceHub2Sand3\SurfaceUpdate\SurfaceTPM".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceTPM\SurfaceTpm.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceTPM\SurfaceTpm.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\SurfaceTPM\SurfaceTpm_7.2.3.1.bin".
+SurfaceHub2Sand3\SurfaceUpdate\usbaudio2aggregator".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\usbaudio2aggregator\NOTICE.txt".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\usbaudio2aggregator\SAMSfpu_045E0C0C.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\usbaudio2aggregator\SurfaceAPO.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\usbaudio2aggregator\SurfaceHub2AudioUnitFilter.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\usbaudio2aggregator\SurfaceRenderAPO_045E095A.json".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\usbaudio2aggregator\SurfaceRenderAPO_045E0C0C.json".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\usbaudio2aggregator\UsbAudio2Aggregator.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\usbaudio2aggregator\UsbAudio2Aggregator.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\usbaudio2aggregator\UsbAudio2Unit.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\usbaudio2aggregator\UsbAudio2UnitAggregator.sys".
+SurfaceHub2Sand3\SurfaceUpdate\usbhubfwupdatev2".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\usbhubfwupdatev2\SurfaceUsbHubFwUpdateV2.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\usbhubfwupdatev2\SurfaceUsbHubFwUpdateV2.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\usbhubfwupdatev2\SurfaceUsbHubFwUpdateV2.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\usbhubfwupdatev2\SurfaceUsbHubFwUpdateV2Service.exe".
+SurfaceHub2Sand3\SurfaceUpdate\WiFi08".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\WiFi08\IntelIHVRouter08.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\WiFi08\IntelIHVRouter10.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\WiFi08\IntelIHVRouter14.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\WiFi08\Netwfw08.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\WiFi08\Netwfw10.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\WiFi08\netwfw14.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\WiFi08\Netwtw08.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\WiFi08\Netwtw08.INF".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\WiFi08\Netwtw08.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\WiFi08\Netwtw10.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceHub2Sand3\SurfaceUpdate\WiFi08\Netwtw14.sys".
+
+Current Folders:
+ManagementEngine
+msu56cx22x64sta
+SurfaceEthernetAdapter
+SurfaceIntegrationDriver
+SurfacePenBleLcAddrAdaptationDriver
+SurfaceSerialHubDriver
+SurfaceServiceNullDriver
+SurfaceSmfClient
+SurfaceTimeAlarmAcpiFilter
+TglChipset
+**********************
+PowerShell transcript end
+End time: 20241018130704
+**********************

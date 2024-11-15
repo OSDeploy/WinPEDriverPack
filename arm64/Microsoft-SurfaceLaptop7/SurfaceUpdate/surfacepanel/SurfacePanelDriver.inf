@@ -1,0 +1,617 @@
+; File:               SurfacePanelDriver.inf
+;
+; Description:        SurfacePanelDriver
+;
+; Copyright (C) 2015 Microsoft Corporation.  All Rights Reserved.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[Version]
+Signature="$Windows NT$"
+Provider=%ManufacturerName%
+ClassGuid={4d36e96e-e325-11ce-bfc1-08002be10318}
+Class=Monitor
+CatalogFile=SurfacePanelDriver.cat
+DriverVer = 06/25/2024,2.4.68.0
+PnPLockDown=1
+
+[SourceDisksNames]
+1 = %DiskName%
+
+[SourceDisksFiles]
+SurfacePanelDriver.dll=1
+
+[Manufacturer]
+%ManufacturerName%=SurfacePanelDriver,NTARM64.10.0...19041
+
+[DestinationDirs]
+DefaultDestDir=13 ; copy to driverstore
+
+[SurfacePanelDriver.NTARM64.10.0...19041]
+%DeviceName%=SurfacePanelDriver_Install_LGD0719, Monitor\LGD0719
+%DeviceName%=SurfacePanelDriver_Install_SHP1587, Monitor\SHP1587 ; Ersa
+%DeviceName%=SurfacePanelDriver_Install_LGD077A, Monitor\LGD077A
+%DeviceName%=SurfacePanelDriver_Install_SHP1572, Monitor\SHP1572 ; _660_ROS Outcell 13"
+%DeviceName%=SurfacePanelDriver_Install_SHP1572, Monitor\SHP15B2 ; _830_QUN Outcell 13"
+%DeviceName%=SurfacePanelDriver_Install_SHP1577, Monitor\SHP1577 ; _660_ROS Outcell 15"
+%DeviceName%=SurfacePanelDriver_Install_SHP1577, Monitor\SHP15B3 ; _830_QUN Outcell 15"
+%DeviceName%=SurfacePanelDriver_Install_LGD0780, Monitor\LGD0780 ; _660_ROS Incell 13"
+%DeviceName%=SurfacePanelDriver_Install_LGD0780, Monitor\LGD07B2 ; _830_QUN Incell 13"
+%DeviceName%=SurfacePanelDriver_Install_LGD077B, Monitor\LGD0779 ; _494_DEI LCD
+%DeviceName%=SurfacePanelDriver_Install_LGD077B, Monitor\LGD077B ; Torrance
+%DeviceName%=SurfacePanelDriver_Install_SDC4195, Monitor\SDC4195 ; _494_DEI OLED
+%DeviceName%=SurfacePanelDriver_Install_SHP14B3, Monitor\SHP14B3 ; _679_AVI 13"
+%DeviceName%=SurfacePanelDriver_Install_SHP14B4, Monitor\SHP14B4 ; _679_AVI 15"
+%DeviceName%=SurfacePanelDriver_Install_LGD0555, Monitor\LGD0555 ; _654_GUR
+%DeviceName%=SurfacePanelDriver_Install_LGD07AC, Monitor\LGD07AC ; _831_WID LCD
+%DeviceName%=SurfacePanelDriver_Install_SDC41B2, Monitor\SDC41B2 ; _831_WID OLED
+%DeviceName%=SurfacePanelDriver_Install_LGD07AD, Monitor\LGD07AD ; _774_LAN
+%DeviceName%=SurfacePanelDriver_Install_SHP15A7, Monitor\SHP15A7 ; _768_VEA
+%DeviceName%=SurfacePanelDriver_Install_BOE0CC9, Monitor\BOE0CC9 ; _768_VEA
+%DeviceName%=SurfacePanelDriver_Install_LGD07AB, Monitor\LGD07AB ; _874_GOA
+
+; =================== Monitor\LGD0719 ==============================
+[SurfacePanelDriver_Install_LGD0719.NT]
+CopyFiles=SurfacePanelDriverCopy
+AddReg=SurfacePanelDriver_Filter_Reg, SurfacePanelDriver_RegLGD0719
+
+[SurfacePanelDriver_RegLGD0719]
+HKR,,PreferredScaleFactor,0x00010001,200
+
+[SurfacePanelDriver_Install_LGD0719.NT.hw]
+AddReg=SurfacePanelDriver_Filter_Reg
+
+[SurfacePanelDriver_Install_LGD0719.NT.Services]
+AddService=WUDFRd,0x000001f8,WUDFRD_ServiceInstall
+AddService=monitor,0x000001fa, Monitor_Service.Install
+
+[SurfacePanelDriver_Install_LGD0719.NT.Wdf]
+UmdfService=SurfacePanelDriver,SurfacePanelDriver_Install_LGD0719
+UmdfServiceOrder=SurfacePanelDriver
+UmdfKernelModeClientPolicy=AllowKernelModeClients
+UmdfFsContextUsePolicy=CanUseFsContext2
+UmdfFileObjectPolicy=AllowNullAndUnknownFileObjects
+UmdfHostProcessSharing=ProcessSharingDisabled
+
+[SurfacePanelDriver_Install_LGD0719]
+UmdfLibraryVersion=2.15.0
+ServiceBinary=%13%\SurfacePanelDriver.dll
+
+[SurfacePanelDriver_Install_LGD0719.NT.Events]
+AddEventProvider = {3D53356D-424B-496A-A094-2154D8D2B304},SurfacePanelDriver_EventProviderInstall
+
+; =================== Monitor\SHP1587 ==============================
+[SurfacePanelDriver_Install_SHP1587.NT]
+CopyFiles=SurfacePanelDriverCopy
+AddReg=SurfacePanelDriver_Filter_Reg, SurfacePanelDriver_RegSHP1587
+
+[SurfacePanelDriver_RegSHP1587]
+HKR,,PreferredScaleFactor,0x00010001,150
+
+[SurfacePanelDriver_Install_SHP1587.NT.hw]
+AddReg=SurfacePanelDriver_Filter_Reg
+
+[SurfacePanelDriver_Install_SHP1587.NT.Services]
+AddService=WUDFRd,0x000001f8,WUDFRD_ServiceInstall
+AddService=monitor,0x000001fa, Monitor_Service.Install
+
+[SurfacePanelDriver_Install_SHP1587.NT.Wdf]
+UmdfService=SurfacePanelDriver,SurfacePanelDriver_Install_SHP1587
+UmdfServiceOrder=SurfacePanelDriver
+UmdfKernelModeClientPolicy=AllowKernelModeClients
+UmdfFsContextUsePolicy=CanUseFsContext2
+UmdfFileObjectPolicy=AllowNullAndUnknownFileObjects
+UmdfHostProcessSharing=ProcessSharingDisabled
+
+[SurfacePanelDriver_Install_SHP1587]
+UmdfLibraryVersion=2.15.0
+ServiceBinary=%13%\SurfacePanelDriver.dll
+
+[SurfacePanelDriver_Install_SHP1587.NT.Events]
+AddEventProvider = {3D53356D-424B-496A-A094-2154D8D2B304},SurfacePanelDriver_EventProviderInstall
+
+; =================== Monitor\LGD077A ==============================
+[SurfacePanelDriver_Install_LGD077A.NT]
+CopyFiles=SurfacePanelDriverCopy
+AddReg=SurfacePanelDriver_Filter_Reg, SurfacePanelDriver_RegLGD077A
+
+[SurfacePanelDriver_RegLGD077A]
+HKR,,PreferredScaleFactor,0x00010001,200
+
+[SurfacePanelDriver_Install_LGD077A.NT.hw]
+AddReg=SurfacePanelDriver_Filter_Reg
+
+[SurfacePanelDriver_Install_LGD077A.NT.Services]
+AddService=WUDFRd,0x000001f8,WUDFRD_ServiceInstall
+AddService=monitor,0x000001fa, Monitor_Service.Install
+
+[SurfacePanelDriver_Install_LGD077A.NT.Wdf]
+UmdfService=SurfacePanelDriver,SurfacePanelDriver_Install_LGD077A
+UmdfServiceOrder=SurfacePanelDriver
+UmdfKernelModeClientPolicy=AllowKernelModeClients
+UmdfFsContextUsePolicy=CanUseFsContext2
+UmdfFileObjectPolicy=AllowNullAndUnknownFileObjects
+UmdfHostProcessSharing=ProcessSharingDisabled
+
+[SurfacePanelDriver_Install_LGD077A]
+UmdfLibraryVersion=2.15.0
+ServiceBinary=%13%\SurfacePanelDriver.dll
+
+[SurfacePanelDriver_Install_LGD077A.NT.Events]
+AddEventProvider = {3D53356D-424B-496A-A094-2154D8D2B304},SurfacePanelDriver_EventProviderInstall
+
+; =================== Monitor\SHP1572 ==============================
+[SurfacePanelDriver_Install_SHP1572.NT]
+CopyFiles=SurfacePanelDriverCopy
+AddReg=SurfacePanelDriver_Filter_Reg, SurfacePanelDriver_RegSHP1572
+
+[SurfacePanelDriver_RegSHP1572]
+HKR,,PreferredScaleFactor,0x00010001,150
+
+[SurfacePanelDriver_Install_SHP1572.NT.hw]
+AddReg=SurfacePanelDriver_Filter_Reg
+
+[SurfacePanelDriver_Install_SHP1572.NT.Services]
+AddService=WUDFRd,0x000001f8,WUDFRD_ServiceInstall
+AddService=monitor,0x000001fa, Monitor_Service.Install
+
+[SurfacePanelDriver_Install_SHP1572.NT.Wdf]
+UmdfService=SurfacePanelDriver,SurfacePanelDriver_Install_SHP1572
+UmdfServiceOrder=SurfacePanelDriver
+UmdfKernelModeClientPolicy=AllowKernelModeClients
+UmdfFsContextUsePolicy=CanUseFsContext2
+UmdfFileObjectPolicy=AllowNullAndUnknownFileObjects
+UmdfHostProcessSharing=ProcessSharingDisabled
+
+[SurfacePanelDriver_Install_SHP1572]
+UmdfLibraryVersion=2.15.0
+ServiceBinary=%13%\SurfacePanelDriver.dll
+
+[SurfacePanelDriver_Install_SHP1572.NT.Events]
+AddEventProvider = {3D53356D-424B-496A-A094-2154D8D2B304},SurfacePanelDriver_EventProviderInstall
+
+; =================== Monitor\SHP1577 ==============================
+[SurfacePanelDriver_Install_SHP1577.NT]
+CopyFiles=SurfacePanelDriverCopy
+AddReg=SurfacePanelDriver_Filter_Reg, SurfacePanelDriver_RegSHP1577
+
+[SurfacePanelDriver_RegSHP1577]
+HKR,,PreferredScaleFactor,0x00010001,150
+
+[SurfacePanelDriver_Install_SHP1577.NT.hw]
+AddReg=SurfacePanelDriver_Filter_Reg
+
+[SurfacePanelDriver_Install_SHP1577.NT.Services]
+AddService=WUDFRd,0x000001f8,WUDFRD_ServiceInstall
+AddService=monitor,0x000001fa, Monitor_Service.Install
+
+[SurfacePanelDriver_Install_SHP1577.NT.Wdf]
+UmdfService=SurfacePanelDriver,SurfacePanelDriver_Install_SHP1577
+UmdfServiceOrder=SurfacePanelDriver
+UmdfKernelModeClientPolicy=AllowKernelModeClients
+UmdfFsContextUsePolicy=CanUseFsContext2
+UmdfFileObjectPolicy=AllowNullAndUnknownFileObjects
+UmdfHostProcessSharing=ProcessSharingDisabled
+
+[SurfacePanelDriver_Install_SHP1577]
+UmdfLibraryVersion=2.15.0
+ServiceBinary=%13%\SurfacePanelDriver.dll
+
+[SurfacePanelDriver_Install_SHP1577.NT.Events]
+AddEventProvider = {3D53356D-424B-496A-A094-2154D8D2B304},SurfacePanelDriver_EventProviderInstall
+
+; =================== Monitor\LGD0780 ==============================
+[SurfacePanelDriver_Install_LGD0780.NT]
+CopyFiles=SurfacePanelDriverCopy
+AddReg=SurfacePanelDriver_Filter_Reg, SurfacePanelDriver_RegLGD0780
+
+[SurfacePanelDriver_RegLGD0780]
+HKR,,PreferredScaleFactor,0x00010001,150
+
+[SurfacePanelDriver_Install_LGD0780.NT.hw]
+AddReg=SurfacePanelDriver_Filter_Reg
+
+[SurfacePanelDriver_Install_LGD0780.NT.Services]
+AddService=WUDFRd,0x000001f8,WUDFRD_ServiceInstall
+AddService=monitor,0x000001fa, Monitor_Service.Install
+
+[SurfacePanelDriver_Install_LGD0780.NT.Wdf]
+UmdfService=SurfacePanelDriver,SurfacePanelDriver_Install_LGD0780
+UmdfServiceOrder=SurfacePanelDriver
+UmdfKernelModeClientPolicy=AllowKernelModeClients
+UmdfFsContextUsePolicy=CanUseFsContext2
+UmdfFileObjectPolicy=AllowNullAndUnknownFileObjects
+UmdfHostProcessSharing=ProcessSharingDisabled
+
+[SurfacePanelDriver_Install_LGD0780]
+UmdfLibraryVersion=2.15.0
+ServiceBinary=%13%\SurfacePanelDriver.dll
+
+[SurfacePanelDriver_Install_LGD0780.NT.Events]
+AddEventProvider = {3D53356D-424B-496A-A094-2154D8D2B304},SurfacePanelDriver_EventProviderInstall
+
+; =================== Monitor\LGD077B ==============================
+[SurfacePanelDriver_Install_LGD077B.NT]
+CopyFiles=SurfacePanelDriverCopy
+AddReg=SurfacePanelDriver_Filter_Reg, SurfacePanelDriver_RegLGD077B
+
+[SurfacePanelDriver_RegLGD077B]
+HKR,,PreferredScaleFactor,0x00010001,200
+
+[SurfacePanelDriver_Install_LGD077B.NT.hw]
+AddReg=SurfacePanelDriver_Filter_Reg
+
+[SurfacePanelDriver_Install_LGD077B.NT.Services]
+AddService=WUDFRd,0x000001f8,WUDFRD_ServiceInstall
+AddService=monitor,0x000001fa, Monitor_Service.Install
+
+[SurfacePanelDriver_Install_LGD077B.NT.Wdf]
+UmdfService=SurfacePanelDriver,SurfacePanelDriver_Install_LGD077B
+UmdfServiceOrder=SurfacePanelDriver
+UmdfKernelModeClientPolicy=AllowKernelModeClients
+UmdfFsContextUsePolicy=CanUseFsContext2
+UmdfFileObjectPolicy=AllowNullAndUnknownFileObjects
+UmdfHostProcessSharing=ProcessSharingDisabled
+
+[SurfacePanelDriver_Install_LGD077B]
+UmdfLibraryVersion=2.15.0
+ServiceBinary=%13%\SurfacePanelDriver.dll
+
+[SurfacePanelDriver_Install_LGD077B.NT.Events]
+AddEventProvider = {3D53356D-424B-496A-A094-2154D8D2B304},SurfacePanelDriver_EventProviderInstall
+
+; =================== Monitor\SDC4195 ==============================
+[SurfacePanelDriver_Install_SDC4195.NT]
+CopyFiles=SurfacePanelDriverCopy
+AddReg=SurfacePanelDriver_Filter_Reg, SurfacePanelDriver_RegSDC4195
+
+[SurfacePanelDriver_RegSDC4195]
+HKR,,PreferredScaleFactor,0x00010001,200
+
+[SurfacePanelDriver_Install_SDC4195.NT.hw]
+AddReg=SurfacePanelDriver_Filter_Reg
+
+[SurfacePanelDriver_Install_SDC4195.NT.Services]
+AddService=WUDFRd,0x000001f8,WUDFRD_ServiceInstall
+AddService=monitor,0x000001fa, Monitor_Service.Install
+
+[SurfacePanelDriver_Install_SDC4195.NT.Wdf]
+UmdfService=SurfacePanelDriver,SurfacePanelDriver_Install_SDC4195
+UmdfServiceOrder=SurfacePanelDriver
+UmdfKernelModeClientPolicy=AllowKernelModeClients
+UmdfFsContextUsePolicy=CanUseFsContext2
+UmdfFileObjectPolicy=AllowNullAndUnknownFileObjects
+UmdfHostProcessSharing=ProcessSharingDisabled
+
+[SurfacePanelDriver_Install_SDC4195]
+UmdfLibraryVersion=2.15.0
+ServiceBinary=%13%\SurfacePanelDriver.dll
+
+[SurfacePanelDriver_Install_SDC4195.NT.Events]
+AddEventProvider = {3D53356D-424B-496A-A094-2154D8D2B304},SurfacePanelDriver_EventProviderInstall
+
+; =================== Monitor\SHP14B3 ==============================
+[SurfacePanelDriver_Install_SHP14B3.NT]
+CopyFiles=SurfacePanelDriverCopy
+AddReg=SurfacePanelDriver_Filter_Reg, SurfacePanelDriver_RegSHP14B3
+
+[SurfacePanelDriver_RegSHP14B3]
+HKR,,PreferredScaleFactor,0x00010001,150
+
+[SurfacePanelDriver_Install_SHP14B3.NT.hw]
+AddReg=SurfacePanelDriver_Filter_Reg
+
+[SurfacePanelDriver_Install_SHP14B3.NT.Services]
+AddService=WUDFRd,0x000001f8,WUDFRD_ServiceInstall
+AddService=monitor,0x000001fa, Monitor_Service.Install
+
+[SurfacePanelDriver_Install_SHP14B3.NT.Wdf]
+UmdfService=SurfacePanelDriver,SurfacePanelDriver_Install_SHP14B3
+UmdfServiceOrder=SurfacePanelDriver
+UmdfKernelModeClientPolicy=AllowKernelModeClients
+UmdfFsContextUsePolicy=CanUseFsContext2
+UmdfFileObjectPolicy=AllowNullAndUnknownFileObjects
+UmdfHostProcessSharing=ProcessSharingDisabled
+
+[SurfacePanelDriver_Install_SHP14B3]
+UmdfLibraryVersion=2.15.0
+ServiceBinary=%13%\SurfacePanelDriver.dll
+
+[SurfacePanelDriver_Install_SHP14B3.NT.Events]
+AddEventProvider = {3D53356D-424B-496A-A094-2154D8D2B304},SurfacePanelDriver_EventProviderInstall
+
+; =================== Monitor\SHP14B4 ==============================
+[SurfacePanelDriver_Install_SHP14B4.NT]
+CopyFiles=SurfacePanelDriverCopy
+AddReg=SurfacePanelDriver_Filter_Reg, SurfacePanelDriver_RegSHP14B4
+
+[SurfacePanelDriver_RegSHP14B4]
+HKR,,PreferredScaleFactor,0x00010001,150
+
+[SurfacePanelDriver_Install_SHP14B4.NT.hw]
+AddReg=SurfacePanelDriver_Filter_Reg
+
+[SurfacePanelDriver_Install_SHP14B4.NT.Services]
+AddService=WUDFRd,0x000001f8,WUDFRD_ServiceInstall
+AddService=monitor,0x000001fa, Monitor_Service.Install
+
+[SurfacePanelDriver_Install_SHP14B4.NT.Wdf]
+UmdfService=SurfacePanelDriver,SurfacePanelDriver_Install_SHP14B4
+UmdfServiceOrder=SurfacePanelDriver
+UmdfKernelModeClientPolicy=AllowKernelModeClients
+UmdfFsContextUsePolicy=CanUseFsContext2
+UmdfFileObjectPolicy=AllowNullAndUnknownFileObjects
+UmdfHostProcessSharing=ProcessSharingDisabled
+
+[SurfacePanelDriver_Install_SHP14B4]
+UmdfLibraryVersion=2.15.0
+ServiceBinary=%13%\SurfacePanelDriver.dll
+
+[SurfacePanelDriver_Install_SHP14B4.NT.Events]
+AddEventProvider = {3D53356D-424B-496A-A094-2154D8D2B304},SurfacePanelDriver_EventProviderInstall
+
+; =================== Monitor\LGD0555 ==============================
+[SurfacePanelDriver_Install_LGD0555.NT]
+CopyFiles=SurfacePanelDriverCopy
+AddReg=SurfacePanelDriver_Filter_Reg, SurfacePanelDriver_RegLGD0555
+
+[SurfacePanelDriver_RegLGD0555]
+HKR,,PreferredScaleFactor,0x00010001,200
+
+[SurfacePanelDriver_Install_LGD0555.NT.hw]
+AddReg=SurfacePanelDriver_Filter_Reg
+
+[SurfacePanelDriver_Install_LGD0555.NT.Services]
+AddService=WUDFRd,0x000001f8,WUDFRD_ServiceInstall
+AddService=monitor,0x000001fa, Monitor_Service.Install
+
+[SurfacePanelDriver_Install_LGD0555.NT.Wdf]
+UmdfService=SurfacePanelDriver,SurfacePanelDriver_Install_LGD0555
+UmdfServiceOrder=SurfacePanelDriver
+UmdfKernelModeClientPolicy=AllowKernelModeClients
+UmdfFsContextUsePolicy=CanUseFsContext2
+UmdfFileObjectPolicy=AllowNullAndUnknownFileObjects
+UmdfHostProcessSharing=ProcessSharingDisabled
+
+[SurfacePanelDriver_Install_LGD0555]
+UmdfLibraryVersion=2.15.0
+ServiceBinary=%13%\SurfacePanelDriver.dll
+
+[SurfacePanelDriver_Install_LGD0555.NT.Events]
+AddEventProvider = {3D53356D-424B-496A-A094-2154D8D2B304},SurfacePanelDriver_EventProviderInstall
+
+; =================== Monitor\LGD07AC ==============================
+[SurfacePanelDriver_Install_LGD07AC.NT]
+CopyFiles=SurfacePanelDriverCopy
+AddReg=SurfacePanelDriver_Filter_Reg, SurfacePanelDriver_RegLGD07AC
+
+[SurfacePanelDriver_RegLGD07AC]
+HKR,,PreferredScaleFactor,0x00010001,200
+
+[SurfacePanelDriver_Install_LGD07AC.NT.hw]
+AddReg=SurfacePanelDriver_Filter_Reg
+
+[SurfacePanelDriver_Install_LGD07AC.NT.Services]
+AddService=WUDFRd,0x000001f8,WUDFRD_ServiceInstall
+AddService=monitor,0x000001fa, Monitor_Service.Install
+
+[SurfacePanelDriver_Install_LGD07AC.NT.Wdf]
+UmdfService=SurfacePanelDriver,SurfacePanelDriver_Install_LGD07AC
+UmdfServiceOrder=SurfacePanelDriver
+UmdfKernelModeClientPolicy=AllowKernelModeClients
+UmdfFsContextUsePolicy=CanUseFsContext2
+UmdfFileObjectPolicy=AllowNullAndUnknownFileObjects
+UmdfHostProcessSharing=ProcessSharingDisabled
+
+[SurfacePanelDriver_Install_LGD07AC]
+UmdfLibraryVersion=2.15.0
+ServiceBinary=%13%\SurfacePanelDriver.dll
+
+[SurfacePanelDriver_Install_LGD07AC.NT.Events]
+AddEventProvider = {3D53356D-424B-496A-A094-2154D8D2B304},SurfacePanelDriver_EventProviderInstall
+
+; =================== Monitor\SDC41B2 ==============================
+[SurfacePanelDriver_Install_SDC41B2.NT]
+CopyFiles=SurfacePanelDriverCopy
+AddReg=SurfacePanelDriver_Filter_Reg, SurfacePanelDriver_RegSDC41B2
+
+[SurfacePanelDriver_RegSDC41B2]
+HKR,,PreferredScaleFactor,0x00010001,200
+
+[SurfacePanelDriver_Install_SDC41B2.NT.hw]
+AddReg=SurfacePanelDriver_Filter_Reg
+
+[SurfacePanelDriver_Install_SDC41B2.NT.Services]
+AddService=WUDFRd,0x000001f8,WUDFRD_ServiceInstall
+AddService=monitor,0x000001fa, Monitor_Service.Install
+
+[SurfacePanelDriver_Install_SDC41B2.NT.Wdf]
+UmdfService=SurfacePanelDriver,SurfacePanelDriver_Install_SDC41B2
+UmdfServiceOrder=SurfacePanelDriver
+UmdfKernelModeClientPolicy=AllowKernelModeClients
+UmdfFsContextUsePolicy=CanUseFsContext2
+UmdfFileObjectPolicy=AllowNullAndUnknownFileObjects
+UmdfHostProcessSharing=ProcessSharingDisabled
+
+[SurfacePanelDriver_Install_SDC41B2]
+UmdfLibraryVersion=2.15.0
+ServiceBinary=%13%\SurfacePanelDriver.dll
+
+[SurfacePanelDriver_Install_SDC41B2.NT.Events]
+AddEventProvider = {3D53356D-424B-496A-A094-2154D8D2B304},SurfacePanelDriver_EventProviderInstall
+
+; =================== Monitor\LGD07AD ==============================
+[SurfacePanelDriver_Install_LGD07AD.NT]
+CopyFiles=SurfacePanelDriverCopy
+AddReg=SurfacePanelDriver_Filter_Reg, SurfacePanelDriver_RegLGD07AD
+
+[SurfacePanelDriver_RegLGD07AD]
+HKR,,PreferredScaleFactor,0x00010001,200
+
+[SurfacePanelDriver_Install_LGD07AD.NT.hw]
+AddReg=SurfacePanelDriver_Filter_Reg
+
+[SurfacePanelDriver_Install_LGD07AD.NT.Services]
+AddService=WUDFRd,0x000001f8,WUDFRD_ServiceInstall
+AddService=monitor,0x000001fa, Monitor_Service.Install
+
+[SurfacePanelDriver_Install_LGD07AD.NT.Wdf]
+UmdfService=SurfacePanelDriver,SurfacePanelDriver_Install_LGD07AD
+UmdfServiceOrder=SurfacePanelDriver
+UmdfKernelModeClientPolicy=AllowKernelModeClients
+UmdfFsContextUsePolicy=CanUseFsContext2
+UmdfFileObjectPolicy=AllowNullAndUnknownFileObjects
+UmdfHostProcessSharing=ProcessSharingDisabled
+
+[SurfacePanelDriver_Install_LGD07AD]
+UmdfLibraryVersion=2.15.0
+ServiceBinary=%13%\SurfacePanelDriver.dll
+
+[SurfacePanelDriver_Install_LGD07AD.NT.Events]
+AddEventProvider = {3D53356D-424B-496A-A094-2154D8D2B304},SurfacePanelDriver_EventProviderInstall
+
+; =================== Monitor\SHP15A7 ==============================
+[SurfacePanelDriver_Install_SHP15A7.NT]
+CopyFiles=SurfacePanelDriverCopy
+AddReg=SurfacePanelDriver_Filter_Reg, SurfacePanelDriver_RegSHP15A7
+
+[SurfacePanelDriver_RegSHP15A7]
+HKR,,PreferredScaleFactor,0x00010001,200
+
+[SurfacePanelDriver_Install_SHP15A7.NT.hw]
+AddReg=SurfacePanelDriver_Filter_Reg
+
+[SurfacePanelDriver_Install_SHP15A7.NT.Services]
+AddService=WUDFRd,0x000001f8,WUDFRD_ServiceInstall
+AddService=monitor,0x000001fa, Monitor_Service.Install
+
+[SurfacePanelDriver_Install_SHP15A7.NT.Wdf]
+UmdfService=SurfacePanelDriver,SurfacePanelDriver_Install_SHP15A7
+UmdfServiceOrder=SurfacePanelDriver
+UmdfKernelModeClientPolicy=AllowKernelModeClients
+UmdfFsContextUsePolicy=CanUseFsContext2
+UmdfFileObjectPolicy=AllowNullAndUnknownFileObjects
+UmdfHostProcessSharing=ProcessSharingDisabled
+
+[SurfacePanelDriver_Install_SHP15A7]
+UmdfLibraryVersion=2.15.0
+ServiceBinary=%13%\SurfacePanelDriver.dll
+
+[SurfacePanelDriver_Install_SHP15A7.NT.Events]
+AddEventProvider = {3D53356D-424B-496A-A094-2154D8D2B304},SurfacePanelDriver_EventProviderInstall
+
+; =================== Monitor\BOE0CC9 ==============================
+[SurfacePanelDriver_Install_BOE0CC9.NT]
+CopyFiles=SurfacePanelDriverCopy
+AddReg=SurfacePanelDriver_Filter_Reg, SurfacePanelDriver_RegBOE0CC9
+
+[SurfacePanelDriver_RegBOE0CC9]
+HKR,,PreferredScaleFactor,0x00010001,200
+
+[SurfacePanelDriver_Install_BOE0CC9.NT.hw]
+AddReg=SurfacePanelDriver_Filter_Reg
+
+[SurfacePanelDriver_Install_BOE0CC9.NT.Services]
+AddService=WUDFRd,0x000001f8,WUDFRD_ServiceInstall
+AddService=monitor,0x000001fa, Monitor_Service.Install
+
+[SurfacePanelDriver_Install_BOE0CC9.NT.Wdf]
+UmdfService=SurfacePanelDriver,SurfacePanelDriver_Install_BOE0CC9
+UmdfServiceOrder=SurfacePanelDriver
+UmdfKernelModeClientPolicy=AllowKernelModeClients
+UmdfFsContextUsePolicy=CanUseFsContext2
+UmdfFileObjectPolicy=AllowNullAndUnknownFileObjects
+UmdfHostProcessSharing=ProcessSharingDisabled
+
+[SurfacePanelDriver_Install_BOE0CC9]
+UmdfLibraryVersion=2.15.0
+ServiceBinary=%13%\SurfacePanelDriver.dll
+
+[SurfacePanelDriver_Install_BOE0CC9.NT.Events]
+AddEventProvider = {3D53356D-424B-496A-A094-2154D8D2B304},SurfacePanelDriver_EventProviderInstall
+
+; =================== Monitor\LGD07AB ==============================
+[SurfacePanelDriver_Install_LGD07AB.NT]
+CopyFiles=SurfacePanelDriverCopy
+AddReg=SurfacePanelDriver_Filter_Reg, SurfacePanelDriver_RegLGD07AB
+
+[SurfacePanelDriver_RegLGD07AB]
+HKR,,PreferredScaleFactor,0x00010001,200
+
+[SurfacePanelDriver_Install_LGD07AB.NT.hw]
+AddReg=SurfacePanelDriver_Filter_Reg
+
+[SurfacePanelDriver_Install_LGD07AB.NT.Services]
+AddService=WUDFRd,0x000001f8,WUDFRD_ServiceInstall
+AddService=monitor,0x000001fa, Monitor_Service.Install
+
+[SurfacePanelDriver_Install_LGD07AB.NT.Wdf]
+UmdfService=SurfacePanelDriver,SurfacePanelDriver_Install_LGD07AB
+UmdfServiceOrder=SurfacePanelDriver
+UmdfKernelModeClientPolicy=AllowKernelModeClients
+UmdfFsContextUsePolicy=CanUseFsContext2
+UmdfFileObjectPolicy=AllowNullAndUnknownFileObjects
+UmdfHostProcessSharing=ProcessSharingDisabled
+
+[SurfacePanelDriver_Install_LGD07AB]
+UmdfLibraryVersion=2.15.0
+ServiceBinary=%13%\SurfacePanelDriver.dll
+
+[SurfacePanelDriver_Install_LGD07AB.NT.Events]
+AddEventProvider = {3D53356D-424B-496A-A094-2154D8D2B304},SurfacePanelDriver_EventProviderInstall
+
+; ==============================Common======================================
+
+[WUDFRD_ServiceInstall]
+DisplayName = %WudfRdDisplayName%
+ServiceType  = %SERVICE_KERNEL_DRIVER%
+StartType    = %SERVICE_DEMAND_START%
+ErrorControl = %SERVICE_ERROR_NORMAL%
+ServiceBinary = %12%\WUDFRd.sys
+StartName = \Driver\WudfRd
+
+[Monitor_Service.Install]
+DisplayName  = %Monitor.SVCDESC%
+ServiceType  = %SERVICE_KERNEL_DRIVER%
+StartType    = %SERVICE_DEMAND_START%
+ErrorControl = %SERVICE_ERROR_NORMAL%
+ServiceBinary  = %12%\monitor.sys
+
+
+[SurfacePanelDriverCopy]
+SurfacePanelDriver.dll
+
+[SurfacePanelDriver_Filter_Reg]
+HKR,,"LowerFilters", 0x00010008,"WUDFRd"
+
+[SurfacePanelDriver_EventProviderInstall]
+ProviderName=Microsoft-Surface-SurfacePanelDriver
+ResourceFile=%13%\SurfacePanelDriver.dll
+MessageFile=%13%\SurfacePanelDriver.dll
+AddChannel= Microsoft-Surface-SurfacePanelDriver/Operational,0x2,SurfacePanelDriver_ChannelInstall
+
+[SurfacePanelDriver_ChannelInstall]
+Isolation         = 1
+Enabled           = 1
+
+; =============================== Generic ========================
+
+[Strings]
+ManufacturerName="Surface"
+DiskName = "SurfacePanelDriver Driver Installation Disk"
+WudfRdDisplayName="Windows Driver Foundation - User-mode Driver Framework Reflector"
+DeviceName="Surface Panel Driver V2"
+Monitor.SVCDESC="Microsoft Monitor Class Function Driver Service"
+
+; non-localizable
+SPSVCINST_ASSOCSERVICE= 0x00000002
+SERVICE_KERNEL_DRIVER = 1
+SERVICE_BOOT_START    = 0
+SERVICE_SYSTEM_START  = 1
+SERVICE_AUTO_START    = 2
+SERVICE_DEMAND_START  = 3
+SERVICE_ERROR_NORMAL  = 1
+SERVICE_ERROR_IGNORE  = 0
+SERVICE_WIN32_SHARE_PROCESS = 0x00000020
+
+;; eof: SurfacePanelDriver.inx
+;;

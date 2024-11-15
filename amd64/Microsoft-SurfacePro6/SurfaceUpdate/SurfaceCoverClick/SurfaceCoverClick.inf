@@ -1,0 +1,48 @@
+; File:               SurfaceCoverClick.inf
+;
+; Description:        Driver installation file for Surface Cover Click driver.
+;
+; Copyright (C) Microsoft Corporation.  All Rights Reserved.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+[Version]
+Signature   = "$WINDOWS NT$"
+Class       = Extension
+ClassGuid   = {e2f84ce7-8efa-411c-aa69-97454ca4cb57}
+Provider    = %ManufacturerName%
+ExtensionId = {028b4317-f1e4-4fb2-80af-82ac4c07e98e}
+DriverSet   = {8D1968A2-EC6D-4107-B007-E81D042E305B}
+DriverVer = 09/07/2018,2.3.139.0
+CatalogFile = SurfaceCoverClick.cat
+PnpLockdown=1
+
+[TargetComputers]
+{9de2a51a-7009-5775-9751-2f0000f831e9}
+{93a7dd9e-7682-59d9-a263-4de0a393a597}
+{64cf359c-b371-55b4-8f30-83606dce6c4a}
+{cc6c683e-ae07-555c-95aa-6bd145fa552d}
+{68d67f8f-ceac-59f3-b912-129ad3f239dc}
+{8d5ab099-9258-5ecb-ac71-1a0a0ce54031}
+{7b786219-28c7-5888-8d2a-f86cbfff4427}
+{04baf62e-e109-5fb1-9713-a1ff30d8433d}
+
+[Manufacturer]
+%ManufacturerName% = Microsoft,NTamd64
+
+[Microsoft.NTamd64]
+%SurfaceCoverClick.DeviceDesc% = SurfaceCoverClick_Install,ACPI(_SB_)#ACPI(PCI0)#ACPI(XHC_)#ACPI(RHUB)#ACPI(HS07)
+
+[SurfaceCoverClick_Install]
+AddProperty = NoConnectSound_AddProperty,NoSafeRemovalRequired_AddProperty
+
+[NoConnectSound_AddProperty]
+NoConnectSound,,,,1
+
+[NoSafeRemovalRequired_AddProperty]
+{afd97640-86a3-4210-b67c-289c41aabe55},3,17,,0
+
+[Strings]
+; localizable strings
+ManufacturerName             = "Surface"
+SurfaceCoverClick.DeviceDesc = "Surface Cover Click"

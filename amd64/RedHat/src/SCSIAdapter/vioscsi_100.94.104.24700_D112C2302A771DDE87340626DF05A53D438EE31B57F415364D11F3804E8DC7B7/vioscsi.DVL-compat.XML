@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<Data> 
+<AssessmentScore ScoreName="vioscsi.x64.General.XMLTimeStamp" ScoreValue="0" ScoreUnit="01/22/2024 18:50:13" />
+<AssessmentScore ScoreName="vioscsi.x64.General.DriverBinary" ScoreValue="0" ScoreUnit="vioscsi.sys" />
+<AssessmentScore ScoreName="vioscsi.x64.General.BinaryTimeStamp" ScoreValue="0" ScoreUnit="12/31/1600 16:00:00" />
+<AssessmentScore ScoreName="vioscsi.x64.General.DriverType" ScoreValue="0" ScoreUnit="storport" />
+<AssessmentScore ScoreName="vioscsi.x64.General.DriverSize" ScoreValue="0" ScoreUnit="LOC" />
+<AssessmentScore ScoreName="vioscsi.x64.General.DriverVersion" ScoreValue="0" ScoreUnit="0" />
+<AssessmentScore ScoreName="vioscsi.x64.General.Libs" ScoreValue="0" ScoreUnit="Number of external libraries used" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Version" ScoreValue="0" ScoreUnit="sdv-03-10-2022" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.DriverEntry.fun_HW_MESSAGE_SIGNALED_INTERRUPT_ROUTINE" ScoreValue="0" ScoreUnit="" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.DriverEntry.fun_SP_DriverEntry" ScoreValue="0" ScoreUnit="" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.DriverEntry.fun_SP_HW_ADAPTER_CONTROL" ScoreValue="0" ScoreUnit="" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.DriverEntry.fun_SP_HW_BUILDIO" ScoreValue="0" ScoreUnit="" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.DriverEntry.fun_SP_HW_FIND_ADAPTER" ScoreValue="0" ScoreUnit="" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.DriverEntry.fun_SP_HW_INITIALIZE" ScoreValue="0" ScoreUnit="" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.DriverEntry.fun_SP_HW_INTERRUPT" ScoreValue="0" ScoreUnit="" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.DriverEntry.fun_SP_HW_RESET_BUS" ScoreValue="0" ScoreUnit="" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.DriverEntry.fun_SP_HW_STARTIO" ScoreValue="0" ScoreUnit="" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.ActiveRuleTotal" ScoreValue="49" ScoreUnit="Total rules available" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.storportpassivefromhwinit" ScoreValue="0" ScoreUnit="SDV_PASSED" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.queuedspinlock" ScoreValue="2" ScoreUnit="SDV_NA" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.storportvirtualdevice2" ScoreValue="2" ScoreUnit="SDV_NA" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.storportenablepassive" ScoreValue="0" ScoreUnit="SDV_PASSED" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.spinlock" ScoreValue="2" ScoreUnit="SDV_NA" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.spcreate" ScoreValue="1" ScoreUnit="SDV_FAILED" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.storportirql" ScoreValue="0" ScoreUnit="SDV_PASSED" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.spinlockdpc" ScoreValue="2" ScoreUnit="SDV_NA" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.doubleexfreepool" ScoreValue="2" ScoreUnit="SDV_NA" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.storportspinlock" ScoreValue="0" ScoreUnit="SDV_PASSED" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.doublekesetevent" ScoreValue="2" ScoreUnit="SDV_NA" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.zwregistrycreate" ScoreValue="2" ScoreUnit="SDV_NA" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.nullcheck" ScoreValue="1" ScoreUnit="SDV_FAILED" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.storportfindadapter" ScoreValue="0" ScoreUnit="SDV_PASSED" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.checkvirtualstorport" ScoreValue="2" ScoreUnit="SDV_NA" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.storportstartio" ScoreValue="2" ScoreUnit="SDV_NA" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.checkhwstorport" ScoreValue="1" ScoreUnit="SDV_FAILED" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.spinlockrelease" ScoreValue="2" ScoreUnit="SDV_NA" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.spirql" ScoreValue="2" ScoreUnit="SDV_NA" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.spnowait" ScoreValue="2" ScoreUnit="SDV_NA" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.useafterfree" ScoreValue="0" ScoreUnit="SDV_PASSED" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.hwstorportprohibitedddis" ScoreValue="0" ScoreUnit="SDV_PASSED" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.storportddisportonly" ScoreValue="2" ScoreUnit="SDV_NA" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.zwregistryopen" ScoreValue="2" ScoreUnit="SDV_NA" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.storportallocatepool2" ScoreValue="3" ScoreUnit="SDV_TIMEOUT" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.spreturnvalue" ScoreValue="2" ScoreUnit="SDV_NA" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.cancelspinlock" ScoreValue="2" ScoreUnit="SDV_NA" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.irqlkereleasespinlock" ScoreValue="2" ScoreUnit="SDV_NA" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.storportallocatepool" ScoreValue="0" ScoreUnit="SDV_PASSED" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.spduplex" ScoreValue="0" ScoreUnit="SDV_PASSED" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.storportnotification2" ScoreValue="0" ScoreUnit="SDV_PASSED" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.storportbuildio" ScoreValue="0" ScoreUnit="SDV_PASSED" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.storportspinlock3" ScoreValue="0" ScoreUnit="SDV_PASSED" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.storportspinlock4" ScoreValue="0" ScoreUnit="SDV_PASSED" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.storportmsilock" ScoreValue="2" ScoreUnit="SDV_NA" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.storportvirtualdevice" ScoreValue="0" ScoreUnit="SDV_PASSED" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.storportcompleterequest" ScoreValue="2" ScoreUnit="SDV_NA" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.storporttimer" ScoreValue="3" ScoreUnit="SDV_TIMEOUT" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.spinlocksafe" ScoreValue="2" ScoreUnit="SDV_NA" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.queuedspinlockrelease" ScoreValue="2" ScoreUnit="SDV_NA" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.storportperfopts" ScoreValue="0" ScoreUnit="SDV_PASSED" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.withincriticalregion" ScoreValue="2" ScoreUnit="SDV_NA" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.spchangeirql" ScoreValue="2" ScoreUnit="SDV_NA" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.storportdeprecated" ScoreValue="2" ScoreUnit="SDV_NA" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.irqldispatch" ScoreValue="2" ScoreUnit="SDV_NA" />
+<AssessmentScore ScoreName="vioscsi.x64.SDV.Rule.iofreeirp" ScoreValue="2" ScoreUnit="SDV_NA" />
+
+<AssessmentScore ScoreName="vioscsi.x64.CodeAnalysis.Summary" ScoreValue="0" ScoreUnit="Types of defects seen" />
+
+
+</Data>

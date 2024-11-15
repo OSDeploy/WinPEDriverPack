@@ -1,0 +1,45 @@
+{
+    "ComputerName":  "bldewdk0009",
+    "PoolName":  "SW Build EWDK Agents",
+    "RepoUrl":  "https://MSFTDEVICES@dev.azure.com/MSFTDEVICES/Drivers/_git/SurfaceButtonDriver",
+    "RepoName":  "SurfaceButtonDriver",
+    "Worktree":  "C:\\w\\181\\s",
+    "CommitId":  "ad13842fdb71eddb1f50b7bc37c3b9c8e0e383e5",
+    "SourceBranch":  "refs/heads/master",
+    "ProjectName":  "Drivers",
+    "BuildId":  2362054,
+    "BuildParameters":  {
+
+                        },
+    "DefinitionId":  8292,
+    "DefinitionName":  "CI_SurfaceButtonDriver",
+    "DefinitionVariables":  {
+
+                            },
+    "Packages":  [
+                     {
+                         "Id":  "Devices.Build.Scripts",
+                         "Version":  "1.5.8"
+                     },
+                     {
+                         "Id":  "Devices.Library.SurfaceLibrary.19H1",
+                         "Version":  "6.282.0"
+                     },
+                     {
+                         "Id":  "Devices.Tool.SignTool",
+                         "Version":  "10.0.16299.64"
+                     },
+                     {
+                         "Id":  "Devices.Tool.AutoSignConsole",
+                         "Version":  "1.5.129"
+                     },
+                     {
+                         "Id":  "Devices.Driver.BuildConfiguration",
+                         "Version":  "1.5.0"
+                     },
+                     {
+                         "Id":  "Devices.Certificate.OEMTest",
+                         "Version":  "1.0.2"
+                     }
+                 ]
+}

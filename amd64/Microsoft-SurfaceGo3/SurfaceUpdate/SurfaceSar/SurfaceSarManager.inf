@@ -1,0 +1,97 @@
+; File:               SurfaceSarManager.inf
+;
+; Description:        SurfaceSarManager
+;
+; Copyright (C) 2015 Microsoft Corporation.  All Rights Reserved.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[Version]
+Signature="$Windows NT$"
+Class=System
+ClassGuid={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%ManufacturerName%
+CatalogFile=SurfaceSarManager.cat
+DriverVer=09/15/2017,1.23.136.0
+PnPLockDown=1
+
+[SourceDisksNames]
+1 = %DiskName%
+
+[SourceDisksFiles]
+SurfaceSarManager.dll=1
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTamd64
+
+[Standard.NTamd64]
+%DeviceName%=SurfaceSarManager, ACPI\MSHW0131
+
+[SurfaceSarManager.NT]
+CopyFiles=UserModeDriverCopy
+AddReg=SurfaceSarManager_AddReg.LatchTransport
+
+[SurfaceSarManager.NT.hw]
+AddReg=SurfaceSarManager_AddReg
+
+[SurfaceSarManager.NT.Services]
+AddService=WUDFRd,0x000001fa,WUDFRD_ServiceInstall
+
+[SurfaceSarManager.NT.CoInstallers]
+AddReg=CoInstallers_AddReg
+
+[SurfaceSarManager.NT.Wdf]
+UmdfService=SurfaceSarManager,SurfaceSarManager_Install
+UmdfServiceOrder=SurfaceSarManager
+UmdfKernelModeClientPolicy=AllowKernelModeClients
+UmdfMethodNeitherAction=Copy
+UmdfFileObjectPolicy=AllowNullAndUnknownFileObjects
+UmdfHostProcessSharing=ProcessSharingDisabled
+
+[SurfaceSarManager_Install]
+UmdfLibraryVersion=2.0.0
+ServiceBinary=%12%\UMDF\SurfaceSarManager.dll
+
+[SurfaceSarManager_AddReg]
+HKR,,"UpperFilters",0x00010008,"WUDFRd" ; FLG_ADDREG_TYPE_MULTI_SZ | FLG_ADDREG_APPEND
+; Latch should use SSH, not HID.
+HKR,,"LatchTransport",0x00010001, 2
+
+[SurfaceSarManager_AddReg.LatchTransport]
+HKR,,"LatchTransport",0x00010001, 2
+
+[WUDFRD_ServiceInstall]
+DisplayName = %WudfRdDisplayName%
+ServiceType  = %SERVICE_KERNEL_DRIVER%
+StartType    = %SERVICE_DEMAND_START%
+ErrorControl = %SERVICE_ERROR_NORMAL%
+ServiceBinary = %12%\WUDFRd.sys
+StartName = \Driver\WudfRd
+
+[CoInstallers_AddReg]
+HKR,,CoInstallers32,0x00010000,WudfCoInstaller.dll
+
+[DestinationDirs]
+UserModeDriverCopy=12,UMDF
+
+[UserModeDriverCopy]
+SurfaceSarManager.dll
+
+[Strings]
+ManufacturerName="Surface"
+DiskName = "SurfaceSarManager driver Installation Disk"
+WudfRdDisplayName="Windows Driver Foundation - User-mode Driver Framework Reflector"
+DeviceName="Surface Radio Monitor"
+
+; non-localizable
+SPSVCINST_ASSOCSERVICE= 0x00000002
+SERVICE_KERNEL_DRIVER = 1
+SERVICE_BOOT_START    = 0
+SERVICE_SYSTEM_START  = 1
+SERVICE_AUTO_START    = 2
+SERVICE_DEMAND_START  = 3
+SERVICE_ERROR_NORMAL  = 1
+SERVICE_ERROR_IGNORE  = 0
+SERVICE_WIN32_SHARE_PROCESS = 0x00000020
+
+;; eof: SurfaceSarManager.inx
+;;

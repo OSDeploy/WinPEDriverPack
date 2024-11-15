@@ -1,0 +1,94 @@
+;
+; SurfaceAcpiPlatformExtensionDriver.inf
+;
+; Copyright (C) 2021 Microsoft Corporation.  All Rights Reserved.
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=System
+ClassGuid={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%ManufacturerName%
+CatalogFile=SurfaceAcpiPlatformExtensionDriver.cat
+DriverVer = 04/18/2023,3.63.3.0
+PnpLockdown=1
+
+[DestinationDirs]
+DefaultDestDir = 13
+
+; ================= Class section =====================
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+SurfaceAcpiPlatformExtensionDriver.sys = 1,,
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTamd64
+
+[Standard.NTamd64]
+%SurfaceAcpiPlatformExtensionDriver.DeviceDesc%=SurfaceAcpiPlatformExtensionDriver_Device, ACPI\MSHW0299
+
+[SurfaceAcpiPlatformExtensionDriver_Device.NT]
+CopyFiles = Drivers_Dir
+
+;-------------- Service installation
+
+[SurfaceAcpiPlatformExtensionDriver_Device.NT.Services]
+AddService = SurfaceAcpiPlatformExtensionDriver,%SPSVCINST_ASSOCSERVICE%,SurfaceAcpiPlatformExtensionDriver_Service_Inst
+
+[Drivers_Dir]
+SurfaceAcpiPlatformExtensionDriver.sys
+
+[SurfaceAcpiPlatformExtensionDriver_Device.NT.HW]
+AddReg=SetSecurityRegkey
+
+[SurfaceAcpiPlatformExtensionDriver_Device.NT.Events]
+AddEventProvider = {ABA759C2-2F7B-41C2-8CFC-71C370E17276},SurfaceAcpiPlatformExtensionDriver_EventProviderInstall
+
+[SetSecurityRegkey]
+HKR,,DeviceCharacteristics,0x10001,0x0100         ; Use same security checks on relative opens
+HKR,,Security,,"D:P(A;;GA;;;BA)(A;;GA;;;SY)"
+
+[SurfaceAcpiPlatformExtensionDriver_Service_Inst]
+DisplayName    = %SurfaceAcpiPlatformExtensionDriver.SVCDESC%
+ServiceType    = %SERVICE_KERNEL_DRIVER%
+StartType      = %SERVICE_BOOT_START%
+ErrorControl   = %SERVICE_ERROR_NORMAL%
+ServiceBinary  = %13%\SurfaceAcpiPlatformExtensionDriver.sys
+LoadOrderGroup = Core Platform Extensions
+;ensure the test PEP loads at same time as ACPI (before real PEPs)
+
+[SurfaceAcpiPlatformExtensionDriver_EventProviderInstall]
+ProviderName=Microsoft-Surface-SurfaceAcpiPlatformExtensionDriver
+ResourceFile=%13%\SurfaceAcpiPlatformExtensionDriver.sys
+MessageFile=%13%\SurfaceAcpiPlatformExtensionDriver.sys
+AddChannel= Microsoft-Surface-SurfaceAcpiPlatformExtensionDriver/Operational,0x2,SurfaceAcpiPlatformExtensionDriver_ChannelInstall
+
+[SurfaceAcpiPlatformExtensionDriver_ChannelInstall]
+Isolation         = 2
+Enabled           = 1
+
+[Strings]
+ManufacturerName            = "Surface"
+DiskName                    = "Surface ACPI Platform Extension Installation Disk"
+SurfaceAcpiPlatformExtensionDriver.DeviceDesc   = "Surface ACPI Platform Extension Driver"
+SurfaceAcpiPlatformExtensionDriver.SVCDESC      = "Surface ACPI Platform Extension Service"
+
+SPSVCINST_ASSOCSERVICE= 0x00000002
+
+SERVICE_BOOT_START     = 0x0
+SERVICE_SYSTEM_START   = 0x1
+SERVICE_AUTO_START     = 0x2
+SERVICE_DEMAND_START   = 0x3
+SERVICE_DISABLED       = 0x4
+
+SERVICE_KERNEL_DRIVER  = 0x1
+SERVICE_ERROR_IGNORE   = 0x0
+SERVICE_ERROR_NORMAL   = 0x1
+SERVICE_ERROR_SEVERE   = 0x2
+SERVICE_ERROR_CRITICAL = 0x3

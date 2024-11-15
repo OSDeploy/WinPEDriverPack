@@ -1,0 +1,88 @@
+;/*++
+;
+;Copyright (c) 1990-2000  Microsoft Corporation
+;
+;Module Name:
+;    SurfaceWakeOnTouchControl.INF
+;
+;Abstract:
+;    INF file for installing the Driver Frameworks SurfaceWoTFilterDriver Driver
+;
+;--*/
+
+[Version]
+Signature	= "$WINDOWS NT$"
+Class		= Extension
+ClassGuid	= {e2f84ce7-8efa-411c-aa69-97454ca4cb57}
+ExtensionId = {C082DBC8-E906-4E94-A522-5BA4877EFAEE}
+Provider	= %ManufacturerName%
+DriverVer = 03/06/2023,1.42.2.0
+CatalogFile	= SurfaceWakeOnTouchControl.cat
+PnpLockdown=1
+
+[DestinationDirs]
+DefaultDestDir = 13
+
+;-------------- SurfaceWoTFilterDriver Install Section
+[Manufacturer]
+%ManufacturerName%=Standard,NTamd64
+
+[Standard.NTamd64]
+%SurfaceWakeOnTouchControl.DeviceDesc%=SurfaceWakeOnTouchControl_Device, PCI\VEN_8086&DEV_98D0
+%SurfaceWakeOnTouchControl.DeviceDesc%=SurfaceWakeOnTouchControl_Device, PCI\VEN_8086&DEV_A0D0
+%SurfaceWakeOnTouchControl.DeviceDesc%=SurfaceWakeOnTouchControl_Device, PCI\VEN_8086&DEV_43D0
+%SurfaceWakeOnTouchControl.DeviceDesc%=SurfaceWakeOnTouchControl_Device, PCI\VEN_8086&DEV_7A50
+%SurfaceWakeOnTouchControl.DeviceDesc%=SurfaceWakeOnTouchControl_Device, PCI\VEN_8086&DEV_7AD8
+%SurfaceWakeOnTouchControl.DeviceDesc%=SurfaceWakeOnTouchControl_Device, PCI\VEN_8086&DEV_98D1
+%SurfaceWakeOnTouchControl.DeviceDesc%=SurfaceWakeOnTouchControl_Device, PCI\VEN_8086&DEV_A0D1
+%SurfaceWakeOnTouchControl.DeviceDesc%=SurfaceWakeOnTouchControl_Device, PCI\VEN_8086&DEV_43D1
+%SurfaceWakeOnTouchControl.DeviceDesc%=SurfaceWakeOnTouchControl_Device, PCI\VEN_8086&DEV_7A51
+%SurfaceWakeOnTouchControl.DeviceDesc%=SurfaceWakeOnTouchControl_Device, PCI\VEN_8086&DEV_7AD9
+%SurfaceWakeOnTouchControl.DeviceDesc%=SurfaceWakeOnTouchControl_Device, PCI\VEN_8086&DEV_51D0
+
+[SurfaceWakeOnTouchControl_Device.NT]
+CopyFiles=SurfaceWakeOnTouchControl.NT.Copy
+
+[SurfaceWakeOnTouchControl.NT.Copy]
+SurfaceWakeOnTouchControl.sys
+
+[SurfaceWakeOnTouchControl_Device.NT.Filters]
+AddFilter=SurfaceWakeOnTouchControl,,SurfaceWakeOnTouchControl_Install
+
+[SurfaceWakeOnTouchControl_Install]
+FilterLevel="WakeLevel"
+
+;-------------- Service installation
+
+[SurfaceWakeOnTouchControl_Device.NT.Services]
+AddService	= SurfaceWakeOnTouchControl, ,SurfaceWakeOnTouchControl_Service_Inst
+
+[SurfaceWakeOnTouchControl_Service_Inst]
+DisplayName    = %SurfaceWakeOnTouchControl.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %13%\SurfaceWakeOnTouchControl.sys
+
+; ================= Source file information =====================
+
+[SourceDisksNames]
+1 = %DiskId1%,,,""
+
+[SourceDisksFiles]
+SurfaceWakeOnTouchControl.sys  = 1,,
+
+; ------------- WDF specific section
+[SurfaceWoTFilterDriver_Device.NT.Wdf]
+KmdfService =  SurfaceWoTFilterDriver, SurfaceWoTFilterDriver_wdfsect
+
+[SurfaceWoTFilterDriver_wdfsect]
+KmdfLibraryVersion = 1.15
+
+; =================== Generic ==================================
+
+[Strings]
+ManufacturerName					= "Surface"
+DiskId1								= "Surface Wake On Touch Control Driver Installation Disk"
+SurfaceWakeOnTouchControl.DeviceDesc	= "Surface Wake On Touch Control Driver Device"
+SurfaceWakeOnTouchControl.SVCDESC		= "Surface Wake On Touch Control Driver Service"

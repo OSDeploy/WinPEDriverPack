@@ -1,0 +1,126 @@
+;
+; SurfaceTconDriver.inf
+;
+; Microsoft Surface Tcon Power Driver Inf
+;
+; Copyright (c) Microsoft Corporation. All rights reserved.
+;
+
+; ================= Class section =====================
+[Version]
+Signature="$WINDOWS NT$"
+Class=HIDClass
+ClassGuid={745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+Provider=%ManufacturerName%
+CatalogFile=SurfaceTconDriver.cat
+DriverVer = 11/07/2020,4.27.139.0
+PnpLockdown=1
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+SurfaceTconMSHW0124.bin = 1
+SurfaceTconMSHW0125.bin = 1
+SurfaceTconDriver.sys  = 1,,
+
+[DestinationDirs]
+DefaultDestDir = 13
+
+[ControlFlags]
+ExcludeFromSelect = *
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName% = Microsoft,NTamd64
+
+[Microsoft.NTamd64]
+%SurfaceTconDriver.DeviceDesc% = SurfaceTconDriver_Install_0124, ACPI\MSHW0124
+%SurfaceTconDriver.DeviceDesc% = SurfaceTconDriver_Install_0125, ACPI\MSHW0125
+
+;;----[0124]------------------------------
+[SurfaceTconDriver_Install_0124]
+CopyFiles = SurfaceTconDriver_Driver_CopyFiles, SurfaceTconDriver_CopyFiles_0124
+
+[SurfaceTconDriver_CopyFiles_0124]
+SurfaceTconMSHW0124.bin
+
+[SurfaceTconDriver_Install_0124.HW]
+AddReg = SurfaceTconDriver_Install_0124_AddReg
+Include=machine.inf
+
+[SurfaceTconDriver_Install_0124_AddReg]
+HKR,,"UpperFilters",0x00010000,"mshidkmdf"
+
+[SurfaceTconDriver_Install_0124.Services]
+AddService = SurfaceTconDriver,0x00000002, SurfaceTconDriver_Service_Inst
+
+[SurfaceTconDriver_Install_0124.Events]
+AddEventProvider = {AEDABFE4-8DF5-4817-98C5-F6E69C2E72C2}, SurfaceTconDriver_EventProviderInstall
+
+
+;;----[0125]------------------------------
+[SurfaceTconDriver_Install_0125]
+CopyFiles=SurfaceTconDriver_Driver_CopyFiles, SurfaceTconDriver_CopyFiles_0125
+
+[SurfaceTconDriver_CopyFiles_0125]
+SurfaceTconMSHW0125.bin
+
+[SurfaceTconDriver_Install_0125.HW]
+AddReg = SurfaceTconDriver_Install_0125_AddReg
+Include=machine.inf
+
+[SurfaceTconDriver_Install_0125_AddReg]
+HKR,,"UpperFilters",0x00010000,"mshidkmdf"
+
+[SurfaceTconDriver_Install_0125.Services]
+AddService = SurfaceTconDriver,0x00000002, SurfaceTconDriver_Service_Inst
+
+[SurfaceTconDriver_Install_0125.Events]
+AddEventProvider = {AEDABFE4-8DF5-4817-98C5-F6E69C2E72C2}, SurfaceTconDriver_EventProviderInstall
+
+
+[SurfaceTconDriver_Driver_CopyFiles]
+SurfaceTconDriver.sys
+
+[SurfaceTconDriver_EventProviderInstall]
+ProviderName=Microsoft-Surface-SurfaceTcon
+ResourceFile=%13%\SurfaceTconDriver.sys
+AddChannel= Microsoft-Surface-SurfaceTcon/Operational,0x2,SurfaceTconDriver_ChannelInstall
+
+[SurfaceTconDriver_ChannelInstall]
+Isolation         = 2
+Enabled           = 1
+
+;*****************************************
+; Service installation section
+;*****************************************
+[SurfaceTconDriver_Service_Inst]
+DisplayName    = %SurfaceTconDriver.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %13%\SurfaceTconDriver.sys
+LoadOrderGroup = Extended Base
+
+
+;*****************************************
+; Strings section
+;*****************************************
+
+[Strings]
+;Localizable
+ManufacturerName="Surface"
+DiskName = "I2C Tcon Device Installation Disk"
+SurfaceTconDriver.DeviceDesc = "Surface Tcon"
+SurfaceTconDriver.SVCDESC = "Microsoft Tcon Driver"
+
+;Non-Localizable
+SERVICE_KERNEL_DRIVER  = 0x1 
+SERVICE_ERROR_IGNORE   = 0x0 
+SERVICE_ERROR_NORMAL   = 0x1 
+SERVICE_ERROR_SEVERE   = 0x2 
+SERVICE_ERROR_CRITICAL = 0x3 

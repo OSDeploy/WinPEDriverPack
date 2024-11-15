@@ -1,0 +1,79 @@
+;
+; SurfaceIntegrationDriver.inf
+;
+; Copyright (C) 2014 Microsoft Corporation.  All Rights Reserved.
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=System
+ClassGuid={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%ManufacturerName%
+CatalogFile=SurfaceIntegrationDriver.cat
+DriverVer=06/21/2018,1.1.342.0
+PnpLockdown=1
+
+[DestinationDirs]
+DefaultDestDir                = 12                            ; %WinDir%\System32\Drivers
+ProvisioningPackage_CopyFiles = 10,Provisioning\Packages      ; %WinDir%\Provisioning\Packages
+
+; ================= Class section =====================
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+Surface.Power.Policy.Defaults.ppkg = 1,,
+SurfaceIntegrationDriver.sys       = 1,,
+Surface.Power.Policy.Adaptive.ppkg = 1,,
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTamd64
+
+[Standard.NTamd64]
+%SurfaceIntegrationDriver.DeviceDesc%=SurfaceIntegrationDriver_Device, ACPI\MSHW0080 
+
+[SurfaceIntegrationDriver_Device.NT]
+CopyFiles=DefaultDestDir,ProvisioningPackage_CopyFiles
+AddReg=SurfaceIntegrationDriver_Device_AddReg
+
+[DefaultDestDir]
+SurfaceIntegrationDriver.sys
+
+[ProvisioningPackage_CopyFiles]
+Surface.Power.Policy.Defaults.ppkg
+Surface.Power.Policy.Adaptive.ppkg
+
+[SurfaceIntegrationDriver_Device.NT.HW]
+
+[SurfaceIntegrationDriver_Device_AddReg]
+HKLM,System\CurrentControlSet\Services\SurfaceService, "ApplyProvisioningPackage", 0x00010001, 0x1
+HKLM,SYSTEM\CurrentControlSet\Control\Power,"EnableScreenRefreshOnPowerButtonLongPress",0x00010001,0x00000001
+HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\AdaptiveDisplayBrightness\{23B44AF2-78CE-4943-81DF-89817E8D23FD},\
+    "CustomAdbSteppings",0x00000001,00,00,00,00,28,00,00,00,32,00,00,00,3c,00,00,00,64,00,00,00,\
+                                    00,00,00,00,2c,00,00,00,37,00,00,00,63,00,00,00,64,00,00,00
+
+;-------------- Service installation
+[SurfaceIntegrationDriver_Device.NT.Services]
+;
+; %SPSVCINST_ASSOCSERVICE% should only be specificed if this is a function driver.
+;
+AddService = SurfaceIntegrationDriver,%SPSVCINST_ASSOCSERVICE%, SurfaceIntegrationDriver_Service_Inst
+
+; -------------- SurfaceIntegrationDriver driver install sections
+[SurfaceIntegrationDriver_Service_Inst]
+DisplayName    = %SurfaceIntegrationDriver.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\SurfaceIntegrationDriver.sys
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="Surface"
+DiskName = "Surface Integration Driver Installation Disk"
+SurfaceIntegrationDriver.DeviceDesc = "Surface Integration"
+SurfaceIntegrationDriver.SVCDESC = "Surface Integration Driver"

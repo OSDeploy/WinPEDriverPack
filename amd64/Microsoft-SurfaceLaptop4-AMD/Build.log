@@ -1,0 +1,552 @@
+**********************
+PowerShell transcript start
+Start time: 20241018114953
+Username: AzureAD\DavidSegura
+RunAs User: AzureAD\DavidSegura
+Configuration Name: 
+Machine: HPFIREFLY16P (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Program Files\PowerShell\7\pwsh.dll
+Process ID: 28232
+PSVersion: 7.4.5
+PSEdition: Core
+GitCommitId: 7.4.5
+OS: Microsoft Windows 10.0.26100
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+Transcript started, output file is C:\Temp\SurfaceLaptop4-AMD\Build.log
+DriverPack: C:\DATA\Surface\SurfaceLaptop4_AMD_Win11_22621_24.093.36046.0.msi
+Removed Content:
+SurfaceLaptop4-AMD\SurfaceUpdate\amdacpbus".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\amdacpbus\amdacpbus.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\amdacpbus\amdacpbus.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\amdacpbus\amdacpbus.sys".
+SurfaceLaptop4-AMD\SurfaceUpdate\amddrtm".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\amddrtm\amddrtm.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\amddrtm\amddrtm.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\amddrtm\amddrtm.inf".
+SurfaceLaptop4-AMD\SurfaceUpdate\amdfendr".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\amdfendr\amdfendr.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\amdfendr\amdfendr.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\amdfendr\amdfendr.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\amdfendr\amdfendrsr.ex_".
+SurfaceLaptop4-AMD\SurfaceUpdate\amdgpio2".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\amdgpio2\amdgpio2.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\amdgpio2\amdgpio2.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\amdgpio2\amdgpio2.sys".
+SurfaceLaptop4-AMD\SurfaceUpdate\amdi2c".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\amdi2c\amdi2c.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\amdi2c\amdi2c.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\amdi2c\amdi2c.sys".
+SurfaceLaptop4-AMD\SurfaceUpdate\amdlpcfilterdriver".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\amdlpcfilterdriver\AmdLpcFilterDriver.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\amdlpcfilterdriver\AmdLpcFilterDriver.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\amdlpcfilterdriver\AmdLpcFilterDriver.sys".
+SurfaceLaptop4-AMD\SurfaceUpdate\amdmicropep".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\amdmicropep\amdmicropep.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\amdmicropep\AmdMicroPEP.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\amdmicropep\amdmicropep.sys".
+SurfaceLaptop4-AMD\SurfaceUpdate\amdpsp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\amdpsp\amdpsp.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\amdpsp\amdpsp.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\amdpsp\amdpsp.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\amdpsp\amdtee_api32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\amdpsp\amdtee_api64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\amdpsp\t-base_client_api32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\amdpsp\t-base_client_api64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\amdpsp\tbaseregistry32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\amdpsp\tbaseregistry64.dll".
+SurfaceLaptop4-AMD\SurfaceUpdate\amdsmf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\amdsmf\AmdSmf.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\amdsmf\AmdSmf.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\amdsmf\AmdSmf.sys".
+SurfaceLaptop4-AMD\SurfaceUpdate\amdspi".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\amdspi\amdspi.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\amdspi\amdspi.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\amdspi\amdspi.sys".
+SurfaceLaptop4-AMD\SurfaceUpdate\amduart".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\amduart\amduart.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\amduart\amduart.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\amduart\amduart.sys".
+SurfaceLaptop4-AMD\SurfaceUpdate\atihdwt6".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\atihdwt6\atihdwt6.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\atihdwt6\AtihdWT6.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\atihdwt6\atihdwt6.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\atihdwt6\ReleaseNotes.txt".
+SurfaceLaptop4-AMD\SurfaceUpdate\bluetooth".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\bluetooth\ibtusb.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\bluetooth\ibtusb.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\bluetooth\ibtusb.sys".
+SurfaceLaptop4-AMD\SurfaceUpdate\dax3aposvc".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3aposvc\CaptureStreamMonitor.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3aposvc\DAX3API.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3aposvc\Dax3DapControl.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3aposvc\dax3_swc_aposvc.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3aposvc\dax3_swc_aposvc.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3aposvc\DAXSSID.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3aposvc\Default_settings.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3aposvc\DolbyAPOv2100.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3aposvc\DolbyAPOv251.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3aposvc\DolbyAPOvlldp.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3aposvc\DolbyAPOvlldp120.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3aposvc\DolbyAPOvlldp130.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3aposvc\DolbyAPOvlldp140.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3aposvc\DolbyDax3Apo.dll".
+SurfaceLaptop4-AMD\SurfaceUpdate\dax3extrtk".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3extrtk\dax3_ext_rtk.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3extrtk\dax3_ext_rtk.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3extrtk\HDAUDIO_DEV_0274_SUBSYS_10EC1212_PCI_SUBSYS_14140001.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3extrtk\HDAUDIO_DEV_0274_SUBSYS_10EC1212_PCI_SUBSYS_D2701022.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3extrtk\HDAUDIO_DEV_0274_SUBSYS_10EC1220_PCI_SUBSYS_14140048.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3extrtk\HDAUDIO_DEV_0274_SUBSYS_10EC1220_PCI_SUBSYS_D2701022.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3extrtk\HDAUDIO_DEV_0274_SUBSYS_10EC122C_PCI_SUBSYS_14140048.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3extrtk\HDAUDIO_DEV_0274_SUBSYS_10EC122C_PCI_SUBSYS_D2701022.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3extrtk\Headphone_Default_Generic_Default_Gaming3.2.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3extrtk\Headphone_Default_Generic_Default_Gaming3.3.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3extrtk\Headphone_Default_Generic_Default_Gaming3.4.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3extrtk\Headphone_Default_Generic_Default_NoGaming3.2.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3extrtk\Headphone_Default_Generic_Default_NoGaming3.3.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3extrtk\Headphone_Default_Generic_Default_NoGaming3.4.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3extrtk\Headphone_Default_Generic_Large_Gaming3.2.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3extrtk\Headphone_Default_Generic_Large_Gaming3.3.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3extrtk\Headphone_Default_Generic_Large_Gaming3.4.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3extrtk\Headphone_Default_Generic_Large_NoGaming3.2.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3extrtk\Headphone_Default_Generic_Large_NoGaming3.3.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3extrtk\Headphone_Default_Generic_Large_NoGaming3.4.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3extrtk\Headphone_Default_Generic_Medium_Gaming3.2.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3extrtk\Headphone_Default_Generic_Medium_Gaming3.3.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3extrtk\Headphone_Default_Generic_Medium_Gaming3.4.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3extrtk\Headphone_Default_Generic_Medium_NoGaming3.2.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3extrtk\Headphone_Default_Generic_Medium_NoGaming3.3.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3extrtk\Headphone_Default_Generic_Medium_NoGaming3.4.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3extrtk\Headphone_Default_Generic_Small_Gaming3.2.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3extrtk\Headphone_Default_Generic_Small_Gaming3.3.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3extrtk\Headphone_Default_Generic_Small_Gaming3.4.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3extrtk\Headphone_Default_Generic_Small_NoGaming3.2.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3extrtk\Headphone_Default_Generic_Small_NoGaming3.3.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3extrtk\Headphone_Default_Generic_Small_NoGaming3.4.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3extrtk\operator_settings.xml".
+SurfaceLaptop4-AMD\SurfaceUpdate\dax3swchsa".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3swchsa\dax3_swc_hsa.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dax3swchsa\dax3_swc_hsa.inf".
+SurfaceLaptop4-AMD\SurfaceUpdate\devicestelemetryservicedriver".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\devicestelemetryservicedriver\AppLauncher.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\devicestelemetryservicedriver\DevicesTelemetryService.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\devicestelemetryservicedriver\DevicesTelemetryServiceDriver.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\devicestelemetryservicedriver\DevicesTelemetryServiceDriver.inf".
+SurfaceLaptop4-AMD\SurfaceUpdate\dock2fwupdate".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dock2fwupdate\SurfaceDock2FwUpdate.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dock2fwupdate\SurfaceDock2FwUpdate.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dock2fwupdate\SurfaceDock2_AMC_APP1.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dock2fwupdate\SurfaceDock2_AMC_APP1.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dock2fwupdate\SurfaceDock2_AMC_APP2.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dock2fwupdate\SurfaceDock2_AMC_APP2.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dock2fwupdate\SurfaceDock2_AUDIO_BANK0.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dock2fwupdate\SurfaceDock2_AUDIO_BANK0.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dock2fwupdate\SurfaceDock2_DP_BANK0.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dock2fwupdate\SurfaceDock2_DP_BANK0.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dock2fwupdate\SurfaceDock2_DP_BANK1.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dock2fwupdate\SurfaceDock2_DP_BANK1.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dock2fwupdate\SurfaceDock2_PD_BANK0.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dock2fwupdate\SurfaceDock2_PD_BANK0.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dock2fwupdate\SurfaceDock2_PD_BANK1.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dock2fwupdate\SurfaceDock2_PD_BANK1.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dock2fwupdate\SurfaceDock2_USBHUB_DS_BANK0.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dock2fwupdate\SurfaceDock2_USBHUB_DS_BANK0.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dock2fwupdate\SurfaceDock2_USBHUB_US_BANK0.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\dock2fwupdate\SurfaceDock2_USBHUB_US_BANK0.payload.bin".
+SurfaceLaptop4-AMD\SurfaceUpdate\hdxacpm".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\hdxacpm\HDXACPM.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\hdxacpm\HDXRT.CAT".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\hdxacpm\RltkAPOU64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\hdxacpm\RTAIODAT.DAT".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\hdxacpm\RtCOM64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\hdxacpm\RtkApi64U.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\hdxacpm\RtkAudUService64.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\hdxacpm\RtkCfg64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\hdxacpm\RTKVHD64.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\hdxacpm\_._".
+SurfaceLaptop4-AMD\SurfaceUpdate\netwtw08".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\netwtw08\IntelIHVRouter08.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\netwtw08\IntelIHVRouter10.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\netwtw08\IntelIHVRouter14.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\netwtw08\Netwfw08.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\netwtw08\Netwfw10.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\netwtw08\netwfw14.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\netwtw08\Netwtw08.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\netwtw08\Netwtw08.INF".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\netwtw08\Netwtw08.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\netwtw08\Netwtw10.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\netwtw08\Netwtw14.sys".
+SurfaceLaptop4-AMD\SurfaceUpdate\powertrackercore".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\powertrackercore\SurfacePowerTrackerCore.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\powertrackercore\SurfacePowerTrackerCore.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\powertrackercore\SurfacePowerTrackerCore.sys".
+SurfaceLaptop4-AMD\SurfaceUpdate\sam".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\sam\SurfaceSAM.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\sam\SurfaceSAM.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\sam\SurfaceSAM_12.200.139.bin".
+SurfaceLaptop4-AMD\SurfaceUpdate\servicenull".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\servicenull\SurfaceBtleLcPenTelemetry.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\servicenull\SurfaceDriversTelemetryConsentSettings.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\servicenull\SurfaceIntegrationServiceDriver.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\servicenull\SurfaceService.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\servicenull\SurfaceServiceNullDriver.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\servicenull\SurfaceServiceSensors.dll".
+SurfaceLaptop4-AMD\SurfaceUpdate\smbus".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\smbus\SMbusamd.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\smbus\SMBUSamd.inf".
+SurfaceLaptop4-AMD\SurfaceUpdate\surfacecfuoverhid".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacecfuoverhid\SurfaceCFUOverHid.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacecfuoverhid\SurfaceCFUOverHid.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacecfuoverhid\SurfaceCFUOverHid.inf".
+SurfaceLaptop4-AMD\SurfaceUpdate\surfacedigitizerhidspiextnpackage".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacedigitizerhidspiextnpackage\SurfaceDigitizerHidSpiExtnPackage.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacedigitizerhidspiextnpackage\SurfaceDigitizerHidSpiExtnPackage.inf".
+SurfaceLaptop4-AMD\SurfaceUpdate\surfacehidfriendlynames".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacehidfriendlynames\SurfaceHIDFriendlyNames.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacehidfriendlynames\SurfaceHIDFriendlyNames.inf".
+SurfaceLaptop4-AMD\SurfaceUpdate\surfacekip".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacekip\SurfaceKIP.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacekip\SurfaceKIP.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacekip\SurfaceKIP_20.5.139.bin".
+SurfaceLaptop4-AMD\SurfaceUpdate\surfacelightsensor".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacelightsensor\SurfaceLightSensor.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacelightsensor\SurfaceLightSensor.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacelightsensor\SurfaceLightSensor.sys".
+SurfaceLaptop4-AMD\SurfaceUpdate\surfaceoempanelamd64".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfaceoempanelamd64\ColorCalibrationComputation.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfaceoempanelamd64\SurfaceEnhanced.icm".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfaceoempanelamd64\SurfaceOemPanel.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfaceoempanelamd64\SurfaceOemPanel.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfaceoempanelamd64\SurfaceOemPanel.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfaceoempanelamd64\SurfacesRGB.icm".
+SurfaceLaptop4-AMD\SurfaceUpdate\surfacepd_cyp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacepd_cyp\SurfacePD.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacepd_cyp\surfacepd.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacepd_cyp\SurfacePD_14.2.0.bin".
+SurfaceLaptop4-AMD\SurfaceUpdate\surfacepd_ti".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacepd_ti\SurfacePD.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacepd_ti\surfacepd.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacepd_ti\SurfacePD_3.12.1.bin".
+SurfaceLaptop4-AMD\SurfaceUpdate\surfacepen0953cfuoverblelcextnpackage".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacepen0953cfuoverblelcextnpackage\SurfacePen0953CfuOverBleLcExtnPackage.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacepen0953cfuoverblelcextnpackage\SurfacePen0953CfuOverBleLcExtnPackage.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacepen0953cfuoverblelcextnpackage\SurfacePen0953CfuOverBleLcExtnPackage_K_BLE_HI.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacepen0953cfuoverblelcextnpackage\SurfacePen0953CfuOverBleLcExtnPackage_K_BLE_HI.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacepen0953cfuoverblelcextnpackage\SurfacePen0953CfuOverBleLcExtnPackage_K_BLE_LO.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacepen0953cfuoverblelcextnpackage\SurfacePen0953CfuOverBleLcExtnPackage_K_BLE_LO.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacepen0953cfuoverblelcextnpackage\SurfacePen0953CfuOverBleLcExtnPackage_K_MCU_B0.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacepen0953cfuoverblelcextnpackage\SurfacePen0953CfuOverBleLcExtnPackage_K_MCU_B0.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacepen0953cfuoverblelcextnpackage\SurfacePen0953CfuOverBleLcExtnPackage_K_MCU_B1.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacepen0953cfuoverblelcextnpackage\SurfacePen0953CfuOverBleLcExtnPackage_K_MCU_B1.payload.bin".
+SurfaceLaptop4-AMD\SurfaceUpdate\surfacepen0953firmwareupdate".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacepen0953firmwareupdate\Surface0953FwUpdate.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacepen0953firmwareupdate\SurfacePen0953FirmwareUpdate.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacepen0953firmwareupdate\SurfacePen0953_Annapurna-HI.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacepen0953firmwareupdate\SurfacePen0953_Annapurna-HI.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacepen0953firmwareupdate\SurfacePen0953_Annapurna-LO.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacepen0953firmwareupdate\SurfacePen0953_Annapurna-LO.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacepen0953firmwareupdate\SurfacePen0953_MCU-B0.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacepen0953firmwareupdate\SurfacePen0953_MCU-B0.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacepen0953firmwareupdate\SurfacePen0953_MCU-B1.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacepen0953firmwareupdate\SurfacePen0953_MCU-B1.payload.bin".
+SurfaceLaptop4-AMD\SurfaceUpdate\surfacepen217fwupdate".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacepen217fwupdate\SurfacePen217FwUpdate.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacepen217fwupdate\SurfacePen217FwUpdate.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacepen217fwupdate\SurfacePen217FwUpdate.inf".
+SurfaceLaptop4-AMD\SurfaceUpdate\surfacepenblelcaddradaptation".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacepenblelcaddradaptation\SurfacePenBleLcAddrAdaptationDriver.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacepenblelcaddradaptation\SurfacePenBleLcAddrAdaptationDriver.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacepenblelcaddradaptation\SurfacePenBleLcAddrAdaptationDriver.sys".
+SurfaceLaptop4-AMD\SurfaceUpdate\surfacepencfuoverblelc".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacepencfuoverblelc\SurfacePenCfuOverBleLc.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacepencfuoverblelc\SurfacePenCfuOverBleLc.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacepencfuoverblelc\SurfacePenCfuOverBleLc.inf".
+SurfaceLaptop4-AMD\SurfaceUpdate\surfacepowermeter".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacepowermeter\SurfacePowerMeter.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacepowermeter\SurfacePowerMeter.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacepowermeter\SurfacePowerMeter.sys".
+SurfaceLaptop4-AMD\SurfaceUpdate\surfacesmf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacesmf\Smf_0.0.0.88.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacesmf\SurfaceSMF.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacesmf\SurfaceSMF.inf".
+SurfaceLaptop4-AMD\SurfaceUpdate\surfacesmf13in".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacesmf13in\Smf_13in_0.0.0.86.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacesmf13in\SurfaceSMF_13in.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacesmf13in\SurfaceSMF_13in.inf".
+SurfaceLaptop4-AMD\SurfaceUpdate\surfacestoragefwupdate".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacestoragefwupdate\SurfaceStorageFwUpdate.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacestoragefwupdate\SurfaceStorageFwUpdate.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacestoragefwupdate\SurfaceStorageFwUpdate.sys".
+SurfaceLaptop4-AMD\SurfaceUpdate\surfacesystemmanagementframework".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacesystemmanagementframework\SurfaceSystemManagementFrameworkDriver.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacesystemmanagementframework\SurfaceSystemManagementFrameworkDriver.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacesystemmanagementframework\SurfaceSystemManagementFrameworkDriver.sys".
+SurfaceLaptop4-AMD\SurfaceUpdate\surfacesystemtelemetry".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacesystemtelemetry\SurfaceSystemTelemetryDriver.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacesystemtelemetry\SurfaceSystemTelemetryDriver.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacesystemtelemetry\SurfaceSystemTelemetryDriver.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacesystemtelemetry\SurfaceSystemTelemetryDriver.sys.lastcodeanalysissucceeded".
+SurfaceLaptop4-AMD\SurfaceUpdate\surfacetcon13".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacetcon13\SurfaceTCON13.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacetcon13\SurfaceTCON13.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacetcon13\SurfaceTCON_13_160.35.15.0.bin".
+SurfaceLaptop4-AMD\SurfaceUpdate\surfacetcon13b".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacetcon13b\SurfaceTCON13B.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacetcon13b\SurfaceTCON13B.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacetcon13b\SurfaceTCON13B_160.35.35.0.bin".
+SurfaceLaptop4-AMD\SurfaceUpdate\surfacetcon13c".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacetcon13c\SurfaceTCON13C.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacetcon13c\SurfaceTCON13C.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacetcon13c\SurfaceTCON13C_160.35.36.1.bin".
+SurfaceLaptop4-AMD\SurfaceUpdate\surfacetcon13d".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacetcon13d\SurfaceTCON13D.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacetcon13d\SurfaceTCON13D.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacetcon13d\SurfaceTCON13D_160.35.14.1.bin".
+SurfaceLaptop4-AMD\SurfaceUpdate\surfacetcon15".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacetcon15\SurfaceTCON15.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacetcon15\SurfaceTCON15.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacetcon15\SurfaceTCON_15_160.35.17.0.bin".
+SurfaceLaptop4-AMD\SurfaceUpdate\surfacetcon15b".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacetcon15b\SurfaceTCON15B.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacetcon15b\SurfaceTCON15B.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacetcon15b\SurfaceTCON15B_160.35.34.0.bin".
+SurfaceLaptop4-AMD\SurfaceUpdate\surfacethermalpolicy".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacethermalpolicy\SurfaceThermalPolicy.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacethermalpolicy\SurfaceThermalPolicy.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacethermalpolicy\SurfaceThermalPolicy.sys".
+SurfaceLaptop4-AMD\SurfaceUpdate\surfacetouchfw_13".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacetouchfw_13\SurfaceTouchFw.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacetouchfw_13\SurfaceTouchFw.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacetouchfw_13\SurfaceTouchFw_5.0.132.139.bin".
+SurfaceLaptop4-AMD\SurfaceUpdate\surfacetouchfw_15".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacetouchfw_15\SurfaceTouchFw.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacetouchfw_15\SurfaceTouchFw.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacetouchfw_15\SurfaceTouchFw_5.0.132.139.bin".
+SurfaceLaptop4-AMD\SurfaceUpdate\surfacetouchpenprocessorupdate_13".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacetouchpenprocessorupdate_13\SurfaceTouchPenProcessorUpdate.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacetouchpenprocessorupdate_13\SurfaceTouchPenProcessorUpdate.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacetouchpenprocessorupdate_13\TouchPenProcessor0C19.dll".
+SurfaceLaptop4-AMD\SurfaceUpdate\surfacetouchpenprocessorupdate_15".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacetouchpenprocessorupdate_15\SurfaceTouchPenProcessorUpdate.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacetouchpenprocessorupdate_15\SurfaceTouchPenProcessorUpdate.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacetouchpenprocessorupdate_15\TouchPenProcessor0C18.dll".
+SurfaceLaptop4-AMD\SurfaceUpdate\surfacetpm".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacetpm\Surface_Tpm.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacetpm\Surface_Tpm.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacetpm\Tpm_7.2.2.0.bin".
+SurfaceLaptop4-AMD\SurfaceUpdate\surfacetrackpad".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacetrackpad\SurfaceTrackpad.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacetrackpad\SurfaceTrackpad.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfacetrackpad\SurfaceTrackpad_20.3.139.bin".
+SurfaceLaptop4-AMD\SurfaceUpdate\surfaceuefi".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfaceuefi\SurfaceUEFI.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfaceuefi\SurfaceUEFI.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\surfaceuefi\Surface_UEFI_4.310.140.0.bin".
+SurfaceLaptop4-AMD\SurfaceUpdate\thunderbolt4dockfwupdate".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\thunderbolt4dockfwupdate\SurfaceThunderbolt4DockFwUpdate.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\thunderbolt4dockfwupdate\SurfaceThunderbolt4DockFwUpdate.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\thunderbolt4dockfwupdate\SurfaceThunderbolt4Dock_1_AMC1.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\thunderbolt4dockfwupdate\SurfaceThunderbolt4Dock_1_AMC1.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\thunderbolt4dockfwupdate\SurfaceThunderbolt4Dock_1_AMC2.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\thunderbolt4dockfwupdate\SurfaceThunderbolt4Dock_1_AMC2.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\thunderbolt4dockfwupdate\SurfaceThunderbolt4Dock_2_UFPPD1.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\thunderbolt4dockfwupdate\SurfaceThunderbolt4Dock_2_UFPPD1.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\thunderbolt4dockfwupdate\SurfaceThunderbolt4Dock_2_UFPPD2.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\thunderbolt4dockfwupdate\SurfaceThunderbolt4Dock_2_UFPPD2.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\thunderbolt4dockfwupdate\SurfaceThunderbolt4Dock_3_U3HUB1.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\thunderbolt4dockfwupdate\SurfaceThunderbolt4Dock_3_U3HUB1.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\thunderbolt4dockfwupdate\SurfaceThunderbolt4Dock_4_AUDIOS1.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\thunderbolt4dockfwupdate\SurfaceThunderbolt4Dock_4_AUDIOS1.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\thunderbolt4dockfwupdate\SurfaceThunderbolt4Dock_6_TBT1.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\thunderbolt4dockfwupdate\SurfaceThunderbolt4Dock_6_TBT1.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\thunderbolt4dockfwupdate\SurfaceThunderbolt4Dock_7_DFPPD1.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\thunderbolt4dockfwupdate\SurfaceThunderbolt4Dock_7_DFPPD1.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\thunderbolt4dockfwupdate\SurfaceThunderbolt4Dock_7_DFPPD2.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\thunderbolt4dockfwupdate\SurfaceThunderbolt4Dock_7_DFPPD2.payload.bin".
+SurfaceLaptop4-AMD\SurfaceUpdate\u0406350".
+SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amd-vulkan32.json".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amd-vulkan64.json".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdave32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdave64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amde31a.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amde34a.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amde34b.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amde40a.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdefctb.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdgfxinfo32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdgfxinfo64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdh264enc32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdh264enc64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdh265enc32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdh265enc64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdhdl32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdhdl64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdhip64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdhwdecoder_32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdhwdecoder_64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdicdxx.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdihk32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdihk64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdkernelevents.mc".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdkmdag.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdkmdap.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdkmpfd.ctz".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdkmpfd.itz".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdkmpfd.stz".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdlogum.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdlvr32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdlvr64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdmantle32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdmantle64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdmiracast.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdmmcl.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdmmcl6.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdocl.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdocl12cl.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdocl12cl64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdocl64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdpcom32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdpcom64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amduve32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amduve64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdverag.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdvlk32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdvlk64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdxc32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdxc64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdxcstub32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdxcstub64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdxn32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amdxn64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amd_comgr.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amd_comgr32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amd_opencl32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amd_opencl64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amf-mft-mjpeg-decoder32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amf-mft-mjpeg-decoder64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amfrt32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\amfrt64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\ati2erec.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\atiacm64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\atiacmlocalisation.ini".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\atiadlxx.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\atiadlxy.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\atiapfxx.blb".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\aticfx32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\aticfx64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\aticfxstub32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\aticfxstub64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\atidemgy.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\atidxx32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\atidxx64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\atidxxstub32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\atidxxstub64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\atieah32.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\atieah64.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\atieclxx.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\atiesrxx.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\atig6pxx.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\atig6txx.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\atigktxx.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\atiglpxx.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\atiicdxx.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\atimpc32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\atimpc64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\atimuixx.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\atio6axx.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\atiodcli.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\atiode.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\atioglxx.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\atisamu32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\atisamu64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\atiu9p64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\atiu9pag.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\atiumd64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\atiumd6a.cap".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\atiumd6a.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\atiumdag.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\atiumdva.cap".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\atiumdva.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\atiuxp64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\atiuxpag.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\ativce02.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\ativce03.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\ativvaxy_cik.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\ativvaxy_cik_nd.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\ativvaxy_cz_nd.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\ativvaxy_el_nd.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\ativvaxy_fj.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\ativvaxy_fj_nd.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\ativvaxy_gl_nd.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\ativvaxy_nv.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\ativvaxy_rv.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\ativvaxy_stn_nd.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\ativvaxy_vcn3.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\ativvaxy_vg20.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\ativvaxy_vg20_nd.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\ativvaxy_vi.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\ativvaxy_vi_nd.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\ativvsnl.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\ativvsny.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\ativvsva.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\ativvsvl.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\branding.bmp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\brandingrsx.bmp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\brandingws_rsx.bmp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\ccc2_install.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\clinfo.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\coinst_20.40.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\detoured32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\detoured64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\dgtrayicon.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\eeurestart.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\gamemanager32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\gamemanager64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\kapp_ci.sbin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\kapp_si.sbin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\mantle32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\mantle64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\mantleaxl32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\mantleaxl64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\mcl32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\mcl64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\rapidfire.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\rapidfire64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\rapidfireserver.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\rapidfireserver64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\samu_krnl_ci.sbin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\samu_krnl_isv_ci.sbin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\vulkan32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\vulkan64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\vulkaninfo32.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\B404564\vulkaninfo64.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\u0406350.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceLaptop4-AMD\SurfaceUpdate\u0406350\u0406350.inf".
+
+Current Folders:
+hotplug
+msu53cx22x64sta
+msu56cx22x64sta
+surfacebattery
+surfacebutton
+surfaceethernetadapter
+surfacehidmini
+surfaceintegration
+surfacepen217integration
+surfaceserialhub
+surfacesmfclient
+surfacesmfdisplayclient
+surfacetcondriver
+surfacetimealarmacpifilter
+surfaceucmucsihidclient
+surfacevirtualfunctionenum
+**********************
+PowerShell transcript end
+End time: 20241018115034
+**********************

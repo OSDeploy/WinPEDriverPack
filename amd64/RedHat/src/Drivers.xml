@@ -1,0 +1,78 @@
+<drivers>
+	<driver guid="{1ba9598a-f0ea-4dbc-9288-7d57ad76d265}" enable="True">
+		<Name>Red Hat, Inc. Net netkvm.inf 100.94.104.24200</Name>
+		<CreatedTime>10/17/2024 7:04:54 PM</CreatedTime>
+		<CreatedBy>AzureAD\DavidSegura</CreatedBy>
+		<LastModifiedTime>10/17/2024 7:04:54 PM</LastModifiedTime>
+		<LastModifiedBy>AzureAD\DavidSegura</LastModifiedBy>
+		<Manufacturer>Red Hat, Inc.</Manufacturer>
+		<Version>100.94.104.24200</Version>
+		<Date>10/09/2023</Date>
+		<Source>.\Out-of-box Drivers\Net\netkvm_100.94.104.24200_06ED57497242B12F33259CD2EF87FE3E493A25585867071FF6100B77CCC597F3\netkvm.inf</Source>
+		<Class>Net</Class>
+		<Hash>06ED57497242B12F33259CD2EF87FE3E493A25585867071FF6100B77CCC597F3</Hash>
+		<WHQLSigned>True</WHQLSigned>
+		<Platform>x64</Platform>
+		<OSVersion>6.3</OSVersion>
+		<PNPId>PCI\VEN_1AF4&amp;DEV_1000&amp;SUBSYS_00011AF4&amp;REV_00</PNPId>
+		<PNPId>PCI\VEN_1AF4&amp;DEV_1000</PNPId>
+		<PNPId>PCI\VEN_1AF4&amp;DEV_1041&amp;SUBSYS_11001AF4&amp;REV_01</PNPId>
+		<PNPId>PCI\VEN_1AF4&amp;DEV_1041</PNPId>
+	</driver>
+	<driver guid="{fddda1e3-244c-4561-9682-2f5af931ddd7}" enable="True">
+		<Name>Red Hat, Inc. NetTrans vioprot.inf 100.94.104.24200</Name>
+		<CreatedTime>10/17/2024 7:04:54 PM</CreatedTime>
+		<CreatedBy>AzureAD\DavidSegura</CreatedBy>
+		<LastModifiedTime>10/17/2024 7:04:54 PM</LastModifiedTime>
+		<LastModifiedBy>AzureAD\DavidSegura</LastModifiedBy>
+		<Manufacturer>Red Hat, Inc.</Manufacturer>
+		<Version>100.94.104.24200</Version>
+		<Date>10/09/2023</Date>
+		<Source>.\Out-of-box Drivers\Net\netkvm_100.94.104.24200_06ED57497242B12F33259CD2EF87FE3E493A25585867071FF6100B77CCC597F3\vioprot.inf</Source>
+		<Class>NetTrans</Class>
+		<Hash>06ED57497242B12F33259CD2EF87FE3E493A25585867071FF6100B77CCC597F3</Hash>
+		<WHQLSigned>True</WHQLSigned>
+		<Platform>x64</Platform>
+		<PNPId>VIOPROT</PNPId>
+	</driver>
+	<driver guid="{ece0ae24-8dcc-4118-9f12-5145e02f30a3}" enable="True">
+		<Name>Red Hat, Inc. SCSIAdapter vioscsi.inf 100.94.104.24700</Name>
+		<CreatedTime>10/17/2024 7:04:54 PM</CreatedTime>
+		<CreatedBy>AzureAD\DavidSegura</CreatedBy>
+		<LastModifiedTime>10/17/2024 7:04:54 PM</LastModifiedTime>
+		<LastModifiedBy>AzureAD\DavidSegura</LastModifiedBy>
+		<Manufacturer>Red Hat, Inc.</Manufacturer>
+		<Version>100.94.104.24700</Version>
+		<Date>01/22/2024</Date>
+		<Source>.\Out-of-box Drivers\SCSIAdapter\vioscsi_100.94.104.24700_D112C2302A771DDE87340626DF05A53D438EE31B57F415364D11F3804E8DC7B7\vioscsi.inf</Source>
+		<Class>SCSIAdapter</Class>
+		<Hash>D112C2302A771DDE87340626DF05A53D438EE31B57F415364D11F3804E8DC7B7</Hash>
+		<WHQLSigned>True</WHQLSigned>
+		<Platform>x64</Platform>
+		<OSVersion>10.0</OSVersion>
+		<PNPId>PCI\VEN_1AF4&amp;DEV_1004&amp;SUBSYS_00081AF4&amp;REV_00</PNPId>
+		<PNPId>PCI\VEN_1AF4&amp;DEV_1004</PNPId>
+		<PNPId>PCI\VEN_1AF4&amp;DEV_1048&amp;SUBSYS_11001AF4&amp;REV_01</PNPId>
+		<PNPId>PCI\VEN_1AF4&amp;DEV_1048</PNPId>
+	</driver>
+	<driver guid="{7a18f60b-5be0-4bba-a990-94e4fa69f946}" enable="True">
+		<Name>Red Hat, Inc. System balloon.inf 100.93.104.23900</Name>
+		<CreatedTime>10/17/2024 7:04:54 PM</CreatedTime>
+		<CreatedBy>AzureAD\DavidSegura</CreatedBy>
+		<LastModifiedTime>10/17/2024 7:04:54 PM</LastModifiedTime>
+		<LastModifiedBy>AzureAD\DavidSegura</LastModifiedBy>
+		<Manufacturer>Red Hat, Inc.</Manufacturer>
+		<Version>100.93.104.23900</Version>
+		<Date>07/04/2023</Date>
+		<Source>.\Out-of-box Drivers\System\balloon_100.93.104.23900_8252FE96DCB7E83B3B7297C631F82B196A0EC2F1383FD97AAC92263F11206F35\balloon.inf</Source>
+		<Class>System</Class>
+		<Hash>8252FE96DCB7E83B3B7297C631F82B196A0EC2F1383FD97AAC92263F11206F35</Hash>
+		<WHQLSigned>False</WHQLSigned>
+		<Platform>x64</Platform>
+		<OSVersion>6.3</OSVersion>
+		<PNPId>PCI\VEN_1AF4&amp;DEV_1002&amp;SUBSYS_00051AF4&amp;REV_00</PNPId>
+		<PNPId>PCI\VEN_1AF4&amp;DEV_1002</PNPId>
+		<PNPId>PCI\VEN_1AF4&amp;DEV_1045&amp;SUBSYS_11001AF4&amp;REV_01</PNPId>
+		<PNPId>PCI\VEN_1AF4&amp;DEV_1045</PNPId>
+	</driver>
+</drivers>

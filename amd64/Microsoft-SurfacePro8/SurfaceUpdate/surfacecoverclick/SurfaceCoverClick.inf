@@ -1,0 +1,38 @@
+; File:               SurfaceCoverClick.inf
+;
+; Description:        Driver installation file for Surface Cover Click driver.
+;
+; Copyright (C) Microsoft Corporation.  All Rights Reserved.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+[Version]
+Signature   = "$WINDOWS NT$"
+Class       = Extension
+ClassGuid   = {e2f84ce7-8efa-411c-aa69-97454ca4cb57}
+Provider    = %ManufacturerName%
+ExtensionId = {5BF171D8-E744-4C29-9036-2CE66C4F8D7E}
+DriverSet   = {8D1968A2-EC6D-4107-B007-E81D042E305B}
+DriverVer = 03/11/2021,2.27.139.0
+CatalogFile = SurfaceCoverClick.cat
+PnpLockdown=1
+
+[Manufacturer]
+%ManufacturerName% = Microsoft,NTamd64
+
+[Microsoft.NTamd64]
+%SurfaceCoverClick.DeviceDesc% = SurfaceCoverClick_Install,USB\VID_04F3&PID_0C7B
+
+[SurfaceCoverClick_Install]
+AddProperty = NoConnectSound_AddProperty,NoSafeRemovalRequired_AddProperty
+
+[NoConnectSound_AddProperty]
+NoConnectSound,,,,1
+
+[NoSafeRemovalRequired_AddProperty]
+{afd97640-86a3-4210-b67c-289c41aabe55},3,17,,0
+
+[Strings]
+; localizable strings
+ManufacturerName             = "Surface"
+SurfaceCoverClick.DeviceDesc = "Surface Cover Click"

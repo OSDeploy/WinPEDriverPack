@@ -1,0 +1,45 @@
+{
+    "ComputerName":  "bldewdk0025",
+    "PoolName":  "SW Build EWDK Agents",
+    "RepoUrl":  "https://MSFTDEVICES@dev.azure.com/MSFTDEVICES/Drivers/_git/SurfaceTimeAlarmAcpiFilterDriver",
+    "RepoName":  "SurfaceTimeAlarmAcpiFilterDriver",
+    "Worktree":  "C:\\w\\170\\s",
+    "CommitId":  "31fc697522be7d4de113efc5844f35c340234699",
+    "SourceBranch":  "refs/heads/master",
+    "ProjectName":  "Drivers",
+    "BuildId":  2397861,
+    "BuildParameters":  {
+
+                        },
+    "DefinitionId":  9229,
+    "DefinitionName":  "CI_SurfaceTimeAlarmAcpiFilterDriver",
+    "DefinitionVariables":  {
+
+                            },
+    "Packages":  [
+                     {
+                         "Id":  "Devices.Build.Scripts",
+                         "Version":  "1.5.8"
+                     },
+                     {
+                         "Id":  "Devices.Library.SurfaceLibrary.19H1",
+                         "Version":  "6.294.0"
+                     },
+                     {
+                         "Id":  "Devices.Tool.SignTool",
+                         "Version":  "10.0.16299.64"
+                     },
+                     {
+                         "Id":  "Devices.Tool.AutoSignConsole",
+                         "Version":  "1.5.129"
+                     },
+                     {
+                         "Id":  "Devices.Driver.BuildConfiguration",
+                         "Version":  "1.5.0"
+                     },
+                     {
+                         "Id":  "Devices.Certificate.OEMTest",
+                         "Version":  "1.0.2"
+                     }
+                 ]
+}

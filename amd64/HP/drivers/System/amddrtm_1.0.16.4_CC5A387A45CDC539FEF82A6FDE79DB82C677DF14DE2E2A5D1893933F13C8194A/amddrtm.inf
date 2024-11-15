@@ -1,0 +1,63 @@
+;
+; Copyright (c) 2023  AMD
+;
+;
+; Installation INF for the AMD DRTM Boot driver.
+; Copyright(C) AMD 2023
+;-----------------------------------------------
+
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=System
+ClassGuid={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%AMD%
+
+DriverVer=02/23/2023, 1.0.16.4
+
+CatalogFile=amddrtm.cat
+
+[DestinationDirs]
+Drivers_Dir = 11
+
+[SourceDisksNames.x86]
+1 = %DISK_NAME%,,,""
+
+[SourceDisksNames.amd64]
+1 = %DISK_NAME%,,,""
+
+
+[SourceDisksFiles]
+amddrtm.dll  = 1
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[Manufacturer]
+%AMD%=AMD_DRTM,NTAMD64
+
+[AMD_DRTM.NTAMD64]
+%AMDDRTM.DeviceDesc%=AMDDRTM_Install , ACPI\DRTM0001
+
+[AMDDRTM_Install]
+
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+amddrtm.dll,,,0x00004000
+
+[AMDDRTM_Install.Services]
+Include=machine.inf
+Needs=NO_DRV.Services
+
+[Strings]
+AMD = "Advanced Micro Devices, Inc"
+AMDDRTM.DeviceDesc = "AMD DRTM Boot Driver"
+SystemClassName = "System devices"
+AMDKMPFD_svcdesc = "AMD DRTM Boot Driver"
+DISK_NAME = "AMD DRTM Install Disk"
+SPSVCINST_ASSOCSERVICE = 0x00000002
+SERVICE_KERNEL_DRIVER  = 1
+SERVICE_BOOT_START     = 0
+SERVICE_DEMAND_START   = 3
+SERVICE_ERROR_NORMAL   = 1

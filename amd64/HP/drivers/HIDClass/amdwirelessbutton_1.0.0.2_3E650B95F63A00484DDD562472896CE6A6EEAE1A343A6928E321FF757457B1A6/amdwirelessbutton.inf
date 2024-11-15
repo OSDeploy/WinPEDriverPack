@@ -1,0 +1,112 @@
+Z;/*++
+;
+;(C) Copyright 2022 Advanced Micro Devices, Inc.
+;
+;Module Name:
+; amdwirelessbutton.inf
+;
+;Abstract:
+;    INF file for installing the amdwirelessbutton Driver
+;
+;
+;--*/
+[Version]
+Signature="$WINDOWS NT$"
+Class=HIDClass ; TODO: edit Class
+ClassGuid={745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+Provider=%ManufacturerName%
+CatalogFile=amdwirelessbutton.cat
+DriverVer = 09/15/2022,1.0.0.2
+
+[DestinationDirs]
+DefaultDestDir = 12
+amdwirelessbutton_Device_CoInstaller_CopyFiles = 11
+
+; ================= Class section =====================
+
+;[ClassInstall32]
+;Addreg=SampleClassReg
+
+;[SampleClassReg]
+;HKR,,,0,%ClassName%
+;HKR,,Icon,,-5
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+amdwirelessbutton.sys  = 1,,
+;
+
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTamd64
+
+[Standard.NTamd64]
+%amdwirelessbutton.DeviceDesc%=amdwirelessbutton_Device, ACPI\AMDI0051 ;Root\amdwirelessbutton ; TODO: edit hw-id
+
+[amdwirelessbutton_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+amdwirelessbutton.sys
+
+[amdwirelessbutton_Device.NT.hw]
+AddReg=amdwirelessbutton_AddReg
+
+;-------------- Service installation
+[amdwirelessbutton_Device.NT.Services]
+AddService=amdwirelessbutton,0,amdwirelessbutton_Service_Inst,
+AddService=mshidkmdf,%SPSVCINST_ASSOCSERVICE%,mshidkmdf_Service_Inst ;flag 0x2 sets this as the service for the device
+
+[amdwirelessbutton_AddReg]
+HKR,,"LowerFilters",0x00010008,"amdwirelessbutton" ; FLG_ADDREG_TYPE_MULTI_SZ | FLG_ADDREG_APPEND
+
+[mshidkmdf_Service_Inst]
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\mshidkmdf.sys
+
+; -------------- amdwirelessbutton driver install sections
+[amdwirelessbutton_Service_Inst]
+DisplayName    = %amdwirelessbutton.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\amdwirelessbutton.sys
+
+;
+;--- amdwirelessbutton_Device Coinstaller installation ------
+;
+
+[amdwirelessbutton_Device.NT.CoInstallers]
+AddReg=amdwirelessbutton_Device_CoInstaller_AddReg
+CopyFiles=amdwirelessbutton_Device_CoInstaller_CopyFiles
+
+[amdwirelessbutton_Device_CoInstaller_AddReg]
+;
+
+
+[amdwirelessbutton_Device_CoInstaller_CopyFiles]
+;
+
+
+[amdwirelessbutton_Device.NT.Wdf]
+KmdfService =  amdwirelessbutton, amdwirelessbutton_wdfsect
+
+[amdwirelessbutton_wdfsect]
+KmdfLibraryVersion = 1.15
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="Advanced Micro Devices, Inc." ;TODO: Replace with your manufacturer name
+ClassName="Samples" ; TODO: edit ClassName
+DiskName = "amdwirelessbutton Installation Disk"
+amdwirelessbutton.DeviceDesc = "AMD Wireless Button Driver"
+amdwirelessbutton.SVCDESC = "amdwirelessbutton Service"
+

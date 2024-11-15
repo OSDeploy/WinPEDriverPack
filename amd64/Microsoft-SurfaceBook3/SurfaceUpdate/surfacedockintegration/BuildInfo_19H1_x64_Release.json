@@ -1,0 +1,37 @@
+{
+    "ComputerName":  "bldewdk0032",
+    "PoolName":  "SW Build EWDK Agents",
+    "RepoUrl":  "https://MSFTDEVICES@dev.azure.com/MSFTDEVICES/Drivers/_git/SurfaceDockIntegration",
+    "RepoName":  "SurfaceDockIntegration",
+    "Worktree":  "C:\\w\\104\\s",
+    "CommitId":  "4b812a8fd3fcce8ebcf00101edc44bd314b7bf3f",
+    "SourceBranch":  "refs/heads/master",
+    "ProjectName":  "Drivers",
+    "BuildId":  2339384,
+    "BuildParameters":  {
+
+                        },
+    "DefinitionId":  8392,
+    "DefinitionName":  "CI_SurfaceDockIntegration",
+    "DefinitionVariables":  {
+
+                            },
+    "Packages":  [
+                     {
+                         "Id":  "Devices.Build.Scripts",
+                         "Version":  "1.5.8"
+                     },
+                     {
+                         "Id":  "Devices.Certificate.OEMTest",
+                         "Version":  "1.0.2"
+                     },
+                     {
+                         "Id":  "Devices.Tool.AutoSignConsole",
+                         "Version":  "1.5.129"
+                     },
+                     {
+                         "Id":  "Devices.Tool.SignTool",
+                         "Version":  "10.0.16299.64"
+                     }
+                 ]
+}

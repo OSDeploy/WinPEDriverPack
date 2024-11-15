@@ -1,0 +1,76 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; File:          SurfaceSerialHubDriver.inf
+;
+; Description:   Driver Installation file.
+;
+; Copyright (C) 2015 Microsoft Corporation.  All Rights Reserved.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=System
+ClassGuid={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%ManufacturerName%
+CatalogFile=SurfaceSerialHubDriver.cat
+DriverVer=08/23/2017,4.1.136.0
+PnpLockdown=1
+
+[DestinationDirs]
+DefaultDestDir = 12
+
+; ================= Class section =====================
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+SurfaceSerialHubDriver.sys  = 1,,
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTamd64
+
+[Standard.NTamd64]
+%SurfaceSerialHubDriver.DeviceDesc%=SurfaceSerialHubDriver_Device, ACPI\MSHW0084
+
+[SurfaceSerialHubDriver_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+SurfaceSerialHubDriver.sys
+
+[SurfaceSerialHubDriver_Device.NT.HW]
+
+
+
+;-------------- Service installation
+[SurfaceSerialHubDriver_Device.NT.Services]
+;
+; %SPSVCINST_ASSOCSERVICE% should only be specificed if this is a function driver.
+;
+AddService = SurfaceSerialHubDriver,%SPSVCINST_ASSOCSERVICE%, SurfaceSerialHubDriver_Service_Inst, SurfaceSerialHubDriver_EventLogInst
+
+; -------------- SurfaceSerialHubDriver driver install sections
+[SurfaceSerialHubDriver_Service_Inst]
+DisplayName    = %SurfaceSerialHubDriver.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\SurfaceSerialHubDriver.sys
+
+[SurfaceSerialHubDriver_EventLogInst]
+AddReg = SurfaceSerialHubDriver_EventLogAddReg
+
+[SurfaceSerialHubDriver_EventLogAddReg]
+HKR,,EventMessageFile,0x00020000,"%%SystemRoot%%\System32\IoLogMsg.dll;%%SystemRoot%%\System32\drivers\SurfaceSerialHubDriver.sys"
+HKR,,TypesSupported,0x00010001,7
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="Surface"
+DiskName = "Surface Serial Hub Driver Installation Disk"
+SurfaceSerialHubDriver.DeviceDesc = "Surface Serial Hub Driver"
+SurfaceSerialHubDriver.SVCDESC = "Surface Serial Hub Driver Service"

@@ -1,0 +1,163 @@
+;/*++
+;
+;Copyright (c) 2010-2021, Intel Corporation
+;
+;Abstract:
+;    INF file for installing Thunderbolt Bus driver
+;
+;--*/
+
+[Version]
+Signature="$WINDOWS NT$"
+Class       = System
+ClassGuid   = {4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider    = %Intel%
+PnpLockdown=1
+CatalogFile = TbtSlimHostController.cat
+DriverVer = 05/30/2021,1.41.1155.0
+
+[DestinationDirs]
+DefaultDestDir = 12
+ShortcutServiceCopy = 10
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+TbtBusDrv.sys  = 1,,
+TbtP2pShortcutService.exe = 1,,
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%Intel% = Thunderbolt, NTamd64.10.0...19041
+
+[Thunderbolt.NTamd64.10.0...19041]
+; DisplayName                Section            Device Id
+; -----------                -------            ---------
+%TbtBusDrv_DeviceDesc1137% = TbtBusDrv_Device_19041, PCI\VEN_8086&DEV_1137
+%TbtBusDrv_DeviceDesc1134% = TbtBusDrv_Device_19041, PCI\VEN_8086&DEV_1134
+%TbtBusDrv_DeviceDesc8A17% = TbtBusDrv_Device_19041, PCI\VEN_8086&DEV_8A17&CC_0880
+%TbtBusDrv_DeviceDesc8A0D% = TbtBusDrv_Device_19041, PCI\VEN_8086&DEV_8A0D&CC_0880
+%TbtBusDrv_DeviceDesc8AA3% = TbtBusDrv_Device_19041, PCI\VEN_8086&DEV_8AA3&CC_0880
+%TbtBusDrv_DeviceDesc8AA0% = TbtBusDrv_Device_19041, PCI\VEN_8086&DEV_8AA0&CC_0880
+%TbtBusDrv_DeviceDesc8AB3% = TbtBusDrv_Device_19041, PCI\VEN_8086&DEV_8AB3&CC_0880
+%TbtBusDrv_DeviceDesc8AB0% = TbtBusDrv_Device_19041, PCI\VEN_8086&DEV_8AB0&CC_0880
+%TbtBusDrv_DeviceDesc9A1B% = TbtBusDrv_Device_19041, PCI\VEN_8086&DEV_9A1B
+%TbtBusDrv_DeviceDesc9A1D% = TbtBusDrv_Device_19041, PCI\VEN_8086&DEV_9A1D
+%TbtBusDrv_DeviceDesc9A1F% = TbtBusDrv_Device_19041, PCI\VEN_8086&DEV_9A1F
+%TbtBusDrv_DeviceDesc9A21% = TbtBusDrv_Device_19041, PCI\VEN_8086&DEV_9A21
+%TbtBusDrv_DeviceDesc463E% = TbtBusDrv_Device_19041, PCI\VEN_8086&DEV_463E
+%TbtBusDrv_DeviceDesc466D% = TbtBusDrv_Device_19041, PCI\VEN_8086&DEV_466D
+%TbtBusDrv_DeviceDesc7EB2% = TbtBusDrv_Device_19041, PCI\VEN_8086&DEV_7EB2
+%TbtBusDrv_DeviceDesc7EC2% = TbtBusDrv_Device_19041, PCI\VEN_8086&DEV_7EC2
+%TbtBusDrv_DeviceDesc7EC3% = TbtBusDrv_Device_19041, PCI\VEN_8086&DEV_7EC3
+
+[TbtBusDrv_Device_19041.NT]
+CopyFiles = Drivers_Dir, ShortcutServiceCopy
+CopyINF = TbtP2pNdisDrv.inf
+
+[Drivers_Dir]
+TbtBusDrv.sys
+
+[ShortcutServiceCopy]
+TbtP2pShortcutService.exe
+
+;-------------- Service installation
+[TbtBusDrv_Device_19041.NT.Services]
+AddService = nhi, 0x000001fa, TbtBusDrv_Service_Inst, win10.EventLog
+AddService = TbtP2pShortcutService, 0x00000800, TbtP2pShortcutService_ServiceInstall
+
+[TbtBusDrv_Device_19041.NT.HW]
+AddReg = MSI.reg
+AddReg = Security.reg
+AddReg = Dfx.reg
+
+[win10.EventLog]
+AddReg = win10.AddEventLog.reg
+
+[Security.reg]
+HKR,,DeviceCharacteristics,0x10001,0x100
+HKR,,Security,,"D:P(A;;GA;;;SY)(A;;GA;;;BA)(A;;GA;;;WD)"
+
+[MSI.reg]
+HKR, "Interrupt Management",                                      0x00000010
+HKR, "Interrupt Management\MessageSignaledInterruptProperties",   0x00000010
+HKR, "Interrupt Management\MessageSignaledInterruptProperties",   MSISupported,        0x00010001, 1
+HKR, "Interrupt Management\MessageSignaledInterruptProperties",   MessageNumberLimit,  0x00010001, 16
+
+[Dfx.reg]
+HKR,"WDF","WdfDirectedPowerTransitionEnable",0x00010001,1
+HKR,"WDF","WdfDirectedPowerTransitionChildrenOptional", 0x00010001,1
+
+[win10.AddEventLog.reg]
+HKR, , EventMessageFile, 0x00020000, %EventLogMessageDllPath%
+HKR, , TypesSupported,   0x00010001, 7
+
+; -------------- TbtBusDrv driver install sections
+[TbtBusDrv_Service_Inst]
+DisplayName    = %TbtBusDrv_SVCDESC%
+ServiceType    = %SERVICE_KERNEL_DRIVER%
+StartType      = %SERVICE_DEMAND_START%
+ErrorControl   = %SERVICE_ERROR_NORMAL%
+ServiceBinary  = "%12%\TbtBusDrv.sys"
+LoadOrderGroup = Extended Base
+AddReg         = TbtBusDrv_Service_Events_AddReg
+
+[TbtP2pShortcutService_ServiceInstall]
+DisplayName = %TbtP2pShortcutServiceName.SrvName%
+Description = %TbtP2pShortcutServiceName.SvcDesc%
+ServiceType    = 0x00000010
+StartType      = 2; SERVICE_AUTO_START
+ErrorControl   = 1
+ServiceBinary  = "%10%\TbtP2pShortcutService.exe"
+
+[TbtBusDrv_Service_Events_AddReg]
+HKR, Parameters, DmaRemappingCompatible, 0x00010001, 1
+HKR,, Universal, 0x00010001, 0
+HKR, Parameters, PowerPolicyIdleTimeoutType, 0x00010001, 2
+HKR, Parameters, InterDomainConnectionShortcutEnabled, 0x00010001, 0
+
+[TbtBusDrv_Device.NT.Wdf]
+KmdfService =  nhi, TbtBusDrv_wdfsect
+
+[TbtBusDrv_Device_19041.NT.Wdf]
+Needs = TbtBusDrv_Device.NT.Wdf
+
+[TbtBusDrv_wdfsect]
+KmdfLibraryVersion = 1.15
+
+[Strings]
+Intel = "Intel(R) Corporation"
+DiskName = "Thunderbolt(TM) Controller Installation Disk"
+TbtBusDrv_DeviceDesc1137 = "Thunderbolt(TM) Controller - 1137"
+TbtBusDrv_DeviceDesc1134 = "Thunderbolt(TM) Controller - 1134"
+TbtBusDrv_DeviceDesc8A17 = "Thunderbolt(TM) Controller - 8A17"
+TbtBusDrv_DeviceDesc8A0D = "Thunderbolt(TM) Controller - 8A0D"
+TbtBusDrv_DeviceDesc8AA3 = "Thunderbolt(TM) Controller - 8AA3"
+TbtBusDrv_DeviceDesc8AA0 = "Thunderbolt(TM) Controller - 8AA0"
+TbtBusDrv_DeviceDesc8AB3 = "Thunderbolt(TM) Controller - 8AB3"
+TbtBusDrv_DeviceDesc8AB0 = "Thunderbolt(TM) Controller - 8AB0"
+TbtBusDrv_DeviceDesc9A1B = "Thunderbolt(TM) Controller - 9A1B"
+TbtBusDrv_DeviceDesc9A1D = "Thunderbolt(TM) Controller - 9A1D"
+TbtBusDrv_DeviceDesc9A1F = "Thunderbolt(TM) Controller - 9A1F"
+TbtBusDrv_DeviceDesc9A21 = "Thunderbolt(TM) Controller - 9A21"
+TbtBusDrv_DeviceDesc463E = "Thunderbolt(TM) Controller - 463E"
+TbtBusDrv_DeviceDesc466D = "Thunderbolt(TM) Controller - 466D"
+TbtBusDrv_DeviceDesc7EB2 = "Thunderbolt(TM) Controller - 7EB2"
+TbtBusDrv_DeviceDesc7EC2 = "Thunderbolt(TM) Controller - 7EC2"
+TbtBusDrv_DeviceDesc7EC3 = "Thunderbolt(TM) Controller - 7EC3"
+
+TbtBusDrv_SVCDESC = "Thunderbolt(TM) Controller"
+WudfRdDisplayName="Windows Driver Foundation - User-mode Driver Framework Reflector"
+SERVICE_KERNEL_DRIVER = 1
+SERVICE_DEMAND_START = 3
+SERVICE_ERROR_NORMAL = 1
+REG_DWORD=0x00010001
+REG_SZ=0x00000000
+FLG_ADDREG_KEYONLY = 0x00000010
+TbtP2pShortcutServiceName.SrvName = "Thunderbolt(TM) Peer to Peer Shortcut"
+TbtP2pShortcutServiceName.SvcDesc = "Thunderbolt(TM) Peer to Peer Shortcut"
+EventLogMessageDllPath = "%SystemRoot%\System32\drivers\TbtBusDrv.sys"

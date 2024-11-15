@@ -1,0 +1,134 @@
+;
+; SurfaceIntegrationDriver.inf
+;
+; Copyright (C) 2014 Microsoft Corporation.  All Rights Reserved.
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=System
+ClassGuid={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%ManufacturerName%
+CatalogFile=SurfaceIntegrationDriver.cat
+DriverVer = 02/22/2024,120.6.37.0
+PnpLockdown=1
+
+[DestinationDirs]
+DefaultDestDir                    = 13                            ; %WinDir%\System32\Drivers
+ProvisioningPackage_CopyFiles     = 13                            ; DriverStore
+
+; ================= Class section =====================
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+Surface.Power.Policy.Defaults.ppkg  = 1,,
+Surface.Power.Policy.WIN10.Defaults.ppkg = 1,,
+Surface.Power.Policy.WIN11-0.Defaults.ppkg = 1,,
+SurfaceIntegrationDriver.sys        = 1,,
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTamd64.10.0...19041
+
+[Standard.NTamd64.10.0...19041]
+%SurfaceIntegrationDriver.DeviceDesc%=SurfaceIntegrationDriver_Device, ACPI\MSHW0530
+
+[SurfaceIntegrationDriver_Device.NT]
+CopyFiles=DefaultDestDir,ProvisioningPackage_CopyFiles
+AddReg=SurfaceIntegrationDriver_Device_AddReg
+AddReg=SurfaceIntegrationDriver_AddBrightnessCurve_AddReg
+
+[DefaultDestDir]
+SurfaceIntegrationDriver.sys
+
+[ProvisioningPackage_CopyFiles]
+Surface.Power.Policy.Defaults.ppkg
+Surface.Power.Policy.WIN10.Defaults.ppkg
+Surface.Power.Policy.WIN11-0.Defaults.ppkg
+
+[SurfaceIntegrationDriver_Device.NT.HW]
+AddReg=SurfaceIntegrationDriver_Service_HWAddReg
+
+[SurfaceIntegrationDriver_Device_AddReg]
+;;HKLM,System\CurrentControlSet\Services\SurfaceIntegrationDriver\Parameters, "ImageNameSID", %REG_SZ%, "(Image.Name)" ; Updated with post processing
+HKLM,System\CurrentControlSet\Services\SurfaceService, "PlatformKipSupported",            %REG_DWORD%, 0x1        ; KIP is supported on this platform (it enables power saving features in KIP)
+HKLM,SYSTEM\CurrentControlSet\Control\Power,           "UserBatteryDischargeEstimator",   %REG_DWORD%, 0xFFFFFFFF ; Hide estimated time to discharge remaining battery
+HKLM,SYSTEM\CurrentControlSet\Control\Power,"EnableScreenRefreshOnPowerButtonLongPress",  %REG_DWORD%, 0x00000001
+HKLM,SYSTEM\CurrentControlSet\Services\fvevol,         "MaxEncryptRequests",              %REG_DWORD%, 0x00000040 ; Set the Encrypt Request Limit to improve SSD perf under Bitlocker
+HKLM,SYSTEM\CurrentControlSet\Services\fvevol,         "MaxCryptoRequestsPerIo",          %REG_DWORD%, 0x00000040
+HKLM,SYSTEM\CurrentControlSet\Services\fvevol,         "MaxDecryptRequests",              %REG_DWORD%, 0x00000040
+
+[SurfaceIntegrationDriver_AddBrightnessCurve_AddReg]
+HKLM,System\CurrentControlSet\Control\Power\EnergyEstimation\Display\BacklightPowerCurve, "PointCount", %REG_DWORD%, 0xE
+HKLM,System\CurrentControlSet\Control\Power\EnergyEstimation\Display\BacklightPowerCurve\0, "BrightnessPercent", %REG_DWORD%, 0x00
+HKLM,System\CurrentControlSet\Control\Power\EnergyEstimation\Display\BacklightPowerCurve\0, "BacklightPower", %REG_DWORD%, 0x29D
+HKLM,System\CurrentControlSet\Control\Power\EnergyEstimation\Display\BacklightPowerCurve\1, "BrightnessPercent", %REG_DWORD%, 0x18
+HKLM,System\CurrentControlSet\Control\Power\EnergyEstimation\Display\BacklightPowerCurve\1, "BacklightPower", %REG_DWORD%, 0x351
+HKLM,System\CurrentControlSet\Control\Power\EnergyEstimation\Display\BacklightPowerCurve\2, "BrightnessPercent", %REG_DWORD%, 0x24
+HKLM,System\CurrentControlSet\Control\Power\EnergyEstimation\Display\BacklightPowerCurve\2, "BacklightPower", %REG_DWORD%, 0x40B
+HKLM,System\CurrentControlSet\Control\Power\EnergyEstimation\Display\BacklightPowerCurve\3, "BrightnessPercent", %REG_DWORD%, 0x2C
+HKLM,System\CurrentControlSet\Control\Power\EnergyEstimation\Display\BacklightPowerCurve\3, "BacklightPower", %REG_DWORD%, 0x4B0
+HKLM,System\CurrentControlSet\Control\Power\EnergyEstimation\Display\BacklightPowerCurve\4, "BrightnessPercent", %REG_DWORD%, 0x32
+HKLM,System\CurrentControlSet\Control\Power\EnergyEstimation\Display\BacklightPowerCurve\4, "BacklightPower", %REG_DWORD%, 0x548
+HKLM,System\CurrentControlSet\Control\Power\EnergyEstimation\Display\BacklightPowerCurve\5, "BrightnessPercent", %REG_DWORD%, 0x38
+HKLM,System\CurrentControlSet\Control\Power\EnergyEstimation\Display\BacklightPowerCurve\5, "BacklightPower", %REG_DWORD%, 0x5F5
+HKLM,System\CurrentControlSet\Control\Power\EnergyEstimation\Display\BacklightPowerCurve\6, "BrightnessPercent", %REG_DWORD%, 0x41
+HKLM,System\CurrentControlSet\Control\Power\EnergyEstimation\Display\BacklightPowerCurve\6, "BacklightPower", %REG_DWORD%, 0x738
+HKLM,System\CurrentControlSet\Control\Power\EnergyEstimation\Display\BacklightPowerCurve\7, "BrightnessPercent", %REG_DWORD%, 0x45
+HKLM,System\CurrentControlSet\Control\Power\EnergyEstimation\Display\BacklightPowerCurve\7, "BacklightPower", %REG_DWORD%, 0x7E0
+HKLM,System\CurrentControlSet\Control\Power\EnergyEstimation\Display\BacklightPowerCurve\8, "BrightnessPercent", %REG_DWORD%, 0x4C
+HKLM,System\CurrentControlSet\Control\Power\EnergyEstimation\Display\BacklightPowerCurve\8, "BacklightPower", %REG_DWORD%, 0x926
+HKLM,System\CurrentControlSet\Control\Power\EnergyEstimation\Display\BacklightPowerCurve\9, "BrightnessPercent", %REG_DWORD%, 0x52
+HKLM,System\CurrentControlSet\Control\Power\EnergyEstimation\Display\BacklightPowerCurve\9, "BacklightPower", %REG_DWORD%, 0xA71
+HKLM,System\CurrentControlSet\Control\Power\EnergyEstimation\Display\BacklightPowerCurve\10, "BrightnessPercent", %REG_DWORD%, 0x57
+HKLM,System\CurrentControlSet\Control\Power\EnergyEstimation\Display\BacklightPowerCurve\10, "BacklightPower", %REG_DWORD%, 0xBAD
+HKLM,System\CurrentControlSet\Control\Power\EnergyEstimation\Display\BacklightPowerCurve\11, "BrightnessPercent", %REG_DWORD%, 0x5C
+HKLM,System\CurrentControlSet\Control\Power\EnergyEstimation\Display\BacklightPowerCurve\11, "BacklightPower", %REG_DWORD%, 0xD10
+HKLM,System\CurrentControlSet\Control\Power\EnergyEstimation\Display\BacklightPowerCurve\12, "BrightnessPercent", %REG_DWORD%, 0x60
+HKLM,System\CurrentControlSet\Control\Power\EnergyEstimation\Display\BacklightPowerCurve\12, "BacklightPower", %REG_DWORD%, 0xE42
+HKLM,System\CurrentControlSet\Control\Power\EnergyEstimation\Display\BacklightPowerCurve\13, "BrightnessPercent", %REG_DWORD%, 0x64
+HKLM,System\CurrentControlSet\Control\Power\EnergyEstimation\Display\BacklightPowerCurve\13, "BacklightPower", %REG_DWORD%, 0xF83
+;----- Setting Panel power to zero
+HKLM,System\CurrentControlSet\Control\Power\EnergyEstimation\Display, "DisplayPanelPowerFloor", %REG_DWORD%, 0x0
+HKLM,System\CurrentControlSet\Control\Power\EnergyEstimation\Display, "DisplayPanelPowerVsyncDelta", %REG_DWORD%, 0x0
+HKLM,System\CurrentControlSet\Control\Power\EnergyEstimation\Display, "DisplayPanelPowerDpiFactor", %REG_DWORD%, 0x0
+HKLM,System\CurrentControlSet\Control\Power\EnergyEstimation\Display, "DisplayPanelPowerAreaFactor", %REG_DWORD%, 0x0
+
+;-------------- Service installation
+[SurfaceIntegrationDriver_Device.NT.Services]
+;
+; %SPSVCINST_ASSOCSERVICE% should only be specified if this is a function driver.
+;
+AddService = SurfaceIntegrationDriver,%SPSVCINST_ASSOCSERVICE%, SurfaceIntegrationDriver_Service_Inst
+
+; -------------- SurfaceIntegrationDriver driver install sections
+[SurfaceIntegrationDriver_Service_Inst]
+DisplayName    = %SurfaceIntegrationDriver.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %13%\SurfaceIntegrationDriver.sys
+
+[SurfaceIntegrationDriver_Service_HWAddReg]
+HKR,,ppkg_updated,0x00010001,0x0
+HKR,,last_known_os_version_major,0x00010001,0x0
+HKR,,last_known_os_version_minor,0x00010001,0x0
+HKR,,win11_ppkg, 0x00000000, \DosDevices\%13%\Surface.Power.Policy.Defaults.ppkg
+HKR,,win10_ppkg, 0x00000000, \DosDevices\%13%\Surface.Power.Policy.WIN10.Defaults.ppkg
+HKR,,win110_ppkg, 0x00000000, \DosDevices\%13%\Surface.Power.Policy.WIN11-0.Defaults.ppkg
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="Surface"
+DiskName = "Surface Integration Driver Installation Disk"
+SurfaceIntegrationDriver.DeviceDesc = "Surface Integration"
+SurfaceIntegrationDriver.SVCDESC = "Surface Integration Driver"
+REG_EXPAND_SZ          = 0x00020000 
+REG_DWORD              = 0x00010001 
+REG_MULTI_SZ           = 0x00010000
+REG_BINARY             = 0x00000001
+REG_SZ                 = 0x00000000

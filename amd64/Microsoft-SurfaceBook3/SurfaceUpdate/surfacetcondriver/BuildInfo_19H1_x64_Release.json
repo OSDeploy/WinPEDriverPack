@@ -1,0 +1,45 @@
+{
+    "ComputerName":  "bldewdk0052",
+    "PoolName":  "SW Build EWDK Agents",
+    "RepoUrl":  "https://MSFTDEVICES@dev.azure.com/MSFTDEVICES/Drivers/_git/SurfaceTconDriver",
+    "RepoName":  "SurfaceTconDriver",
+    "Worktree":  "C:\\w\\213\\s",
+    "CommitId":  "aaa13cb6a6d36040ece5d2eb0f3bf9d132863ac3",
+    "SourceBranch":  "refs/heads/master",
+    "ProjectName":  "Drivers",
+    "BuildId":  2372627,
+    "BuildParameters":  {
+
+                        },
+    "DefinitionId":  8311,
+    "DefinitionName":  "CI_SurfaceTconDriver",
+    "DefinitionVariables":  {
+
+                            },
+    "Packages":  [
+                     {
+                         "Id":  "Devices.Build.Scripts",
+                         "Version":  "1.5.8"
+                     },
+                     {
+                         "Id":  "Devices.Library.SurfaceLibrary.19H1",
+                         "Version":  "6.287.0"
+                     },
+                     {
+                         "Id":  "Devices.Tool.SignTool",
+                         "Version":  "10.0.16299.64"
+                     },
+                     {
+                         "Id":  "Devices.Tool.AutoSignConsole",
+                         "Version":  "1.5.129"
+                     },
+                     {
+                         "Id":  "Devices.Driver.BuildConfiguration",
+                         "Version":  "1.5.0"
+                     },
+                     {
+                         "Id":  "Devices.Certificate.OEMTest",
+                         "Version":  "1.0.2"
+                     }
+                 ]
+}

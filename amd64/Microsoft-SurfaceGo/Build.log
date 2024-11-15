@@ -1,0 +1,897 @@
+**********************
+PowerShell transcript start
+Start time: 20241018124849
+Username: AzureAD\DavidSegura
+RunAs User: AzureAD\DavidSegura
+Configuration Name: 
+Machine: HPFIREFLY16P (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Program Files\PowerShell\7\pwsh.dll
+Process ID: 28232
+PSVersion: 7.4.5
+PSEdition: Core
+GitCommitId: 7.4.5
+OS: Microsoft Windows 10.0.26100
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+Transcript started, output file is C:\Temp\SurfaceGo-WiFi\Build.log
+DriverPack: C:\DATA\Surface\SurfaceGoWiFi_Win10_19042_22.104.24060_WiFi_0.msi
+Removed Content:
+SurfaceGo-WiFi\SurfaceUpdate\Drivers
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\HDAudio
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\HDAudio\DolbyDAX2APOv201.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\HDAudio\hdxrt.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\HDAudio\HDXSSTM.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\HDAudio\HiFiDAX2API.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\HDAudio\RltkAPOU64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\HDAudio\RTAIODAT.DAT
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\HDAudio\RtCOM64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\HDAudio\RtkApi64U.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\HDAudio\RtkAudUService64.exe
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\HDAudio\RtkCfg64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\HDAudio\RTKVHD64.sys
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\HDAudioExtension
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\HDAudioExtension\hdxrtext.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\HDAudioExtension\RealtekExt.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\HDAudioExtension\realtekhsa.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\HDAudioExtension\RealtekHSA.inf
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\AS
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\AS\Communication DLLs
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\AS\Communication DLLs\IntelAudioDll_x64.not_dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\AS\Communication DLLs\IntelWovSetupDll_x64.not_dll
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\AS\IAS
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\AS\IAS\Cfg
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\AS\IAS\Cfg\aecs_asr_str_def_1ch_in.tf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\AS\IAS\Cfg\aecs_asr_str_def_2ch_in.tf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\AS\IAS\Cfg\aecs_asr_str_def_4ch_in.tf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\AS\IAS\Cfg\aecs_wov_str_def_1ch_in.tf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\AS\IAS\Cfg\aecs_wov_str_def_2ch_in.tf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\AS\IAS\Cfg\aecs_wov_str_def_4ch_in.tf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\AS\IAS\Cfg\DefaultConfigs.xml
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\AS\IAS\ControlModule.not_dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\AS\IAS\DetectionVerificationDrv.not_dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\AS\IAS\IntelAudioService.exe.config
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\AS\IAS\IntelAudioService.not_exe
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\AS\IAS\IntelAudioService.tlb
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\AS\IAS\IntelSSTPreprocStreamer.not_dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\AS\IAS\ModelsControllerLib.not_dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\AS\IAS\Windows.winmd
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\AS\IAS\Windows.xml
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\AS\IAS\WppLoggerDll.not_dll
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\FW
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\FW\fw.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\FW\fw_7CAD0808-AB10-CD23-EF45-12AB34CD56EF.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\FW\lib_cpath.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\FW\lib_cpath_46CB87FB-D2C9-4970-96D2-6D7E614BB605.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\FW\lib_dolby.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\FW\lib_dolby_E0E018A8-3550-4B54-A8D0-A8E05D0FCBA2.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\FW\lib_dolby_ll.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\FW\lib_dolby_ll_849F0D73-1678-4D57-8C78-61C548253993.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\FW\lib_dsm_core.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\FW\lib_dsm_core_C75061F3-F2B2-4DCC-8F9F-82ABB4131E66.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\FW\lib_dts.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\FW\lib_dts_E1284052-8664-4FE4-A353-3878F72704C3.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\FW\lib_fm.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\FW\lib_fm_B3573EFF-6441-4A75-91F7-4281EEC4597D.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\FW\lib_int_sst.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\FW\lib_int_sst_7C708106-3AFF-40FE-88BE-8C999B3F7445.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\FW\lib_int_wov.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\FW\lib_int_wov_EC774FA9-28D3-424A-90E4-69F984F1EEB7.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\FW\lib_smartamp.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\FW\lib_smartamp_2C093145-5895-4699-9DDB-6FEFDC77E85D.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\FW\lib_waves.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\FW\lib_waves_B489C2DE-0F96-42E1-8A2D-C25B5091EE49.bin
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Echo
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Echo\m
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Echo\m\de-DE
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Echo\m\de-DE\echo_de-DE_ex.amp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Echo\m\de-DE\echo_de-DE_ex.dsp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Echo\m\de-DE\echo_de-DE_ex.eth
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Echo\m\de-DE\echo_de-DE_ex.nrm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Echo\m\de-DE\echo_de-DE_ex.phm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Echo\m\de-DE\echo_de-DE_ex.th
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Echo\m\de-DE\echo_de-DE_hq.amp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Echo\m\de-DE\echo_de-DE_hq.dsp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Echo\m\de-DE\echo_de-DE_hq.nrm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Echo\m\de-DE\echo_de-DE_hq.phm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Echo\m\de-DE\echo_de-DE_hq.th
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Echo\m\en-GB
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Echo\m\en-GB\echo_en-GB_ex.amp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Echo\m\en-GB\echo_en-GB_ex.dsp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Echo\m\en-GB\echo_en-GB_ex.eth
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Echo\m\en-GB\echo_en-GB_ex.nrm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Echo\m\en-GB\echo_en-GB_ex.phm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Echo\m\en-GB\echo_en-GB_ex.th
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Echo\m\en-GB\echo_en-GB_hq.amp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Echo\m\en-GB\echo_en-GB_hq.dsp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Echo\m\en-GB\echo_en-GB_hq.nrm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Echo\m\en-GB\echo_en-GB_hq.phm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Echo\m\en-GB\echo_en-GB_hq.th
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Echo\m\en-US
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Echo\m\en-US\echo_en-US_ex.amp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Echo\m\en-US\echo_en-US_ex.dsp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Echo\m\en-US\echo_en-US_ex.eth
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Echo\m\en-US\echo_en-US_ex.nrm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Echo\m\en-US\echo_en-US_ex.phm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Echo\m\en-US\echo_en-US_ex.th
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Echo\m\en-US\echo_en-US_hq.amp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Echo\m\en-US\echo_en-US_hq.dsp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Echo\m\en-US\echo_en-US_hq.nrm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Echo\m\en-US\echo_en-US_hq.phm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Echo\m\en-US\echo_en-US_hq.th
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Echo\m\cohort_echo.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Echo\m\cohort_echo.th
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Echo\echo_constraints.conf
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\de-DE
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\de-DE\cortana_de-DE_hq.amp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\de-DE\cortana_de-DE_hq.dsp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\de-DE\cortana_de-DE_hq.nrm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\de-DE\cortana_de-DE_hq.phm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\de-DE\cortana_de-DE_hq.th
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\de-DE\cortana_de-DE_hq.uth
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\en-AU
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\en-AU\cortana_en-AU_hq.amp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\en-AU\cortana_en-AU_hq.dsp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\en-AU\cortana_en-AU_hq.nrm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\en-AU\cortana_en-AU_hq.phm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\en-AU\cortana_en-AU_hq.th
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\en-AU\cortana_en-AU_hq.uth
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\en-CA
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\en-CA\cortana_en-CA_hq.amp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\en-CA\cortana_en-CA_hq.dsp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\en-CA\cortana_en-CA_hq.nrm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\en-CA\cortana_en-CA_hq.phm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\en-CA\cortana_en-CA_hq.th
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\en-CA\cortana_en-CA_hq.uth
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\en-GB
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\en-GB\cortana_en-GB_hq.amp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\en-GB\cortana_en-GB_hq.dsp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\en-GB\cortana_en-GB_hq.nrm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\en-GB\cortana_en-GB_hq.phm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\en-GB\cortana_en-GB_hq.th
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\en-GB\cortana_en-GB_hq.uth
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\en-IN
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\en-IN\cortana_en-IN_hq.amp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\en-IN\cortana_en-IN_hq.dsp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\en-IN\cortana_en-IN_hq.nrm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\en-IN\cortana_en-IN_hq.phm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\en-IN\cortana_en-IN_hq.th
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\en-IN\cortana_en-IN_hq.uth
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\en-US
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\en-US\cortana_en-US_hq.amp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\en-US\cortana_en-US_hq.dsp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\en-US\cortana_en-US_hq.nrm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\en-US\cortana_en-US_hq.phm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\en-US\cortana_en-US_hq.th
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\en-US\cortana_en-US_hq.uth
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\es-ES
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\es-ES\cortana_es-ES_hq.amp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\es-ES\cortana_es-ES_hq.dsp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\es-ES\cortana_es-ES_hq.nrm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\es-ES\cortana_es-ES_hq.phm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\es-ES\cortana_es-ES_hq.th
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\es-ES\cortana_es-ES_hq.uth
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\es-MX
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\es-MX\cortana_es-MX_hq.amp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\es-MX\cortana_es-MX_hq.dsp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\es-MX\cortana_es-MX_hq.nrm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\es-MX\cortana_es-MX_hq.phm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\es-MX\cortana_es-MX_hq.th
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\es-MX\cortana_es-MX_hq.uth
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\fr-CA
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\fr-CA\cortana_fr-CA_hq.amp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\fr-CA\cortana_fr-CA_hq.dsp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\fr-CA\cortana_fr-CA_hq.nrm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\fr-CA\cortana_fr-CA_hq.phm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\fr-CA\cortana_fr-CA_hq.th
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\fr-CA\cortana_fr-CA_hq.uth
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\fr-FR
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\fr-FR\cortana_fr-FR_hq.amp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\fr-FR\cortana_fr-FR_hq.dsp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\fr-FR\cortana_fr-FR_hq.nrm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\fr-FR\cortana_fr-FR_hq.phm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\fr-FR\cortana_fr-FR_hq.th
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\fr-FR\cortana_fr-FR_hq.uth
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\it-IT
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\it-IT\cortana_it-IT_hq.amp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\it-IT\cortana_it-IT_hq.dsp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\it-IT\cortana_it-IT_hq.nrm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\it-IT\cortana_it-IT_hq.phm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\it-IT\cortana_it-IT_hq.th
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\it-IT\cortana_it-IT_hq.uth
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\ja-JP
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\ja-JP\cortana_ja-JP_hq.amp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\ja-JP\cortana_ja-JP_hq.dsp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\ja-JP\cortana_ja-JP_hq.nrm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\ja-JP\cortana_ja-JP_hq.phm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\ja-JP\cortana_ja-JP_hq.th
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\ja-JP\cortana_ja-JP_hq.uth
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\pt-BR
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\pt-BR\cortana_pt-BR_hq.amp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\pt-BR\cortana_pt-BR_hq.dsp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\pt-BR\cortana_pt-BR_hq.nrm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\pt-BR\cortana_pt-BR_hq.phm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\pt-BR\cortana_pt-BR_hq.th
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\pt-BR\cortana_pt-BR_hq.uth
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\zh-CN
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\zh-CN\cortana_zh-CN_hq.amp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\zh-CN\cortana_zh-CN_hq.dsp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\zh-CN\cortana_zh-CN_hq.nrm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\zh-CN\cortana_zh-CN_hq.phm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\zh-CN\cortana_zh-CN_hq.th
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\m\zh-CN\cortana_zh-CN_hq.uth
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\cortana_constraints.conf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\IntelHwKws.config
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\IntelHwKws.not_dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\IntelHwKwsImpl.not_dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\IntelWovSDK_MTUWP.not_dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\HwKws\ReleaseNotes.txt
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Service
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Service\IntelWovSDK_S.not_dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Service\MultichannelWoVCfg_S.not_dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Service\MultiChannelWoV_S.not_dll
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\sid
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\sid\ubm.bin
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Yoga
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Yoga\m
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Yoga\m\zh-CN
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Yoga\m\zh-CN\yoga_zh-CN_ex.amp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Yoga\m\zh-CN\yoga_zh-CN_ex.eth
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Yoga\m\zh-CN\yoga_zh-CN_ex.nrm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Yoga\m\zh-CN\yoga_zh-CN_ex.phm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Yoga\m\zh-CN\yoga_zh-CN_ex.th
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Yoga\m\zh-CN\yoga_zh-CN_hq.amp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Yoga\m\zh-CN\yoga_zh-CN_hq.dsp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Yoga\m\zh-CN\yoga_zh-CN_hq.nrm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Yoga\m\zh-CN\yoga_zh-CN_hq.phm
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Yoga\m\zh-CN\yoga_zh-CN_hq.th
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\WoVartifacts\Yoga\yoga_constraints.conf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\detectionverificationdrv.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\DetectionVerificationDrv.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\DetectionVerificationDrv.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\intcaudiobus.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\IntcAudioBus.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\IntcAudioBus.sys
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\intcoed.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\IntcOED.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\IntcOED.sys
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\IntelSSTPreprocStreamer.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\IntelWovSDK.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\MultiChannelWoV.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Audio\SmartSoundBus\MultichannelWovCfg.dll
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\csi2hostcontrollerdriver
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\csi2hostcontrollerdriver\csi2hostcontrollerdriver.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\csi2hostcontrollerdriver\CSI2HostControllerDriver.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\csi2hostcontrollerdriver\CSI2HostControllerDriver.sys
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\iacamera64
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\iacamera64\cilkrts20_64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\iacamera64\css_fw.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\iacamera64\defaultCpff.aiqb
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\iacamera64\iacamera64.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\iacamera64\iacamera64.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\iacamera64\iacamera64.sys
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\iacamera64\IntelCameraPlugin64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\iacamera64\libia_cp64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\iacamera64\mute.bmp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\iacamera64\pvl64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\iacamera64\pvl_perspective_control64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\iacamera64\pvl_skin_smoothing_denoising64.dll
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\iactrllogic64
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\iactrllogic64\iactrllogic64.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\iactrllogic64\iactrllogic64.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\iactrllogic64\iactrllogic64.sys
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\iaisp64
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\iaisp64\iaisp64.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\iaisp64\iaisp64.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\iaisp64\iaisp64.sys
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV5693
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV5693\ov5693.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV5693\ov5693.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV5693\ov5693.sys
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV5693\OV5693_13P2BA540_SKY.cpf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV5693\OV5693_13P2BA540_SKY_pipeCfg.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV5693\OV5693_5BA505T2_SKY.cpf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV5693\OV5693_5BA505T2_SKY_pipeCfg.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV5693\OV5693_AM-5C012_SKY.cpf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV5693\OV5693_AM-5C012_SKY_pipeCfg.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV5693\OV5693_CJAF513_SKY.cpf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV5693\OV5693_CJAF513_SKY_pipeCfg.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV5693\OV5693_MSHW0070_SKY.cpf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV5693\OV5693_MSHW0070_SKY_pipeCfg.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV5693\OV5693_MSHW0120_SKY.cpf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV5693\OV5693_MSHW0120_SKY_pipeCfg.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV5693\OV5693_MSHW0140_SKY.CPF
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV5693\OV5693_MSHW0140_SKY_pipeCfg.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV5693\OV5693_MSHW0150_SKY.cpf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV5693\OV5693_MSHW0150_SKY_pipeCfg.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV5693\OV5693_YHCU_SKY.cpf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV5693\OV5693_YHCU_SKY_pipeCfg.bin
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV7251
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV7251\ov7251.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV7251\ov7251.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV7251\ov7251.sys
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV7251\OV7251_6SF002T2_SKY.CPF
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV7251\OV7251_6SF002T2_SKY_pipeCfg.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV7251\OV7251_MSHW0072_SKY.cpf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV7251\OV7251_MSHW0072_SKY_pipeCfg.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV7251\OV7251_MSHW0074_SKY.cpf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV7251\OV7251_MSHW0074_SKY_pipeCfg.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV7251\OV7251_MSHW0122_SKY.cpf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV7251\OV7251_MSHW0122_SKY_pipeCfg.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV7251\OV7251_MSHW0142_SKY.cpf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV7251\OV7251_MSHW0142_SKY_pipeCfg.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV7251\OV7251_MSHW0152_SKY.cpf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV7251\OV7251_MSHW0152_SKY_pipeCfg.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV7251\OV7251_YHCV_SKY.cpf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV7251\OV7251_YHCV_SKY_pipeCfg.bin
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV8865
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV8865\ov8865.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV8865\ov8865.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV8865\ov8865.sys
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV8865\OV8865_MSHW0071_SKY.cpf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV8865\OV8865_MSHW0071_SKY_pipeCfg.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV8865\OV8865_MSHW0121_SKY.cpf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV8865\OV8865_MSHW0121_SKY_pipeCfg.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV8865\OV8865_MSHW0141_SKY.cpf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV8865\OV8865_MSHW0141_SKY_pipeCfg.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV8865\OV8865_MSHW0151_SKY.cpf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV8865\OV8865_MSHW0151_SKY_pipeCfg.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV8865\OV8865_MYCLAA4T_SKY.cpf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV8865\OV8865_MYCLAA4T_SKY_pipeCfg.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV8865\OV8865_YHCT_SKY.cpf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Camera\OV8865\OV8865_YHCT_SKY_pipeCfg.bin
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\DisplayAudio
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\DisplayAudio\10.26
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\DisplayAudio\10.26\IntcDAud.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\DisplayAudio\10.26\IntcDAud.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\DisplayAudio\10.26\IntcDAud.sys
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\DisplayAudio\10.27
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\DisplayAudio\10.27\IntcDAud.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\DisplayAudio\10.27\IntcDAud.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\DisplayAudio\10.27\IntcDAud.sys
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\DisplayAudio\11.1
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\DisplayAudio\11.1\IntcDAud.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\DisplayAudio\11.1\IntcDAud.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\DisplayAudio\11.1\IntcDAud.sys
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\DisplayAudio\11.2
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\DisplayAudio\11.2\IntcDAud.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\DisplayAudio\11.2\IntcDAud.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\DisplayAudio\11.2\IntcDAud.sys
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\ColorImageEnhancement.wmv
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\cpa_32.vp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\cpa_64.vp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\cp_resources.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\cui_dch.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\c_32.cpa
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\c_64.cpa
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\dev_32.vp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\dev_64.vp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\extinf.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\FilmModeDetection.wmv
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\GfxDownloadWrapper.exe
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\h265e_32.vp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\h265e_64.vp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\HdBusExt.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\HdBusExt.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\he_32.vp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\he_64.vp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\ig11icd32.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\ig11icd64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\ig9icd32.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\ig9icd64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\iga32.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\iga64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igc32.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igc64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igcc_dch.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igd10iumd32.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igd10iumd64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igd11dxva32.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igd11dxva64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igd12dxva32.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igd12dxva64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igd12umd32.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igd12umd64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igd9dxva32.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igd9dxva64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igdail32.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igdail64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igdde32.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igdde64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igdext32.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igdext64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igdfcl32.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igdfcl64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igdgmm32.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igdgmm64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igdinfo32.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igdinfo64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igdkmd64.sys
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igdkmdn64.sys
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igdlh.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igdmd32.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igdmd64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igdml32.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igdml64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igdrcl32.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igdrcl64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igdumdim32.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igdumdim64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igfx11cmrt32.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igfx11cmrt64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igfxcmrt32.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igfxcmrt64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igfxCUIService.exe
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igfxCUIServiceN.exe
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igfxCUIServicePS.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igfxCUIServicePSN.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igfxDH.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igfxDHN.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igfxDI.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igfxDIN.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igfxEM.exe
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igfxEMN.exe
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igfxexps.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igfxexps32.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igfxext.exe
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igfxextN.exe
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igfxLHM.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igfxSDK.exe
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igfxSDKLib.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\iglhxa64.cpa
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\iglhxa64.vp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\iglhxc64.vp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\iglhxc64_dev.vp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\iglhxg64.vp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\iglhxg64_dev.vp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\iglhxo64.vp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\iglhxo64_dev.vp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\iglhxs64.vp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\iglhxsn64.vp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igvk32.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igvk32.json
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igvk64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\igvk64.json
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\iigd_dch.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\iigd_ext_at.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\iigd_ext_Av.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\iigd_ext_Cz.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\iigd_ext_Fb.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\iigd_ext_Hv.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\iigd_ext_JaZ.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\iigd_ext_Lb.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\ImageStabilization.wmv
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\IntelCpHDCPSvc.exe
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\IntelCpHeciSvc.exe
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\IntelGpuCompiler32.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\IntelGpuCompiler64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\intel_gfx_api-x64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\intel_gfx_api-x86.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\Intel_OpenCL_ICD32.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\Intel_OpenCL_ICD64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\libmfxhw32.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\libmfxhw64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\LiteDB.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\mfxplugin32_hw.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\mfxplugin64_hw.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\mfx_loader_dll_hw32.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\mfx_loader_dll_hw64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\mfx_mft_encrypt_32.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\mfx_mft_encrypt_64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\mfx_mft_h264ve_32.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\mfx_mft_h264ve_64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\mfx_mft_h265ve_32.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\mfx_mft_h265ve_64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\mfx_mft_mjpgvd_32.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\mfx_mft_mjpgvd_64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\mfx_mft_vp9ve_32.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\mfx_mft_vp9ve_64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\mj_32.vp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\mj_64.vp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\Newtonsoft.Json.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\NLog.config
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\NLog.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\OneApp.IGCC.COMLibrary.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\OneApp.IGCC.CommunicationService.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\OneApp.IGCC.CoreLibrary.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\OneApp.IGCC.SDKCommandLine.exe
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\OneApp.IGCC.SDKCommandLine.exe.config
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\OneApp.IGCC.WinService.exe
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\OneApp.IGCC.WinService.exe.config
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\opencl-clang32.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\opencl-clang64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\OSSCOPYRIGHT
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\SPIRVDLL.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\SPIRVDLL32.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\UniversalAdapter32.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\UniversalAdapter64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\vp9e_32.vp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\vp9e_64.vp
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\vulkan-1-32.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\vulkan-1-64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\vulkaninfo-32.exe
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\vulkaninfo-64.exe
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\VulkanRT-EULA.txt
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\ze_intel_gpu64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\ze_loader.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Graphics64\ze_validation_layer.dll
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\PanelCalibration
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\PanelCalibration\qiomem.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\PanelCalibration\QIOMEM.INF
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\PanelCalibration\QIOMem.sys
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\PanelCalibration\Surface.Power.Policy.Defaults.ppkg
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\PanelCalibration\WirelessPowerBackoffService.exe
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\PanelCalibration\wpcsc64.exe
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\PanelCalibration\wpcsc64Service.exe
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Surface1824DigitizerIntegration
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Surface1824DigitizerIntegration\surface1824digitizerintegration.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Surface1824DigitizerIntegration\Surface1824DigitizerIntegration.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\Surface1824DigitizerIntegration\Surface1824DigitizerIntegration.sys
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\SurfaceDisplay
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\SurfaceDisplay\surfacedisplay.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Display\SurfaceDisplay\SurfaceDisplay.inf
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\Bluetooth
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\Bluetooth\AdminService.exe
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\Bluetooth\atheros_bth.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\Bluetooth\AthrBT_0x00000200.dfu
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\Bluetooth\AthrBT_0x00000300.dfu
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\Bluetooth\AthrBT_0x00000302.dfu
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\Bluetooth\AthrBT_TF_0x00000302.dfu
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\Bluetooth\btfilter.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\Bluetooth\btfilter.sys
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\Bluetooth\ramps_0x00000200_48.dfu
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\Bluetooth\ramps_0x00000200_48_NFA354.dfu
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\Bluetooth\ramps_0x00000300_48.dfu
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\Bluetooth\ramps_0x00000300_48_NFA435_10db.dfu
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\Bluetooth\ramps_0x00000302_48.dfu
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\Bluetooth\ramps_0x00000302_48_NFA354A_10db.dfu
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\Bluetooth\ramps_0x00000302_48_tx8.dfu
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\Bluetooth\ramps_TF_0x00000302_48.dfu
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\Bluetooth\ramps_TF_0x00000302_48_NFA435_10dbm.dfu
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\Data61x4_2_2.msc
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\Data9377_2_0.msc
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_2p1_NFA324i_5.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_2p1_NFA344i.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_2p1_NFA344i_highTX.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_2p1_NFA345i.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_2p1_NFA345i_highTX.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_2p1_NFA354xp.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_2p1_NFA354xp_SS_EU.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_2p1_NFA355i.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_NFA324i_1.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_NFA324i_5.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_NFA324i_5_B.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_NFA324i_5_RV_0520.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_NFA324i_5_RV_0521.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_NFA324i_5_RV_0522.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_NFA324i_5_SS_N.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_NFA324i_5_SS_S.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_NFA324i_5_SS_T.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_NFA324i_5_SS_V.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_NFA344a.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_NFA344a_AC_BRN.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_NFA344a_BLP.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_NFA344a_highTX.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_NFA344a_highTX_LE_1.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_NFA344a_highTX_LE_2.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_NFA344a_highTX_LE_3.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_NFA344a_highTX_LE_4.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_NFA344a_highTX_LE_5.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_NFA344a_highTX_LE_6.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_NFA344a_highTX_LE_7.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_NFA344a_highTX_LE_8.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_NFA344a_highTX_LE_9.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_NFA344A_power1213.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_NFA344A_power1213_DE_0410.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_NFA344A_power1213_DE_5459.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_NFA344A_power1213_RV_0519.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_NFA344a_VA_1.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_NFA354xp.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_NFA364xp.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_NFA364xp_LE_1.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_NFA364xp_LE_2.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_NFA364xp_power1213.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_NFA364xp_powerA.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_NFA364xp_RV_0519.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_NFA364xp_RV_0520.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_QCA9008.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_SS_620.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_SS_620_K.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_SS_700.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_SS_700_K.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_SS_720.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_SS_720_K.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_TX8_clpc.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_ar6320_3p0_TX8_lte_clpc.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_qca9377_1p0_NFA425_olpc.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_qca9377_1p0_NFA435_olpc.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_qca9377_1p0_NFA435_olpc_A.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_qca9377_1p0_NFA435_olpc_LE_1.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_qca9377_1p0_NFA435_olpc_LE_2.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_qca9377_1p0_NFA455_olpc.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_qca9377_1p1_NFA425_olpc.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_qca9377_1p1_NFA425_olpc_A.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_qca9377_1p1_NFA425_olpc_A_BC_CBXA0.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_qca9377_1p1_NFA425_olpc_A_low.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_qca9377_1p1_NFA425_olpc_A_low2.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_qca9377_1p1_NFA425_olpc_A_T103HAF.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_qca9377_1p1_NFA425_olpc_A_TP203NA.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_qca9377_1p1_NFA425_olpc_A_TP203NAH.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_qca9377_1p1_nfa425_olpc_L.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_qca9377_1p1_nfa425_olpc_L_LE_1.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_qca9377_1p1_nfa425_olpc_SS_N.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_qca9377_1p1_nfa425_olpc_SS_S.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_qca9377_1p1_nfa425_olpc_SS_T.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_qca9377_1p1_nfa425_olpc_SS_V.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_qca9377_1p1_NFA435_olpc.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_qca9377_1p1_NFA435_olpc_A.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_qca9377_1p1_NFA435_olpc_A_TP401NA.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_qca9377_1p1_NFA435_olpc_LE_1.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_qca9377_1p1_NFA435_olpc_LE_10.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_qca9377_1p1_NFA435_olpc_LE_11.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_qca9377_1p1_NFA435_olpc_LE_12.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_qca9377_1p1_NFA435_olpc_LE_13.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_qca9377_1p1_NFA435_olpc_LE_14.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_qca9377_1p1_NFA435_olpc_LE_15.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_qca9377_1p1_NFA435_olpc_LE_2.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_qca9377_1p1_NFA435_olpc_LE_3.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_qca9377_1p1_NFA435_olpc_LE_4.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_qca9377_1p1_NFA435_olpc_LE_5.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_qca9377_1p1_NFA435_olpc_LE_6.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_qca9377_1p1_NFA435_olpc_LE_7.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_qca9377_1p1_NFA435_olpc_LE_8.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\eeprom_qca9377_1p1_NFA435_olpc_LE_9.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\LE_CTL_ar6320_3p0_NFA344a_highTX_A.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\LE_CTL_ar6320_3p0_NFA344a_highTX_B.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\LE_CTL_ar6320_3p0_NFA344a_highTX_C.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\LE_CTL_ar6320_3p0_NFA344a_highTX_D.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\LE_CTL_ar6320_3p0_NFA344a_highTX_E.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\LE_CTL_ar6320_3p0_NFA344a_highTX_F.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\LE_CTL_ar6320_3p0_NFA344a_highTX_G.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\LE_CTL_ar6320_3p0_NFA344a_highTX_H.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\LE_CTL_ar6320_3p0_NFA344a_highTX_I.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\LE_CTL_ar6320_3p0_NFA344a_highTX_J.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\LE_CTL_ar6320_3p0_NFA344a_highTX_K.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\LE_CTL_ar6320_3p0_NFA344a_highTX_L.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\LE_CTL_ar6320_3p0_NFA344a_highTX_M.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\netathr10x.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\qca61x4_1_1_2.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\qca61x4_2_2.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\qca9377_2_0.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\Qcamain10x64.sys
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\qcamainext10x.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Network\WiFi\QcomWlanSrvx64.exe
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Pen
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Pen\SurfacePenFwUpdate
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Pen\SurfacePenFwUpdate\SurfacePen217FwUpdate.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Pen\SurfacePenFwUpdate\SurfacePen217FwUpdate.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Pen\SurfacePenFwUpdate\SurfacePen217FwUpdate.inf
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Pen\SurfacePenIntegration
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Pen\SurfacePenIntegration\surfacepen217integration.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Pen\SurfacePenIntegration\SurfacePen217Integration.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Pen\SurfacePenIntegration\SurfacePen217Integration.sys
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Pen\SurfacePenPairing
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Pen\SurfacePenPairing\surfacepenpairing.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Pen\SurfacePenPairing\SurfacePenPairing.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Pen\SurfacePenPairing\SurfacePenPairing.inf
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\Pen\SurfacePenSettingsDriver
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Pen\SurfacePenSettingsDriver\surfacependriver.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Pen\SurfacePenSettingsDriver\SurfacePenDriver.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Pen\SurfacePenSettingsDriver\SurfacePenDriver.sys
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\Pen\SurfacePenSettingsDriver\WdfCoinstaller01011.dll
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\System
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Battery
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Battery\ACPIBattery
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Battery\ACPIBattery\surfaceacpibattery.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Battery\ACPIBattery\SurfaceACPIBattery.inf
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Battery\TelemetryDriver
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Battery\TelemetryDriver\surfacesystemtelemetrydriver.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Battery\TelemetryDriver\SurfaceSystemTelemetryDriver.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Battery\TelemetryDriver\SurfaceSystemTelemetryDriver.sys
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\CardReader
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\CardReader\RsCRIcon.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\CardReader\RtsPer.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\CardReader\RtsPer.sys
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\CardReader\rtsper64.cat
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Chipset_Kabylake
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Chipset_Kabylake\Intel.Chipset.Chipset.Driver.cab
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Chipset_Kabylake\kabylake.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Chipset_Kabylake\KabylakeSystem.inf
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Chipset_LP
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Chipset_LP\Intel.SPT.Chipset.Driver.cab
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Chipset_LP\sunrisepoint-lp.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Chipset_LP\SunrisePoint-LPSystem.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Chipset_LP\SunrisePoint-LPSystemThermal.inf
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\DPTF
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\DPTF\Dptf.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\DPTF\DptfPolicyAct.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\DPTF\DptfPolicyActive.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\DPTF\DptfPolicyActive2.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\DPTF\DptfPolicyAdaptivePerformance.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\DPTF\DptfPolicyConfigTdp.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\DPTF\DptfPolicyCritical.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\DPTF\DptfPolicyEmergencyCallMode.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\DPTF\DptfPolicyPassive.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\DPTF\DptfPolicyPassive2.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\DPTF\DptfPolicyPid.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\DPTF\DptfPolicyPowerBoss.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\DPTF\DptfPolicyVirtualSensor.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\DPTF\dptf_acpi.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\DPTF\dptf_acpi.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\DPTF\dptf_acpi.sys
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\DPTF\dptf_cpu.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\DPTF\dptf_cpu.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\DPTF\dptf_cpu.sys
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\DPTF\dptf_helper.exe
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\DPTF\dsp.dv
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\DPTF\esif_lf.sys
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\DPTF\esif_manager.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\DPTF\esif_manager.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\DPTF\esif_uf.exe
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\DPTF\esif_umdf2.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\DPTF\msvcp140.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\DPTF\upe_nvme.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\DPTF\upe_wifi.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\DPTF\upe_wwan.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\DPTF\vcruntime140.dll
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\HIDFilter
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\HIDFilter\Drivers
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\HIDFilter\Drivers\x64
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\HIDFilter\Drivers\x64\HidEventFilter.sys
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\HIDFilter\HidEventFilter.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\HIDFilter\HidEventFilter.inf
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ISH_BusDriver
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ISH_BusDriver\ISH_BusDriver.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ISH_BusDriver\ISH_BusDriver.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ISH_BusDriver\ISH_BusDriver.sys
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ISH_HECI
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ISH_HECI\ISH.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ISH_HECI\ISH.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ISH_HECI\ISH.sys
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ISH_HID_PCI
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ISH_HID_PCI\HID_PCI.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ISH_HID_PCI\HID_PCI.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ISH_HID_PCI\HID_PCI.sys
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine\x64
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine\x64\TEEDriverW10x64.sys
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine\x86
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine\x86\TEEDriverW10.sys
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine\heci.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine\heci.inf
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_Extension
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_Extension\OemExtension.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_Extension\OemExtension.inf
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\conf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\conf\cacert.pem
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\conf\epid2_paramcert.dat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\conf\EPIDGroupCertLegacy.cer
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\conf\EPIDGroupCertX509.cer
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\conf\epid_paramcert.dat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\conf\iclsProxy.conf
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\Documents
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\Documents\development_tools.txt
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\Documents\License.txt
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\Documents\Readme.txt
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\Documents\redist.txt
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\Documents\Third Party Licenses.txt
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\lib
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\lib\concrt140.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\lib\iclsClient.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\lib\iclsClientInternal.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\lib\iclsProxy.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\lib\iclsProxyInternal.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\lib\IntelPTTEKRecertification.exe
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\lib\libcrypto-1_1-x64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\lib\libssl-1_1-x64.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\lib\msvcp140.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\lib\SocketHeciServer.exe
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\lib\TPMProvisioningService.exe
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\lib\vcruntime140.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\lib\vcruntime140_1.dll
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\lib32
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\lib32\concrt140.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\lib32\iclsClient.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\lib32\iclsClientInternal.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\lib32\iclsProxy.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\lib32\iclsProxyInternal.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\lib32\IntelPTTEKRecertification.exe
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\lib32\libcrypto-1_1.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\lib32\libssl-1_1.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\lib32\msvcp140.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\lib32\SocketHeciServer.exe
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\lib32\TPMProvisioningService.exe
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\lib32\vcruntime140.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\iclsclient.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\ManagementEngine_ICLS\iclsClient.inf
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\NFC
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\NFC\nxpnfcclientdriver.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\NFC\NxpNfcClientDriver.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\NFC\NxpNfcClientDriver.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\NFC\NxpNfcClientDriver.pdb
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\NFC\NXPPN547FW.DAT
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\NFC\NXPPN548FW.DAT
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Serial_IO
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Serial_IO\iaLPSS2_GPIO2.sys
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Serial_IO\ialpss2_gpio2_skl.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Serial_IO\iaLPSS2_GPIO2_SKL.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Serial_IO\iaLPSS2_I2C.sys
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Serial_IO\ialpss2_i2c_skl.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Serial_IO\iaLPSS2_I2C_SKL.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Serial_IO\iaLPSS2_UART2.sys
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Serial_IO\ialpss2_uart2_skl.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Serial_IO\iaLPSS2_UART2_SKL.inf
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Surface Dock 2 Firmware Update v.5.5.0.0
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Surface Dock 2 Firmware Update v.5.5.0.0\surfacedock2fwupdate.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Surface Dock 2 Firmware Update v.5.5.0.0\SurfaceDock2FwUpdate.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Surface Dock 2 Firmware Update v.5.5.0.0\SurfaceDock2_AMC_APP1.offer.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Surface Dock 2 Firmware Update v.5.5.0.0\SurfaceDock2_AMC_APP1.payload.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Surface Dock 2 Firmware Update v.5.5.0.0\SurfaceDock2_AMC_APP2.offer.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Surface Dock 2 Firmware Update v.5.5.0.0\SurfaceDock2_AMC_APP2.payload.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Surface Dock 2 Firmware Update v.5.5.0.0\SurfaceDock2_AUDIO_BANK0.offer.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Surface Dock 2 Firmware Update v.5.5.0.0\SurfaceDock2_AUDIO_BANK0.payload.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Surface Dock 2 Firmware Update v.5.5.0.0\SurfaceDock2_DP_BANK0.offer.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Surface Dock 2 Firmware Update v.5.5.0.0\SurfaceDock2_DP_BANK0.payload.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Surface Dock 2 Firmware Update v.5.5.0.0\SurfaceDock2_DP_BANK1.offer.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Surface Dock 2 Firmware Update v.5.5.0.0\SurfaceDock2_DP_BANK1.payload.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Surface Dock 2 Firmware Update v.5.5.0.0\SurfaceDock2_PD_BANK0.offer.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Surface Dock 2 Firmware Update v.5.5.0.0\SurfaceDock2_PD_BANK0.payload.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Surface Dock 2 Firmware Update v.5.5.0.0\SurfaceDock2_PD_BANK1.offer.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Surface Dock 2 Firmware Update v.5.5.0.0\SurfaceDock2_PD_BANK1.payload.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Surface Dock 2 Firmware Update v.5.5.0.0\SurfaceDock2_USBHUB_DS_BANK0.offer.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Surface Dock 2 Firmware Update v.5.5.0.0\SurfaceDock2_USBHUB_DS_BANK0.payload.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Surface Dock 2 Firmware Update v.5.5.0.0\SurfaceDock2_USBHUB_US_BANK0.offer.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\Surface Dock 2 Firmware Update v.5.5.0.0\SurfaceDock2_USBHUB_US_BANK0.payload.bin
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\SurfaceCFUOverHID_v2.49.139.0
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\SurfaceCFUOverHID_v2.49.139.0\surfacecfuoverhid.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\SurfaceCFUOverHID_v2.49.139.0\SurfaceCFUOverHid.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\SurfaceCFUOverHID_v2.49.139.0\SurfaceCFUOverHid.inf
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\SurfaceCIF
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\SurfaceCIF\msvcp140.dll
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\SurfaceCIF\surfacecif.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\SurfaceCIF\SurfaceCIF.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\SurfaceCIF\vcruntime140.dll
+SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\SurfaceNVMExpressController
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\SurfaceNVMExpressController\surfacenvmexpresscontroller.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Drivers\System\SurfaceNVMExpressController\SurfaceNVMExpressController.inf
+SurfaceGo-WiFi\SurfaceUpdate\Firmware
+SurfaceGo-WiFi\SurfaceUpdate\Firmware\ISH
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Firmware\ISH\catalog.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Firmware\ISH\SurfaceISH_3_1_0_3524.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Firmware\ISH\SurfaceISH_3_1_0_3524.inf
+SurfaceGo-WiFi\SurfaceUpdate\Firmware\ME
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Firmware\ME\catalog.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Firmware\ME\SurfaceME.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Firmware\ME\SurfaceME_4222.bin
+SurfaceGo-WiFi\SurfaceUpdate\Firmware\PD
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Firmware\PD\RTKCAPSULE.Cap
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Firmware\PD\rtkfwcapsule.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Firmware\PD\RtkFWCapsule.inf
+SurfaceGo-WiFi\SurfaceUpdate\Firmware\TOUCH
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Firmware\TOUCH\elants.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Firmware\TOUCH\ElanTs.inf
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Firmware\TOUCH\MSLCM1.bin
+SurfaceGo-WiFi\SurfaceUpdate\Firmware\UEFI
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Firmware\UEFI\catalog.cat
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Firmware\UEFI\SurfaceUefi1038.bin
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo-WiFi\SurfaceUpdate\Firmware\UEFI\SurfaceUefi1038.inf
+
+Current Folders:
+**********************
+PowerShell transcript end
+End time: 20241018124926
+**********************

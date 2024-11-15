@@ -1,0 +1,72 @@
+;;------------------------------------------------------------------------------
+;; File:          SurfaceButton.inf
+;;
+;; Description:   Driver Installation file for Surface Buttons
+;;
+;; Copyright (C) 2014 Microsoft Corporation.  All Rights Reserved.
+;;------------------------------------------------------------------------------
+;;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=System
+ClassGuid={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%ManufacturerName%
+CatalogFile=SurfaceButton.cat
+DriverVer=06/09/2016,1.1.662.0
+PnpLockdown=1 
+
+[DestinationDirs]
+DefaultDestDir = 12
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+SurfaceButton.sys  = 1,,
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTamd64
+
+[Standard.NTamd64]
+%SurfaceButton.DeviceDesc%=SurfaceButton_Device, ACPI\MSHW0028
+%SurfaceButton.DeviceDesc%=SurfaceButton_Device, ACPI\MSHW0040
+
+[SurfaceButton_Device.NT]
+CopyFiles=Drivers_Dir
+AddProperty=HomeButtonNotPresent_Property
+
+[Drivers_Dir]
+SurfaceButton.sys
+
+[SurfaceButton_Device.NT.HW]
+AddReg=SetSecurityRegkey,SetTouchLockRegkey
+
+[SetSecurityRegkey]
+HKR,,Security,,"D:P(A;;GA;;;BA)(A;;GA;;;SY)"
+
+[SetTouchLockRegkey]
+HKLM,SOFTWARE\Microsoft\Surface\Experience,TouchLockEnabled,0x00010003,0
+
+[HomeButtonNotPresent_Property]
+{57ED7A5D-BA63-46B7-A572-E82F709FEF41},2,18,,"HomeButtonNotPresent"
+
+[SurfaceButton_Device.NT.Services]
+AddService = SurfaceButton,%SPSVCINST_ASSOCSERVICE%, SurfaceButton_Service_Inst
+
+[SurfaceButton_Service_Inst]
+DisplayName    = %SurfaceButton.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\SurfaceButton.sys
+
+[Strings]
+SPSVCINST_ASSOCSERVICE      = 0x00000002
+ManufacturerName            = "Microsoft"
+DiskName                    = "Surface Button Installation Disk"
+SurfaceButton.DeviceDesc    = "Surface Button"
+SurfaceButton.SVCDESC       = "Surface Button Service"
+
+;; eof: SurfaceButton.inx
+;;

@@ -1,0 +1,62 @@
+;*******************************************
+; AMDPPMPF.inf
+; For AMD PPM (Processor Power Management) Provisioning File Driver
+; Copyright © 2023 Advanced Micro Devices, Inc. All rights reserved.
+;*******************************************
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=System 
+ClassGuid={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%AMD%
+DriverVer=07/28/2023, 8.0.0.23
+CatalogFile=amdppmpf.cat
+PnPLockDown=1
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[Manufacturer]
+%AMD_MFG% = InstallSection, NTX86, NTamd64
+
+[DestinationDirs]
+DefaultDestDir = 12
+ProvisioningPackage_CopyFiles = 10,Provisioning\Packages ; %WinDir%\Provisioning\Packages
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+AMD.Power.Processor.ppkg  = 1,,
+AMD.Power.NVMe.ppkg  = 1,,
+
+[InstallSection.NTX86]
+%AMDPPMPF.DeviceDesc%=AMDPPMPF_DEV,ACPI\AMDI0052
+
+[InstallSection.NTamd64]
+%AMDPPMPF.DeviceDesc%=AMDPPMPF_DEV,ACPI\AMDI0052
+
+;[AMDPPMPF_DEV]
+
+[ProvisioningPackage_CopyFiles]
+AMD.Power.Processor.ppkg
+AMD.Power.NVMe.ppkg
+
+[AMDPPMPF_DEV.NT]
+CopyFiles=ProvisioningPackage_CopyFiles
+
+
+[AMDPPMPF_DEV.NT.Services]
+AddService = , %SPSVCINST_ASSOCSERVICE%		; null service install
+
+[Strings]
+AMD = "Advanced Micro Devices, Inc."
+AMD_MFG = "Advanced Micro Devices, Inc."
+AMDPPMPF.DeviceDesc = "AMD PPM Provisioning File"
+
+
+;*******************************************
+;Handy macro substitutions (non-localizable)
+;*******************************************
+SPSVCINST_ASSOCSERVICE = 0x00000002
+DiskName = "PPMPF Installation Disk"

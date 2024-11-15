@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Realtek.Shared.Driver.msu56cx22x64sta.CO.WHQL</id>
+    <version>1156.9.20.823</version>
+    <authors>v-chsun2</authors>
+    <owners>v-chsun2</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Realtek.Shared.Driver.msu56cx22x64sta.CO.WHQL package</description>
+    <copyright>Copyright 2022 Microsoft. All rights reserved.</copyright>
+    <tags>metapackage</tags>
+  </metadata>
+</package>

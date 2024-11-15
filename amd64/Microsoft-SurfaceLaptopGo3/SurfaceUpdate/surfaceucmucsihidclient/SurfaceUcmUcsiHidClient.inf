@@ -1,0 +1,65 @@
+;
+; Copyright (c) Microsoft Corporation. All rights reserved.
+;
+; INF Name:
+;
+;     SurfaceUcmUcsiHidClient.inx
+;
+; Abstract:
+;
+;     INF for installing the UCM-UCSI HID client driver.
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class = UCM
+ClassGuid = {e6f1aa1c-7f3b-4473-b2e8-c97d8ac71d53}
+Provider=%ManufacturerName%
+CatalogFile=SurfaceUcmUcsiHidClient.cat
+DriverVer = 11/18/2022,2.52.139.0
+PnpLockdown = 1
+
+[DestinationDirs]
+DefaultDestDir = 13
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+SurfaceUcmUcsiHidClient.sys  = 1,,
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTamd64
+
+[Standard.NTamd64]
+%SurfaceUcmUcsiHidClient.DeviceDesc%=SurfaceUcmUcsiHidClient_Device, HID\VID_045E&UP:FF00_U:F900 ; Any UCSI PPM HID
+
+[SurfaceUcmUcsiHidClient_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+SurfaceUcmUcsiHidClient.sys
+
+;-------------- Service installation
+[SurfaceUcmUcsiHidClient_Device.NT.Services]
+AddService = SurfaceUcmUcsiHidClient,%SPSVCINST_ASSOCSERVICE%, SurfaceUcmUcsiHidClient_Service_Inst
+
+; -------------- SurfaceUcmUcsiHidClient driver install sections
+[SurfaceUcmUcsiHidClient_Service_Inst]
+DisplayName    = %SurfaceUcmUcsiHidClient.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %13%\SurfaceUcmUcsiHidClient.sys
+Dependencies   = UcmUcsiCx
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="Surface"
+DiskName = "Surface UCM UCSI HID Client Installation Disk"
+SurfaceUcmUcsiHidClient.DeviceDesc = "Surface UCM UCSI HID Client"
+SurfaceUcmUcsiHidClient.SVCDESC = "Surface UCM UCSI HID Client Service"

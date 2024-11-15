@@ -1,0 +1,90 @@
+;
+; SurfaceIntegrationDriver.inf
+;
+; Copyright (C) Microsoft Corporation.  All Rights Reserved.
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=System
+ClassGuid={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%ManufacturerName%
+CatalogFile=SurfaceIntegrationDriver.cat
+DriverVer = 07/01/2024,108.11.14.0
+PnpLockdown=1
+
+[DestinationDirs]
+DefaultDestDir                = 13                            ; DriverStore
+ProvisioningPackage_CopyFiles = 10,Provisioning\Packages      ; %WinDir%\Provisioning\Packages
+
+; ================= Class section =====================
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+Surface.Power.Policy.Defaults.ppkg  = 1,,
+SurfaceIntegrationDriver.sys        = 1,,
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTARM64.10.0...19041
+
+[Standard.NTARM64.10.0...19041]
+%SurfaceIntegrationDriver.DeviceDesc%=SurfaceIntegrationDriver_Device, ACPI\MSHW0465 
+
+[SurfaceIntegrationDriver_Device.NT]
+CopyFiles=DefaultDestDir,ProvisioningPackage_CopyFiles
+AddReg = SurfaceIntegrationDriver_Device_AddReg
+AddReg = SurfaceIntegrationDriver_PriorityControl_AddReg
+
+[DefaultDestDir]
+SurfaceIntegrationDriver.sys
+
+[ProvisioningPackage_CopyFiles]
+Surface.Power.Policy.Defaults.ppkg
+
+[SurfaceIntegrationDriver_Device.NT.HW]
+
+[SurfaceIntegrationDriver_PriorityControl_AddReg]
+HKLM,SYSTEM\CurrentControlSet\Control\PriorityControl,"ConvertibilityEnabled",%REG_DWORD%,0x0 ;Device is not convertible
+
+[SurfaceIntegrationDriver_Device_AddReg]
+HKLM,SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity,"Locked",%REG_DWORD%,0x1 ;Lock HVCI enablement
+
+; Adaptive display brightness settings
+HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\AdaptiveDisplayBrightness\{23B44AF2-78CE-4943-81DF-89817E8D23FD},"AutobrightnessLuxToNitsCurve", %REG_SZ%, "0:12,4:12,5:35,10:50,20:70,40:100,100:150,400:170,700:200,2000:400,3000:500,4500:700"
+HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\AdaptiveDisplayBrightness\{23B44AF2-78CE-4943-81DF-89817E8D23FD},"ShouldStopTransitionDuringHandsOnDisplay", %REG_DWORD%, 1
+
+; Hiberboot
+HKLM,SYSTEM\CurrentControlSet\Control\Session Manager\Power,"HiberbootEnabled",  %REG_DWORD%, 0x00000000
+
+;-------------- Service installation
+[SurfaceIntegrationDriver_Device.NT.Services]
+;
+; %SPSVCINST_ASSOCSERVICE% should only be specified if this is a function driver.
+;
+AddService = SurfaceIntegrationDriver,%SPSVCINST_ASSOCSERVICE%, SurfaceIntegrationDriver_Service_Inst
+
+; -------------- SurfaceIntegrationDriver driver install sections
+[SurfaceIntegrationDriver_Service_Inst]
+DisplayName    = %SurfaceIntegrationDriver.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %13%\SurfaceIntegrationDriver.sys
+AddReg         = SurfaceIntegrationDriver_Service_AddReg
+
+[SurfaceIntegrationDriver_Service_AddReg]
+;;HKR,Parameters, "ImageNameSID", %REG_SZ%, "(Image.Name)" ; Updated with post processing
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="Surface"
+DiskName = "Surface Integration Driver Installation Disk"
+SurfaceIntegrationDriver.DeviceDesc = "Surface Integration"
+SurfaceIntegrationDriver.SVCDESC = "Surface Integration Driver"
+REG_DWORD              = 0x00010001
+REG_SZ                 = 0x00000000

@@ -1,0 +1,189 @@
+
+;-------------------------------------------------------------------------
+; vmci.inf
+;
+; Copyright (c) 1993-1999, Microsoft Corporation
+; Copyright (c) 1999-2016,2019,2021 VMware, Inc.  All rights reserved.
+;-------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[version]
+Signature   = "$Windows NT$"
+Class       = System
+ClassGUID   = {4d36e97d-e325-11ce-bfc1-08002be10318}
+Provider    = %VMwareProvider%
+DriverVer   = 10/29/2021, 9.8.18.0
+CatalogFile = vmci.cat
+
+[ControlFlags]
+; Exclude all devices from Select Device list
+ExcludeFromSelect = *
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;;
+;; Plug-n-Play ID metadata
+;; =======================
+[Manufacturer]
+
+
+
+
+
+
+
+%loc.VMwareManufacturer%=VMware,NTamd64.6.2
+
+
+; Other architectures are unsupported, as are older versions of Windows on all platforms.
+[VMware.NTamd64]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[VMware.NTamd64.6.2]
+%loc.VMwareBusDeviceDesc%  = vmci.install.x64, PCI\VEN_15AD&DEV_0740&SUBSYS_074015AD, PCI\VEN_15AD&DEV_0740
+%loc.VMwareHostDeviceDesc% = vmci.install.x64, ROOT\VMWVMCIHOSTDEV
+
+
+
+;;
+;; Install Directives Section
+;; ==========================
+[vmci.install.x64.NT]
+AddReg          = vmci.reg
+CopyFiles       = vmci.DriverFiles.x64
+
+[vmci.install.x64.NT.Services]
+AddService = vmci, 2, vmci.Service.x64, common.EventLog  ; SPSVCINST_ASSOCSERVICE
+
+[vmci.install.x64.NT.HW]
+AddReg = enableMSI.reg
+
+;;
+;; Services Section
+;; ================
+[vmci.Service.x64]
+DisplayName     = %loc.vmciServiceDisplayName%
+ServiceType     = 1 ;%SERVICE_KERNEL_DRIVER%
+StartType       = 0 ;%SERVICE_BOOT_START%
+ErrorControl    = 0 ;%SERVICE_ERROR_IGNORE%
+ServiceBinary   = %12%\vmci.sys
+LoadOrderGroup  = System Bus Extender
+AddReg          = vmware_installers_addreg
+
+;;
+;; Sources
+;; =======
+[SourceDisksNames]
+1 = %loc.Disk1%,"",,
+
+[SourceDisksFiles]
+vmci.sys=1
+
+;;
+;; Destinations
+;; ============
+[DestinationDirs]
+vmci.DriverFiles.x64    = 12	; %%SystemRoot%%\System32\drivers
+
+;;
+;; CopyFiles directives
+;; ====================
+[vmci.DriverFiles.x64]
+vmci.sys,,,2	; COPYFLG_NOSKIP
+
+;;
+;; Registry Modifications
+;; ======================
+[vmci.reg]
+
+[enableMSI.reg]
+HKR, "Interrupt Management", 0x00000010
+HKR, "Interrupt Management\MessageSignaledInterruptProperties", 0x00000010
+HKR, "Interrupt Management\MessageSignaledInterruptProperties", MSISupported, 0x00010001, 1
+HKR, "Interrupt Management\MessageSignaledInterruptProperties", MessageNumberLimit, 0x00010001, 2
+
+[vmware_installers_addreg]
+HKR,, %vmci.installers.value.name%, 0x00000010, %vmci.installers.value.windows%
+;; FLG_ADDREG_KEYONLY
+HKR,, %vmci.installers.value.name%, 0x00010002, %vmci.installers.value.windows%
+;; FLG_ADDREG_NOCLOBBER | FLG_ADDREG_TYPE_MULTI_SZ
+
+[common.EventLog]
+AddReg = common.AddEventLog.reg
+
+[common.AddEventLog.reg]
+HKR, , EventMessageFile, 0x00020000, "%%SystemRoot%%\System32\drivers\vmci.sys"
+HKR, , TypesSupported,   0x00010001, 7
+
+;;
+;; Let installers find the original INF path if needed
+;; ===================================================
+[VMwarePathInfo]
+OriginalInfSourcePath = %1%
+
+;;
+;; Strings (localizable and not localizable)
+;; =========================================
+[Strings]
+loc.Disk1                     = "VMware VMCI Device Disk"
+loc.vmciServiceDisplayName    = "VMware VMCI Bus Driver"
+loc.VMwareHostDeviceDesc      = "VMware VMCI Host Device"
+loc.VMwareBusDeviceDesc       = "VMware VMCI Bus Device"
+loc.VMwareManufacturer        = "VMware, Inc."
+VMwareProvider                = "VMware, Inc."
+vmci.installers.value.name    = "vwdk.installers"
+vmci.installers.value.windows = "Windows"

@@ -1,0 +1,45 @@
+{
+    "ComputerName":  "bldewdk0051",
+    "PoolName":  "Azure - SW Build EWDK Agents",
+    "RepoUrl":  "https://MSFTDEVICES@dev.azure.com/MSFTDEVICES/Drivers/_git/SurfaceUcmUcsiHidClientDriver",
+    "RepoName":  "SurfaceUcmUcsiHidClientDriver",
+    "Worktree":  "C:\\w\\315\\s",
+    "CommitId":  "0bc97ce4553bab0b97fef51ea5f385921bb424ba",
+    "SourceBranch":  "refs/heads/master",
+    "ProjectName":  "Drivers",
+    "BuildId":  2428953,
+    "BuildParameters":  {
+
+                        },
+    "DefinitionId":  8364,
+    "DefinitionName":  "CI_SurfaceUcmUcsiHidClientDriver",
+    "DefinitionVariables":  {
+
+                            },
+    "Packages":  [
+                     {
+                         "Id":  "Devices.Build.Scripts",
+                         "Version":  "1.5.8"
+                     },
+                     {
+                         "Id":  "Devices.Library.SurfaceLibrary.19H1",
+                         "Version":  "6.303.0"
+                     },
+                     {
+                         "Id":  "Devices.Tool.SignTool",
+                         "Version":  "10.0.16299.64"
+                     },
+                     {
+                         "Id":  "Devices.Tool.AutoSignConsole",
+                         "Version":  "1.5.129"
+                     },
+                     {
+                         "Id":  "Devices.Driver.BuildConfiguration",
+                         "Version":  "1.5.0"
+                     },
+                     {
+                         "Id":  "Devices.Certificate.OEMTest",
+                         "Version":  "1.0.2"
+                     }
+                 ]
+}

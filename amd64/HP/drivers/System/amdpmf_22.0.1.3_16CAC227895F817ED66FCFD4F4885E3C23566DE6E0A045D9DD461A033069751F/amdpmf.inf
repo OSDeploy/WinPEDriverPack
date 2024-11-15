@@ -1,0 +1,106 @@
+; amdpmf.inf - INF file for installing AMD PMF Driver
+;
+; Copyright (c) 2022 Advanced Micro Devices, Inc. (AMD)
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=System
+ClassGuid={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%ManufacturerName%
+CatalogFile=amdpmf.cat
+DriverVer = 03/16/2022,22.0.1.3
+PnpLockDown=1
+
+[DestinationDirs]
+DefaultDestDir = 12            ; %WinDir%\System32\Drivers
+
+; ================= Class section =====================
+
+
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+amdpmf.sys  = 1,,
+SystemIdleStateDetection.exe = 1,,
+;
+
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=AMDPMF,NTamd64
+
+[AMDPMF.NTamd64]
+%AMDPMF.DeviceDesc%=AMDPMF_INSTALL.NTamd64, ACPI\AMDI0100
+%AMDPMF.DeviceDesc%=AMDPMF_INSTALL.NTamd64, ACPI\AMDI0102
+
+[AMDPMF_INSTALL.NTamd64]
+CopyFiles=AmdPmf.CopyFiles.x64
+AddReg=AmdPmf_AddReg
+AddPowerSetting = PowerSlider
+Reboot
+; Windows typically ignores this reboot but it is still required to instance the System Idle Detection Service
+
+[AmdPmf.CopyFiles.x64]
+amdpmf.sys
+SystemIdleStateDetection.exe
+
+;-------------- Service installation
+[AMDPMF_INSTALL.ntamd64.Services]
+AddService = amdpmf,%SPSVCINST_ASSOCSERVICE%, AMDPMF.AddService.x64
+
+; -------------- AMDPMF driver install sections
+[AMDPMF.AddService.x64]
+DisplayName    = %AMDPMF.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\amdpmf.sys
+
+
+; -------------- AMDPMF driver regkey
+[AmdPmf_AddReg]
+HKLM,"SYSTEM\CurrentControlSet\Services\SystemIdleDetectionSvc",Description,%REG_SZ%,%AMDPMFSVC.Description%
+HKLM,"SYSTEM\CurrentControlSet\Services\SystemIdleDetectionSvc",DisplayName,%REG_SZ%,%AMDPMFSVC.DisplayName%
+HKLM,"SYSTEM\CurrentControlSet\Services\SystemIdleDetectionSvc",ErrorControl,%REG_DWORD%,1
+HKLM,"SYSTEM\CurrentControlSet\Services\SystemIdleDetectionSvc",ImagePath,%REG_SZ%,%%SystemRoot%%\System32\Drivers\SystemIdleStateDetection.exe
+HKLM,"SYSTEM\CurrentControlSet\Services\SystemIdleDetectionSvc",Start,%REG_DWORD%,2
+HKLM,"SYSTEM\CurrentControlSet\Services\SystemIdleDetectionSvc",Type,%REG_DWORD%,0x50
+
+;--------------- AMDPMF power slider settings
+
+[PowerSlider]
+SubGroup = {C763B4EC-0E50-4B6B-9BED-2B92A6EE884E}, "AMD Power Slider", "Adjust AMD Power Slider options"
+Setting = {38cab4d5-db09-449f-9db5-1c91c909b6d4}, "PMF Controller", "Controls the thermal power solution"
+Value = 1, "Better battery", "Enable some AMD power savings feature to increase battery life", %REG_DWORD%, 0x1
+Value = 2, "Better performance", "Enable more performance gaining features", %REG_DWORD%, 0x2
+Value = 3, "Best performance", "Enable all possible AMD performance gaining features", %REG_DWORD%, 0x3
+Default = %GUID_BETTER_PERFORMANCE%, %POWERSLIDER_AC%, 2
+Default = %GUID_BETTER_PERFORMANCE%, %POWERSLIDER_DC%, 2
+Default = %GUID_BETTER_BATTERY%, %POWERSLIDER_AC%, 1
+Default = %GUID_BETTER_BATTERY%, %POWERSLIDER_DC%, 1
+Default = %GUID_BEST_PERFORMANCE%, %POWERSLIDER_AC%, 3
+Default = %GUID_BEST_PERFORMANCE%, %POWERSLIDER_DC%, 3
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="Advanced Micro Devices, Inc."
+DiskName = "AMD PMF Installation Disk"
+AMDPMF.DeviceDesc = "AMD PMF"
+AMDPMF.SVCDESC = "AMD PMF Kernel Driver"
+AMDPMFSVC.DisplayName = "System Idle State Detection Service"
+AMDPMFSVC.Description = "System idle state detection for platform management framework"
+
+GUID_BETTER_PERFORMANCE = {381b4222-f694-41f0-9685-ff5bb260df2e}
+GUID_BETTER_BATTERY = {961CC777-2547-4F9D-8174-7D86181b8A7A}
+GUID_BEST_PERFORMANCE = {DED574B5-45A0-4F42-8737-46345C09C238}
+POWERSLIDER_AC = 0
+POWERSLIDER_DC = 1
+
+REG_SZ = 0x00000000
+REG_DWORD = 0x00010001

@@ -1,0 +1,1181 @@
+**********************
+PowerShell transcript start
+Start time: 20241018125300
+Username: AzureAD\DavidSegura
+RunAs User: AzureAD\DavidSegura
+Configuration Name: 
+Machine: HPFIREFLY16P (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Program Files\PowerShell\7\pwsh.dll
+Process ID: 28232
+PSVersion: 7.4.5
+PSEdition: Core
+GitCommitId: 7.4.5
+OS: Microsoft Windows 10.0.26100
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+Transcript started, output file is C:\Temp\SurfaceGo4\Build.log
+DriverPack: C:\DATA\Surface\SurfaceGo4_Win11_22621_24.091.8549.0.msi
+Removed Content:
+SurfaceGo4\SurfaceUpdate\alderlakepchnsystem".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\alderlakepchnsystem\alderlakepch-n.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\alderlakepchnsystem\AlderLakePCH-NSystem.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\alderlakepchnsystem\AlderLakePCH-NSystemISH.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\alderlakepchnsystem\AlderLakePCH-NSystemNorthpeak.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\alderlakepchnsystem\ChipsetProductBase.cdf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\alderlakepchnsystem\install.json".
+SurfaceGo4\SurfaceUpdate\alderlakepchnsystemish".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\alderlakepchnsystemish\alderlakepch-n.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\alderlakepchnsystemish\AlderLakePCH-NSystem.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\alderlakepchnsystemish\AlderLakePCH-NSystemISH.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\alderlakepchnsystemish\AlderLakePCH-NSystemNorthpeak.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\alderlakepchnsystemish\ChipsetProductBase.cdf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\alderlakepchnsystemish\install.json".
+SurfaceGo4\SurfaceUpdate\audiosst".
+SurfaceGo4\SurfaceUpdate\audiosst\AS".
+SurfaceGo4\SurfaceUpdate\audiosst\AS\DLLs".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\DLLs\IntelAcaDll.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\DLLs\IntelAcaDll.NetFull.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\DLLs\IntelAudioDll_x64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\DLLs\IntelMultiPaSetupDll.dll".
+SurfaceGo4\SurfaceUpdate\audiosst\AS\IAS".
+SurfaceGo4\SurfaceUpdate\audiosst\AS\IAS\Cfg".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\IAS\Cfg\aec_asr_str_def_1ch_in.tf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\IAS\Cfg\aec_asr_str_def_2ch_in.tf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\IAS\Cfg\aec_asr_str_def_2ch_in_gna.tf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\IAS\Cfg\aec_asr_str_def_4ch_in.tf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\IAS\Cfg\aec_asr_str_def_4ch_in_gna.tf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\IAS\Cfg\aec_default.tf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\IAS\Cfg\aec_default_fw16.tf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\IAS\Cfg\aec_dns_str_def_1ch_in_48k_gna.tf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\IAS\Cfg\aec_dns_str_def_1ch_in_gna.tf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\IAS\Cfg\aec_dns_str_def_2ch_in_48k_gna.tf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\IAS\Cfg\aec_dns_str_def_2ch_in_gna.tf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\IAS\Cfg\aec_fdkf_fw16.tf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\IAS\Cfg\aec_wov_str_def_1ch_in.tf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\IAS\Cfg\aec_wov_str_def_2ch_in.tf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\IAS\Cfg\aec_wov_str_def_2ch_in_gna.tf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\IAS\Cfg\aec_wov_str_def_4ch_in.tf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\IAS\Cfg\aec_wov_str_def_4ch_in_gna.tf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\IAS\Cfg\ana_default.tf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\IAS\Cfg\asr_cortana_3_1_default.tf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\IAS\Cfg\asr_cortana_4_0_default.tf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\IAS\Cfg\asr_default.tf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\IAS\Cfg\DefaultConfigs.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\IAS\Cfg\dns_default.tf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\IAS\Cfg\str_1ch_in_1_out_bypass.tf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\IAS\Cfg\str_2ch_in_1_out_bypass.tf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\IAS\Cfg\str_4ch_in_1_out_bypass.tf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\IAS\Cfg\wov_default_multi_channel_input.tf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\IAS\Cfg\wov_default_one_channel_input.tf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\IAS\Cfg\wov_multi_out_default.tf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\IAS\ControlModule.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\IAS\IntelAudioService.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\IAS\IntelAudioService.exe.config".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\IAS\IntelSSTPreprocStreamer.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\IAS\NativeApiAdapter.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\IAS\RpcServer.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\IAS\WppLoggerDll.dll".
+SurfaceGo4\SurfaceUpdate\audiosst\AS\MultiPaOemDll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\MultiPaOemDll\IntelHwKws_v2.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\MultiPaOemDll\settingsHwKws.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\AS\MultiPaOemDll\WweConfigurationDll.dll".
+SurfaceGo4\SurfaceUpdate\audiosst\Cfg".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\Cfg\aec_wov_str_def_1ch_in.tf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\Cfg\aec_wov_str_def_2ch_in.tf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\Cfg\aec_wov_str_def_4ch_in.tf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\Cfg\str_1ch_in_1_out_bypass.tf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\Cfg\str_2ch_in_1_out_bypass.tf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\Cfg\str_4ch_in_1_out_bypass.tf".
+SurfaceGo4\SurfaceUpdate\audiosst\Fw".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\Fw\dsp_fw_adl-n_release.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\Fw\dsp_fw_adl_release.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\Fw\dsp_fw_tgl_release.bin".
+SurfaceGo4\SurfaceUpdate\audiosst\Libs".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\Libs\dsp_lib_intel_wov_adl-n_release.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\Libs\dsp_lib_intel_wov_adl_release.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\Libs\dsp_lib_intel_wov_tgl_release.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\Libs\dsp_lib_whm_adl-n_release.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\Libs\dsp_lib_whm_adl_release.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\Libs\dsp_lib_whm_tgl_release.bin".
+SurfaceGo4\SurfaceUpdate\audiosst\Topology".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\Topology\IntcOEDTopology.oec".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\Topology\IntcOEDTopology.xml".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Alefuj".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Alefuj\m".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Alefuj\m\ja-JP".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Alefuj\m\ja-JP\alefuj_ja-JP_hq.dsp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Alefuj\m\ja-JP\alefuj_ja-JP_hq_echo.th".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Alefuj\m\ja-JP\alefuj_ja-JP_hq_fuj.th".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Alenec".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Alenec\m".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Alenec\m\ja-JP".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Alenec\m\ja-JP\alenec_ja-JP_hq.dsp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Alenec\m\ja-JP\alenec_ja-JP_hq_echo.th".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Alenec\m\ja-JP\alenec_ja-JP_hq_nec.th".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\de-AT".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\de-AT\echo_de-AT_ex.alco".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\de-AT\echo_de-AT_ex.eth".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\de-AT\echo_de-AT_ex.hsc".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\de-AT\echo_de-AT_ex.th".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\de-AT\echo_de-AT_hq.dsp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\de-AT\echo_de-AT_hq.th".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\de-DE".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\de-DE\echo_de-DE_ex.alco".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\de-DE\echo_de-DE_ex.eth".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\de-DE\echo_de-DE_ex.hsc".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\de-DE\echo_de-DE_ex.th".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\de-DE\echo_de-DE_hq.dsp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\de-DE\echo_de-DE_hq.th".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-AU".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-AU\echo_en-AU_ex.alco".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-AU\echo_en-AU_ex.eth".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-AU\echo_en-AU_ex.hsc".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-AU\echo_en-AU_ex.th".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-AU\echo_en-AU_hq.dsp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-AU\echo_en-AU_hq.th".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-CA".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-CA\echo_en-CA_ex.alco".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-CA\echo_en-CA_ex.eth".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-CA\echo_en-CA_ex.hsc".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-CA\echo_en-CA_ex.th".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-CA\echo_en-CA_hq.dsp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-CA\echo_en-CA_hq.th".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-GB".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-GB\echo_en-GB_ex.alco".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-GB\echo_en-GB_ex.eth".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-GB\echo_en-GB_ex.hsc".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-GB\echo_en-GB_ex.th".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-GB\echo_en-GB_hq.dsp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-GB\echo_en-GB_hq.th".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-IE".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-IE\echo_en-IE_ex.alco".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-IE\echo_en-IE_ex.eth".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-IE\echo_en-IE_ex.hsc".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-IE\echo_en-IE_ex.th".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-IE\echo_en-IE_hq.dsp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-IE\echo_en-IE_hq.th".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-IN".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-IN\echo_en-IN_ex.alco".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-IN\echo_en-IN_ex.eth".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-IN\echo_en-IN_ex.hsc".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-IN\echo_en-IN_ex.th".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-IN\echo_en-IN_hq.dsp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-IN\echo_en-IN_hq.th".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-NZ".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-NZ\echo_en-NZ_ex.alco".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-NZ\echo_en-NZ_ex.eth".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-NZ\echo_en-NZ_ex.hsc".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-NZ\echo_en-NZ_ex.th".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-NZ\echo_en-NZ_hq.dsp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-NZ\echo_en-NZ_hq.th".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-US".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-US\echo_en-US_ex.alco".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-US\echo_en-US_ex.eth".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-US\echo_en-US_ex.hsc".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-US\echo_en-US_ex.th".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-US\echo_en-US_hq.dsp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\en-US\echo_en-US_hq.th".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\es-ES".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\es-ES\echo_es-ES_ex.alco".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\es-ES\echo_es-ES_ex.eth".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\es-ES\echo_es-ES_ex.hsc".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\es-ES\echo_es-ES_ex.th".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\es-ES\echo_es-ES_hq.dsp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\es-ES\echo_es-ES_hq.th".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\es-MX".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\es-MX\echo_es-MX_ex.alco".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\es-MX\echo_es-MX_ex.eth".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\es-MX\echo_es-MX_ex.hsc".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\es-MX\echo_es-MX_ex.th".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\es-MX\echo_es-MX_hq.dsp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\es-MX\echo_es-MX_hq.th".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\es-US".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\es-US\echo_es-US_ex.alco".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\es-US\echo_es-US_ex.eth".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\es-US\echo_es-US_ex.hsc".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\es-US\echo_es-US_ex.th".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\es-US\echo_es-US_hq.dsp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\es-US\echo_es-US_hq.th".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\fr-CA".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\fr-CA\echo_fr-CA_ex.alco".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\fr-CA\echo_fr-CA_ex.eth".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\fr-CA\echo_fr-CA_ex.hsc".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\fr-CA\echo_fr-CA_ex.th".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\fr-CA\echo_fr-CA_hq.dsp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\fr-CA\echo_fr-CA_hq.th".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\fr-FR".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\fr-FR\echo_fr-FR_ex.alco".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\fr-FR\echo_fr-FR_ex.eth".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\fr-FR\echo_fr-FR_ex.hsc".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\fr-FR\echo_fr-FR_ex.th".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\fr-FR\echo_fr-FR_hq.dsp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\fr-FR\echo_fr-FR_hq.th".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\it-IT".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\it-IT\echo_it-IT_ex.alco".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\it-IT\echo_it-IT_ex.eth".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\it-IT\echo_it-IT_ex.hsc".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\it-IT\echo_it-IT_ex.th".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\it-IT\echo_it-IT_hq.dsp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\it-IT\echo_it-IT_hq.th".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\ja-JP".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\ja-JP\echo_ja-JP_ex.alco".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\ja-JP\echo_ja-JP_ex.eth".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\ja-JP\echo_ja-JP_ex.hsc".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\ja-JP\echo_ja-JP_ex.th".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\ja-JP\echo_ja-JP_hq.dsp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\ja-JP\echo_ja-JP_hq.th".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\pt-BR".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\pt-BR\echo_pt-BR_ex.alco".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\pt-BR\echo_pt-BR_ex.eth".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\pt-BR\echo_pt-BR_ex.hsc".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\pt-BR\echo_pt-BR_ex.th".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\pt-BR\echo_pt-BR_hq.dsp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Echo\m\pt-BR\echo_pt-BR_hq.th".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Fuj".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Fuj\m".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Fuj\m\ja-JP".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Fuj\m\ja-JP\fuj_ja-JP_ex.alco".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Fuj\m\ja-JP\fuj_ja-JP_ex.eth".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Fuj\m\ja-JP\fuj_ja-JP_ex.hsc".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Fuj\m\ja-JP\fuj_ja-JP_ex.th".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Fuj\m\ja-JP\fuj_ja-JP_hq.dsp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Fuj\m\ja-JP\fuj_ja-JP_hq.th".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Leno2".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Leno2\m".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Leno2\m\zh-CN".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Leno2\m\zh-CN\leno2_zh-CN_ex.alco".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Leno2\m\zh-CN\leno2_zh-CN_ex.eth".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Leno2\m\zh-CN\leno2_zh-CN_ex.hsc".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Leno2\m\zh-CN\leno2_zh-CN_ex.th".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Leno2\m\zh-CN\leno2_zh-CN_hq.dsp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Leno2\m\zh-CN\leno2_zh-CN_hq.th".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Ms".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Ms\m".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Ms\m\en-US".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Ms\m\en-US\ms_en-US_ex.alco".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Ms\m\en-US\ms_en-US_ex.eth".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Ms\m\en-US\ms_en-US_ex.hsc".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Ms\m\en-US\ms_en-US_ex.th".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Ms\m\en-US\ms_en-US_hq.dsp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Ms\m\en-US\ms_en-US_hq.th".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Mslexa".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Mslexa\m".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Mslexa\m\en-US".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Mslexa\m\en-US\mslexa_en-US_hq.dsp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Mslexa\m\en-US\mslexa_en-US_hq_echo.th".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Mslexa\m\en-US\mslexa_en-US_hq_ms.th".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Nec".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Nec\m".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Nec\m\ja-JP".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Nec\m\ja-JP\nec_ja-JP_ex.alco".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Nec\m\ja-JP\nec_ja-JP_ex.eth".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Nec\m\ja-JP\nec_ja-JP_ex.hsc".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Nec\m\ja-JP\nec_ja-JP_ex.th".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Nec\m\ja-JP\nec_ja-JP_hq.dsp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Nec\m\ja-JP\nec_ja-JP_hq.th".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Service".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Service\MultiChannelWoV.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Service\MultichannelWoVCfg.dll".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Tencent".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Tencent\m".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Tencent\m\zh-CN".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Tencent\m\zh-CN\tencent_zh-CN_ex.alco".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Tencent\m\zh-CN\tencent_zh-CN_ex.eth".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Tencent\m\zh-CN\tencent_zh-CN_ex.hsc".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Tencent\m\zh-CN\tencent_zh-CN_ex.th".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Tencent\m\zh-CN\tencent_zh-CN_hq.dsp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Tencent\m\zh-CN\tencent_zh-CN_hq.th".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Xiaomi".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Xiaomi\m".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Xiaomi\m\zh-CN".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Xiaomi\m\zh-CN\xiaomi_zh-CN_ex.alco".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Xiaomi\m\zh-CN\xiaomi_zh-CN_ex.eth".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Xiaomi\m\zh-CN\xiaomi_zh-CN_ex.hsc".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Xiaomi\m\zh-CN\xiaomi_zh-CN_ex.th".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Xiaomi\m\zh-CN\xiaomi_zh-CN_hq.dsp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Xiaomi\m\zh-CN\xiaomi_zh-CN_hq.th".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Yoga".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Yoga\m".
+SurfaceGo4\SurfaceUpdate\audiosst\WoV\Yoga\m\zh-CN".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Yoga\m\zh-CN\yoga_zh-CN_ex.alco".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Yoga\m\zh-CN\yoga_zh-CN_ex.eth".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Yoga\m\zh-CN\yoga_zh-CN_ex.hsc".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Yoga\m\zh-CN\yoga_zh-CN_ex.th".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Yoga\m\zh-CN\yoga_zh-CN_hq.dsp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\Yoga\m\zh-CN\yoga_zh-CN_hq.th".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\intelwov_data_manifest.txt".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WoV\model_metadata.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\detectionverificationdrv.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\DetectionVerificationDrv.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\DetectionVerificationDrv.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\install.json".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\intcaudiobus.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\IntcAudioBus.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\IntcAudioBus.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\intcbtau.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\IntcBTAu.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\IntcBTAu.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\intcbtle.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\IntcBtLE.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\IntcBtLE.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\intcdmic.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\IntcDMic.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\IntcDMic.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\intcoed.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\IntcOED.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\IntcOED.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\intcsdw.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\IntcSDW.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\IntcSDW.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\intcsdwbus.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\IntcSdwBus.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\IntcSdwBus.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\intcsst.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\IntcSST.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\IntcSST.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\intcusb.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\IntcUSB.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\IntcUSB.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\IntelSSTPreprocStreamer.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\IntelWovSDK.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\lt6911au.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\LT6911Au.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\LT6911Au.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\MultiChannelWoV.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\MultichannelWoVCfg.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\audiosst\WakeWordEngine.dll".
+SurfaceGo4\SurfaceUpdate\bluetooth".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\bluetooth\ibtusb.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\bluetooth\ibtusb.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\bluetooth\ibtusb.sys".
+SurfaceGo4\SurfaceUpdate\cameradriver".
+SurfaceGo4\SurfaceUpdate\cameradriver\Bootloader".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\Bootloader\cpd_btldr_signed.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\Bootloader\cpd_btldr_signed_adln.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\Bootloader\cpd_btldr_signed_rpl.bin".
+SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK".
+SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Documentation".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Documentation\Sensor Development Environment Setup Guide.docx".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Documentation\Sensor_VCM_EEPROM_development_Guide.docx".
+SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Include".
+SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Include\Skycam".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Include\Skycam\BIOSInterface.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Include\Skycam\InterfacesCommon.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Include\Skycam\public.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Include\Skycam\SensorDataInterface.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Include\Skycam\VTIO_BIOS_Manifest.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Include\controllogic_common.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Include\controllogic_sensor_intf.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Include\CVF_Camera_Intf.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Include\dsdt.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Include\FlipMode.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Include\HDMI_I2S_Interface.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Include\platf_info.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Include\PrivacyMode.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Include\sensor_feature.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Include\sensor_intf.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Include\sensor_intfclass.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Include\sensor_skycam.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Include\sensor_types.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Include\stdbool.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Include\stdint.h".
+SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Lib".
+SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Lib\ADL".
+SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Lib\ADL\Release".
+SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Lib\ADL\Release\x64".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Lib\ADL\Release\x64\common.lib".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Lib\ADL\Release\x64\nvram.lib".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Lib\ADL\Release\x64\vcm.lib".
+SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Platform".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Platform\BuildCameraSensor.bat".
+SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor".
+SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common".
+SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\inc".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\inc\sensor.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\inc\sensor_internal.h".
+SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss".
+SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\libinc".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\libinc\SsCommon.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\libinc\SsGpio.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\libinc\SsI2c.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\libinc\SsNvm.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\libinc\SsReader.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\libinc\SsSensor.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\libinc\SsVcm.h".
+SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\src".
+SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\src\nvram".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\src\nvram\nvm_24AA16.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\src\nvram\nvm_brca016gwz.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\src\nvram\nvm_cat24c08.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\src\nvram\nvm_cat24c16.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\src\nvram\nvm_cat24c64.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\src\nvram\nvm_dw9806b.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\src\nvram\nvm_dw9808.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\src\nvram\nvm_eeprom.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\src\nvram\nvm_gt24p64m.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\src\nvram\nvm_M24C64S.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\src\nvram\nvram.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\src\nvram\nvram_map.c".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\src\nvram\nvram_type.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\src\nvram\otp_dummy.c".
+SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\src\vcm".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\src\vcm\vcm.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\src\vcm\vcm_ad5816.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\src\vcm\vcm_ad5823.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\src\vcm\vcm_ak7371.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\src\vcm\vcm_bu64297gwz.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\src\vcm\vcm_dw9714.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\src\vcm\vcm_dw9718.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\src\vcm\vcm_dw9719.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\src\vcm\vcm_dw9800.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\src\vcm\vcm_dw9806b.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\src\vcm\vcm_dw9808.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\src\vcm\vcm_dw9825a.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\src\vcm\vcm_lc898122XA.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\src\vcm\vcm_lc898212AXB.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\src\vcm\vcm_lc898217.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\src\vcm\vcm_map.c".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\src\vcm\vcm_type.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\src\vcm\vcm_wv517s.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Common\libiss\src\SsSensor.c".
+SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Sample".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Sample\device.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Sample\Sample.c".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Sample\Sample.inx".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Sample\Sample.rc".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Sample\Sample.vcxproj".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Sample\Sample_setting.c".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\CameraDDK\Sensor\Sample\SensorTrace.h".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\burstisp_ipux.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\cpd_component_signed.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\cpd_component_signed_adln.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\cpd_component_signed_rpl.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\evcp.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\graph_descriptor.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\graph_settings_ov5693_13P2BA540_ADL.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\graph_settings_ov5693_MSHW0430_ADL.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\graph_settings_ov7251_5SF010T2_ADL.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\graph_settings_OV7251_MSHW0432_ADL.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\graph_settings_OV8865_MSHW0431_ADL.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\graph_settings_OV8865_S8VM32_ADL.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\graph_settings_TPG1_INTEL_DEFAULT.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\graph_settings_TPG2_INTEL_DEFAULT.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\iacamera64.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\iacamera64.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\iacamera64.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\iacamera64_surface_extension_adln.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\iacamera64_surface_extension_adln.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\iactrllogic64.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\iactrllogic64.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\iactrllogic64.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\iaisp64.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\iaisp64.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\iaisp64.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\iaisptrustlet64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\install.json".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\Intel Limited Distribution (Commercial Use) OBL(v 5.11.2021).pdf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\IntelDeviceMFT64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\libia_cp64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\mute-mirror.bmp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\mute.bmp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\out.svendict_isys.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\out.svendict_psys.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\ov5693.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\ov5693.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\ov5693.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\OV5693_13P2BA540_ADL.aiqb".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\OV5693_13P2BA540_ADL.cpf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\OV5693_MSHW0430_ADL.aiqb".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\OV5693_MSHW0430_ADL.cpf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\ov5693_surface_extension_adln.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\ov5693_surface_extension_adln.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\ov7251.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\ov7251.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\ov7251.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\OV7251_5SF010T2_ADL.aiqb".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\OV7251_5SF010T2_ADL.cpf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\OV7251_MSHW0432_ADL.aiqb".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\OV7251_MSHW0432_ADL.cpf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\ov7251_surface_extension_adln.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\ov7251_surface_extension_adln.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\ov8865.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\ov8865.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\ov8865.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\OV8865_MSHW0431_ADL.aiqb".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\OV8865_MSHW0431_ADL.cpf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\OV8865_S8VM32_ADL.aiqb".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\OV8865_S8VM32_ADL.cpf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\ov8865_surface_extension_adln.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\ov8865_surface_extension_adln.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\pvl64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\pvl_perspective_control64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\pvl_skin_smoothing64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\subway_blazeface_tracking.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\subway_centernet_tracking.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\subway_user_framing.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\tnr7_cm.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\TPG1_INTEL.aiqb".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\TPG1_INTEL.cpf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\TPG1_INTEL_SVE.cpf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\TPG2_INTEL.aiqb".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\TPG2_INTEL.cpf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\cameradriver\TPG2_INTEL_rgbir.cpf".
+SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient".
+SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient\conf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient\conf\cacert.pem".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient\conf\epid2_paramcert.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient\conf\EPIDGroupCertLegacy.cer".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient\conf\EPIDGroupCertX509.cer".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient\conf\epid_paramcert.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient\conf\iclsProxy.conf".
+SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient\Documents".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient\Documents\development_tools.txt".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient\Documents\License.txt".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient\Documents\Readme.txt".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient\Documents\redist.txt".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient\Documents\Third Party Licenses.txt".
+SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient\lib".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient\lib\concrt140.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient\lib\iclsClient.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient\lib\iclsClientInternal.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient\lib\iclsProxy.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient\lib\iclsProxyInternal.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient\lib\IntelPTTEKRecertification.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient\lib\libcrypto-3-x64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient\lib\libssl-3-x64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient\lib\msvcp140.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient\lib\PlatformLicenseManagerService.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient\lib\TPMProvisioningService.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient\lib\vcruntime140.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient\lib\vcruntime140_1.dll".
+SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient\lib32".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient\lib32\concrt140.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient\lib32\iclsClient.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient\lib32\iclsClientInternal.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient\lib32\iclsProxy.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient\lib32\iclsProxyInternal.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient\lib32\IntelPTTEKRecertification.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient\lib32\libcrypto-3.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient\lib32\libssl-3.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient\lib32\msvcp140.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient\lib32\TPMProvisioningService.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient\lib32\vcruntime140.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient\iclsClient.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\CapabilityLicensingSvcClient\iclsClient.inf".
+SurfaceGo4\SurfaceUpdate\dax3aposvc".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3aposvc\CaptureStreamMonitor.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3aposvc\DAX3API.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3aposvc\Dax3DapControl.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3aposvc\Dax3Ref.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3aposvc\dax3_swc_aposvc.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3aposvc\dax3_swc_aposvc.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3aposvc\DAXSSID.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3aposvc\default_settings.json".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3aposvc\Default_settings.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3aposvc\DolbyAPONs.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3aposvc\DolbyAPONs30.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3aposvc\DolbyAPOv2100.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3aposvc\DolbyAPOv251.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3aposvc\DolbyAPOvlldp.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3aposvc\DolbyAPOvlldp120.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3aposvc\DolbyAPOvlldp130.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3aposvc\DolbyAPOvlldp140.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3aposvc\DolbyAPOvlldp150.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3aposvc\DolbyApoVr.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3aposvc\DolbyDax3Apo.dll".
+SurfaceGo4\SurfaceUpdate\dax3extrtk".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3extrtk\dax3_ext_rtk.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3extrtk\dax3_ext_rtk.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3extrtk\DEV_0274_SUBSYS_10EC120A_PCI_SUBSYS_72708086.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3extrtk\DEV_0274_SUBSYS_10EC1216_PCI_SUBSYS_72708086.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3extrtk\DEV_0274_SUBSYS_10EC121C_PCI_SUBSYS_72708086.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3extrtk\DEV_0274_SUBSYS_10EC121C_PCI_SUBSYS_72708086_settings.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3extrtk\DEV_0274_SUBSYS_10EC121E_PCI_SUBSYS_72708086.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3extrtk\DEV_0274_SUBSYS_10EC122A_PCI_SUBSYS_72708086.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3extrtk\DEV_0274_SUBSYS_10EC122E_PCI_SUBSYS_72708086.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3extrtk\DEV_0274_SUBSYS_10EC123C_PCI_SUBSYS_72708086.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3extrtk\DEV_0274_SUBSYS_10EC123E_PCI_SUBSYS_72708086.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3extrtk\DEV_0274_SUBSYS_10EC1248_PCI_SUBSYS_72708086.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3extrtk\DEV_0274_SUBSYS_10EC126A_PCI_SUBSYS_72708086.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3extrtk\DEV_0274_SUBSYS_10EC126A_PCI_SUBSYS_72708086_settings.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3extrtk\DEV_0274_SUBSYS_10EC1282_PCI_SUBSYS_72708086.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3extrtk\DEV_0274_SUBSYS_10EC1282_PCI_SUBSYS_72708086_settings.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3extrtk\DEV_0274_SUBSYS_10EC1284_PCI_SUBSYS_72708086.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3extrtk\DEV_0274_SUBSYS_10EC1284_PCI_SUBSYS_72708086_settings.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3extrtk\DEV_0274_SUBSYS_10EC1286_PCI_SUBSYS_72708086.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3extrtk\DEV_0274_SUBSYS_10EC1288_PCI_SUBSYS_72708086.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3extrtk\DEV_0274_SUBSYS_10EC128E_PCI_SUBSYS_72708086.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3extrtk\DEV_0274_SUBSYS_10EC1290_PCI_SUBSYS_72708086.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3extrtk\DEV_0274_SUBSYS_10EC129C_PCI_SUBSYS_72708086.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3extrtk\DEV_0274_SUBSYS_10EC12B8_PCI_SUBSYS_72708086.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3extrtk\DEV_0274_SUBSYS_10EC12B8_PCI_SUBSYS_72708086_settings.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3extrtk\DEV_0274_SUBSYS_10EC12D2_PCI_SUBSYS_72708086.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3extrtk\DEV_0298_SUBSYS_10EC12BA_PCI_SUBSYS_72708086.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3extrtk\Headphone_Default_Generic_Default_Atmos3.7.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3extrtk\operator_DolbyAudioPremium_settings.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3extrtk\operator_settings.xml".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3extrtk\operator_settings_msft_atmos.json".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3extrtk\operator_settings_msft_audiopremium.json".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3extrtk\settings_msft_atmos_capture_off.json".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3extrtk\settings_msft_atmos_capture_off_multi_stream.json".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3extrtk\settings_msft_atmos_feedback_off.json".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3extrtk\settings_msft_atmos_multi_stream.json".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\dax3extrtk\settings_msft_audiopremium_feedback_off.json".
+SurfaceGo4\SurfaceUpdate\eccapsule".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\eccapsule\SurfaceEC.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\eccapsule\SurfaceEC.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\eccapsule\SurfaceEC_2.2.0.1.bin".
+SurfaceGo4\SurfaceUpdate\ehdxsstmd3a3".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\ehdxsstmd3a3\EHDXSSTMD3A3.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\ehdxsstmd3a3\HDXRT.CAT".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\ehdxsstmd3a3\RltkAPOU64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\ehdxsstmd3a3\RltkAPOU642.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\ehdxsstmd3a3\RTAIODAT.DAT".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\ehdxsstmd3a3\RtCOM64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\ehdxsstmd3a3\RtkApi64U.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\ehdxsstmd3a3\RtkAudUService64.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\ehdxsstmd3a3\RtkCfg64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\ehdxsstmd3a3\RTKVHD64.sys".
+SurfaceGo4\SurfaceUpdate\graphicsbase".
+SurfaceGo4\SurfaceUpdate\graphicsbase\CtaChildDriver".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\CtaChildDriver\ctachilddriver.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\CtaChildDriver\CtaChildDriver.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\CtaChildDriver\CtaChildDriver.sys".
+SurfaceGo4\SurfaceUpdate\graphicsbase\DisplayAudio".
+SurfaceGo4\SurfaceUpdate\graphicsbase\DisplayAudio\11.2".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\DisplayAudio\11.2\intcdaud.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\DisplayAudio\11.2\IntcDAud.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\DisplayAudio\11.2\IntcDAud.sys".
+SurfaceGo4\SurfaceUpdate\graphicsbase\DisplayAudio\12.1".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\DisplayAudio\12.1\intcdaud.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\DisplayAudio\12.1\IntcDAud.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\DisplayAudio\12.1\IntcDAudD.sys".
+SurfaceGo4\SurfaceUpdate\graphicsbase\fw".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\fw\dg1_gfx_fwupdate.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\fw\dg2_gfx_fwupdate_A0_SOC2.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\fw\dg2_gfx_fwupdate_B0_SOC1.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\fw\dg2_gfx_fwupdate_SOC1.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\fw\dg2_gfx_fwupdate_SOC2.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\fw\dg2_gfx_fwupdate_SOC3.bin".
+SurfaceGo4\SurfaceUpdate\graphicsbase\I2CDriver".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\I2CDriver\intel_nf_i2c.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\I2CDriver\Intel_NF_I2C.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\I2CDriver\Intel_NF_I2C_Child.inf".
+SurfaceGo4\SurfaceUpdate\graphicsbase\MiniCtaDriver".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\MiniCtaDriver\minictadriver.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\MiniCtaDriver\MiniCtaDriver.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\MiniCtaDriver\MiniCtaDriver.sys".
+SurfaceGo4\SurfaceUpdate\graphicsbase\oprom".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\oprom\dg1_c_oprom.rom".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\acxdac.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\clangFEWrapper.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\clangFEWrapper32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\ColorImageEnhancement.wmv".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\ControlLib.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\ControlLib32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\cpa_32.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\cpa_64.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\cp_resources.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\cui_dch.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\c_32.cpa".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\c_64.cpa".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\dev_32.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\dev_64.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\DnnlPlugin.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\enctools32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\enctools64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\FilmModeDetection.wmv".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\GfxDownloadWrapper.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\gscauxdriver.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\GSCAuxDriver.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\GSCAuxDriverx64.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\gscheci.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\gscheci.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\h265e_32.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\h265e_64.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\hdbusext.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\HdBusExt.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\he_32.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\he_64.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\iga32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\iga64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igc32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igc64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igcc_dch.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igd10iumd32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igd10iumd64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igd10mg32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igd10mg64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igd10um32xe.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igd10um64xe.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igd10umt32xe.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igd10umt64xe.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igd11dxva32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igd11dxva64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igd12dxva32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igd12dxva64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igd12mg32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igd12mg64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igd12um32xeh.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igd12um32xel.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igd12um64xeh.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igd12um64xel.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igd12umd32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igd12umd64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igd9dxva32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igd9dxva64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igd9trinity32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igd9trinity64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igdail32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igdail64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igdde32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igdde64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igdext32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igdext64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igdfcl32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igdfcl64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igdgmm32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igdgmm64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igdinfo32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igdinfo64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igdkmdn64.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igdkmdnd64.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igdlh.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igdmd32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igdmd64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igdml32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igdml64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igdrcl32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igdrcl64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igdumdim32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igdumdim64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igfx11cmrt32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igfx11cmrt64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igfxcmrt32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igfxcmrt64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igfxCUIServiceN.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igfxCUIServicePSN.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igfxDHN.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igfxDIN.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igfxEMN.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igfxexps.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igfxexps32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igfxextN.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igfxLHM.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igfxSDK.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igfxSDKLib.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\iglhxa64.cpa".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\iglhxa64.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\iglhxc64.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\iglhxc64_dev.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\iglhxg64.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\iglhxg64_dev.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\iglhxo64.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\iglhxo64_dev.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\iglhxsn64.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\iglhxsnd64.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igmlsblob64xeh.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igmlsblob64xel.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igsc.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igvk32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igvk32.json".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igvk64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igvk64.json".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igvkMedia32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igvkMedia64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igxehpgicd32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igxehpgicd64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igxelpicd32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igxelpicd64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igxelpplusicd32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igxelpplusicd64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\igxess.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\iigd_dch.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\ImageStabilization.wmv".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\install.json".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\IntelControlLib.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\IntelControlLib32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\IntelCpHDCPSvc.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\IntelCpHeciSvc.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\IntelGFXFwUpdateTool.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\IntelGpuCompiler32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\IntelGpuCompiler64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\intel_gfx_api-x64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\intel_gfx_api-x86.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\Intel_OpenCL_ICD32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\Intel_OpenCL_ICD64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\libigc.so".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\libigd12dxva64.so".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\libigd12um64xeh.so".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\libigd12um64xel.so".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\libigd12umd64.so".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\libigdfcl.so".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\libigdgmm_w.so.12".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\libLLVM-9.so".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\libmfx32-gen.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\libmfx64-gen.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\libmfxhw32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\libmfxhw64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\libopencl-clang.so.9".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\libUniversalAdapter64.so".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\libwsl_compute_helper.so".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\LiteDB.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\media_bin_32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\media_bin_64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\memcntrl.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\mfxplugin32_av1e_gacc.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\mfxplugin32_hw.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\mfxplugin64_av1e_gacc.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\mfxplugin64_hw.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\mfx_loader_dll_hw32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\mfx_loader_dll_hw64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\mfx_mft_av1hve_32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\mfx_mft_av1hve_32.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\mfx_mft_av1hve_64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\mfx_mft_av1hve_64.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\mfx_mft_av1ve_32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\mfx_mft_av1ve_32.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\mfx_mft_av1ve_64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\mfx_mft_av1ve_64.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\mfx_mft_encrypt_32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\mfx_mft_encrypt_64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\mfx_mft_h264ve_32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\mfx_mft_h264ve_64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\mfx_mft_h265ve_32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\mfx_mft_h265ve_64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\mfx_mft_mjpgvd_32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\mfx_mft_mjpgvd_64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\mfx_mft_vp9ve_32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\mfx_mft_vp9ve_64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\mj_32.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\mj_64.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\MSHdaDac.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\Newtonsoft.Json.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\NLog.config".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\NLog.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\OneApp.IGCC.COMLibrary.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\OneApp.IGCC.CommunicationService.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\OneApp.IGCC.CoreLibrary.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\OneApp.IGCC.WinService.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\OneApp.IGCC.WinService.exe.config".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\opencl-clang32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\opencl-clang64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\OSSCOPYRIGHT.txt".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\TeeDriverGscW8x64.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\UMED.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\UniversalAdapter32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\UniversalAdapter64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\vp9e_32.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\vp9e_64.vp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\vpl_dispatcher_32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\vpl_dispatcher_64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\vulkan-1-32.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\vulkan-1-64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\vulkaninfo-32.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\vulkaninfo-64.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\VulkanRT-EULA.txt".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\XeFX.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\ze_intel_gpu64.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\ze_loader.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\ze_tracing_layer.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsbase\ze_validation_layer.dll".
+SurfaceGo4\SurfaceUpdate\graphicsext".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsext\extinf.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsext\iigd_ext_lx.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\graphicsext\install.json".
+SurfaceGo4\SurfaceUpdate\hideventfilter".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\hideventfilter\hideventfilter.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\hideventfilter\HidEventFilter.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\hideventfilter\HidEventFilter.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\hideventfilter\install.json".
+SurfaceGo4\SurfaceUpdate\hidpciminiport".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\hidpciminiport\hid_pci.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\hidpciminiport\HID_PCI.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\hidpciminiport\HID_PCI.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\hidpciminiport\install.json".
+SurfaceGo4\SurfaceUpdate\ialpss2gpio2adln".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\ialpss2gpio2adln\ialpss2_gpio2_adl_n.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\ialpss2gpio2adln\iaLPSS2_GPIO2_ADL_N.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\ialpss2gpio2adln\iaLPSS2_GPIO2_ADL_N.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\ialpss2gpio2adln\install.json".
+SurfaceGo4\SurfaceUpdate\ialpss2i2cadln".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\ialpss2i2cadln\ialpss2_i2c_adl_n.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\ialpss2i2cadln\iaLPSS2_I2C_ADL_N.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\ialpss2i2cadln\iaLPSS2_I2C_ADL_N.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\ialpss2i2cadln\install.json".
+SurfaceGo4\SurfaceUpdate\ialpss2spiadln".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\ialpss2spiadln\ialpss2_spi_adl_n.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\ialpss2spiadln\iaLPSS2_SPI_ADL_N.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\ialpss2spiadln\iaLPSS2_SPI_ADL_N.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\ialpss2spiadln\install.json".
+SurfaceGo4\SurfaceUpdate\ialpss2uart2adln".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\ialpss2uart2adln\ialpss2_uart2_adl_n.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\ialpss2uart2adln\iaLPSS2_UART2_ADL_N.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\ialpss2uart2adln\iaLPSS2_UART2_ADL_N.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\ialpss2uart2adln\install.json".
+SurfaceGo4\SurfaceUpdate\intcoedoemlibpath".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\intcoedoemlibpath\adl_vlldp14x_lite_lib.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\intcoedoemlibpath\adl_vlldp_131_lite_lib.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\intcoedoemlibpath\install.json".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\intcoedoemlibpath\intcoed_oemlibpath.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\intcoedoemlibpath\IntcOED_OemLibPath.inf".
+SurfaceGo4\SurfaceUpdate\ishbus".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\ishbus\install.json".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\ishbus\ish_busdriver.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\ishbus\ISH_BusDriver.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\ishbus\ISH_BusDriver.sys".
+SurfaceGo4\SurfaceUpdate\ishheci".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\ishheci\install.json".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\ishheci\ish.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\ishheci\ISH.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\ishheci\ISH.sys".
+SurfaceGo4\SurfaceUpdate\mecapsule".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\mecapsule\SurfaceME.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\mecapsule\SurfaceME.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\mecapsule\SurfaceME_18.12.1453.2.bin".
+SurfaceGo4\SurfaceUpdate\nfcclient".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\nfcclient\install.json".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\nfcclient\nxpnfcclientdriver.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\nfcclient\NxpNfcClientDriver.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\nfcclient\NxpNfcClientDriver.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\nfcclient\NXPPN547FW.DAT".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\nfcclient\NXPPN548FW.DAT".
+SurfaceGo4\SurfaceUpdate\pdcapsule".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\pdcapsule\install.json".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\pdcapsule\surfacepd.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\pdcapsule\SurfacePD.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\pdcapsule\SurfacePD_1.0.1.0.bin".
+SurfaceGo4\SurfaceUpdate\smfcapsule".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\smfcapsule\install.json".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\smfcapsule\Smf_109.0.0.25.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\smfcapsule\surfacesmf.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\smfcapsule\SurfaceSMF.inf".
+SurfaceGo4\SurfaceUpdate\surfacecaptureapoextension".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacecaptureapoextension\install.json".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacecaptureapoextension\surfacecaptureapoextension.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacecaptureapoextension\SurfaceCaptureApoExtension.inf".
+SurfaceGo4\SurfaceUpdate\surfacecaptureaposwcinstaller".
+SurfaceGo4\SurfaceUpdate\surfacecaptureaposwcinstaller\CodeQL DVL x64 Release".
+SurfaceGo4\SurfaceUpdate\surfacecaptureaposwcinstaller\CodeQL DVL x64 Release\Semmle".
+SurfaceGo4\SurfaceUpdate\surfacecaptureaposwcinstaller\CodeQL DVL x64 Release\Semmle\cpp".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacecaptureaposwcinstaller\CodeQL DVL x64 Release\Semmle\cpp\codeqloutput-NI-Release-x64-cpp.sarif".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacecaptureaposwcinstaller\CodeQL DVL x64 Release\Semmle\cpp\SurfaceCaptureApo.DVL.XML".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacecaptureaposwcinstaller\CodeQL DVL x64 Release\SdtReport.html".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacecaptureaposwcinstaller\CodeQL DVL x64 Release\SdtReport.tsv".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacecaptureaposwcinstaller\install.json".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacecaptureaposwcinstaller\NOTICE.txt".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacecaptureaposwcinstaller\SurfaceCaptureAPO.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacecaptureaposwcinstaller\surfacecaptureaposwcinstaller.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacecaptureaposwcinstaller\SurfaceCaptureApoSwcInstaller.inf".
+SurfaceGo4\SurfaceUpdate\surfacecfuoverhid".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacecfuoverhid\SurfaceCFUOverHid.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacecfuoverhid\SurfaceCFUOverHid.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacecfuoverhid\SurfaceCFUOverHid.inf".
+SurfaceGo4\SurfaceUpdate\Surfacedevicestelemetryservicedriver".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\Surfacedevicestelemetryservicedriver\AppLauncher.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\Surfacedevicestelemetryservicedriver\DevicesTelemetryService.exe".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\Surfacedevicestelemetryservicedriver\DevicesTelemetryServiceDriver.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\Surfacedevicestelemetryservicedriver\DevicesTelemetryServiceDriver.inf".
+SurfaceGo4\SurfaceUpdate\surfacedock2fwupdate".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacedock2fwupdate\SurfaceDock2FwUpdate.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacedock2fwupdate\SurfaceDock2FwUpdate.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacedock2fwupdate\SurfaceDock2_AMC_APP1.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacedock2fwupdate\SurfaceDock2_AMC_APP1.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacedock2fwupdate\SurfaceDock2_AMC_APP2.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacedock2fwupdate\SurfaceDock2_AMC_APP2.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacedock2fwupdate\SurfaceDock2_AUDIO_BANK0.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacedock2fwupdate\SurfaceDock2_AUDIO_BANK0.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacedock2fwupdate\SurfaceDock2_DP_BANK0.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacedock2fwupdate\SurfaceDock2_DP_BANK0.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacedock2fwupdate\SurfaceDock2_DP_BANK1.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacedock2fwupdate\SurfaceDock2_DP_BANK1.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacedock2fwupdate\SurfaceDock2_PD_BANK0.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacedock2fwupdate\SurfaceDock2_PD_BANK0.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacedock2fwupdate\SurfaceDock2_PD_BANK1.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacedock2fwupdate\SurfaceDock2_PD_BANK1.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacedock2fwupdate\SurfaceDock2_USBHUB_DS_BANK0.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacedock2fwupdate\SurfaceDock2_USBHUB_DS_BANK0.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacedock2fwupdate\SurfaceDock2_USBHUB_US_BANK0.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacedock2fwupdate\SurfaceDock2_USBHUB_US_BANK0.payload.bin".
+SurfaceGo4\SurfaceUpdate\surfacehidfriendlynames".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacehidfriendlynames\SurfaceHIDFriendlyNames.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacehidfriendlynames\SurfaceHIDFriendlyNames.inf".
+SurfaceGo4\SurfaceUpdate\surfaceihvcpusmfclient".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfaceihvcpusmfclient\SurfaceIhvCpuSmfClient.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfaceihvcpusmfclient\SurfaceIhvCpuSmfClient.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfaceihvcpusmfclient\SurfaceIhvCpuSmfClient.sys".
+SurfaceGo4\SurfaceUpdate\surfaceoempanel".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfaceoempanel\ColorCalibrationComputation.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfaceoempanel\SurfaceEnhanced.icm".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfaceoempanel\SurfaceOemPanel.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfaceoempanel\SurfaceOemPanel.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfaceoempanel\SurfaceOemPanel.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfaceoempanel\SurfacesRGB.icm".
+SurfaceGo4\SurfaceUpdate\surfaceoempanelcustomization".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfaceoempanelcustomization\DisplayCalibrationConfig.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfaceoempanelcustomization\SurfaceEnhanced.icm".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfaceoempanelcustomization\SurfaceOemPanelCustomization.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfaceoempanelcustomization\SurfaceOemPanelCustomization.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfaceoempanelcustomization\SurfacesRGB.icm".
+SurfaceGo4\SurfaceUpdate\surfacepen0953firmwareupdate".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacepen0953firmwareupdate\install.json".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacepen0953firmwareupdate\Surface0953FwUpdate.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacepen0953firmwareupdate\SurfacePen0953FirmwareUpdate.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacepen0953firmwareupdate\SurfacePen0953_Annapurna-HI.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacepen0953firmwareupdate\SurfacePen0953_Annapurna-HI.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacepen0953firmwareupdate\SurfacePen0953_Annapurna-LO.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacepen0953firmwareupdate\SurfacePen0953_Annapurna-LO.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacepen0953firmwareupdate\SurfacePen0953_MCU-B0.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacepen0953firmwareupdate\SurfacePen0953_MCU-B0.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacepen0953firmwareupdate\SurfacePen0953_MCU-B1.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacepen0953firmwareupdate\SurfacePen0953_MCU-B1.payload.bin".
+SurfaceGo4\SurfaceUpdate\surfacepen217fwupdate".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacepen217fwupdate\SurfacePen217FwUpdate.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacepen217fwupdate\SurfacePen217FwUpdate.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacepen217fwupdate\SurfacePen217FwUpdate.inf".
+SurfaceGo4\SurfaceUpdate\surfacepowermeter".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacepowermeter\SurfacePowerMeterDriver.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacepowermeter\SurfacePowerMeterDriver.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacepowermeter\SurfacePowerMeterDriver.sys".
+SurfaceGo4\SurfaceUpdate\surfacepowerstate".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacepowerstate\SurfacePowerState.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacepowerstate\SurfacePowerStateDriver.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacepowerstate\SurfacePowerStateDriver.sys".
+SurfaceGo4\SurfaceUpdate\surfacepowertrackercore".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacepowertrackercore\SurfacePowerTrackerCore.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacepowertrackercore\SurfacePowerTrackerCore.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacepowertrackercore\SurfacePowerTrackerCore.sys".
+SurfaceGo4\SurfaceUpdate\surfacestoragefwupdateenum".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacestoragefwupdateenum\SurfaceStorageFwUpdateEnum.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacestoragefwupdateenum\SurfaceStorageFwUpdateEnum.inf".
+SurfaceGo4\SurfaceUpdate\surfacestoragefwupdatehn8g962ehkx03764g".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacestoragefwupdatehn8g962ehkx03764g\SurfaceStorageFwUpdateHN8G962EHKX03764G.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacestoragefwupdatehn8g962ehkx03764g\SurfaceStorageFwUpdateHN8G962EHKX03764GPackage.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacestoragefwupdatehn8g962ehkx03764g\V7_TLC_Voyager2_UFS2.2_MS_A801.bin".
+SurfaceGo4\SurfaceUpdate\surfacestoragefwupdatehn8t05dehkx073".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacestoragefwupdatehn8t05dehkx073\Hynix_V7_TLC_Voyager2_UFS3.1_MS_A801.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacestoragefwupdatehn8t05dehkx073\install.json".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacestoragefwupdatehn8t05dehkx073\surfacestoragefwupdatehn8t05dehkx073.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacestoragefwupdatehn8t05dehkx073\SurfaceStorageFwUpdateHN8T05DEHKX073.inf".
+SurfaceGo4\SurfaceUpdate\surfacestoragefwupdatehn8t15dehkx075256g".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacestoragefwupdatehn8t15dehkx075256g\SurfaceStorageFwUpdateHN8T15DEHKX075256G.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacestoragefwupdatehn8t15dehkx075256g\SurfaceStorageFwUpdateHN8T15DEHKX075256GPackage.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacestoragefwupdatehn8t15dehkx075256g\V7_TLC_Voyager2_UFS3.1_MS_A801.bin".
+SurfaceGo4\SurfaceUpdate\surfacestoragefwupdatekludg4uhgcb0e1".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacestoragefwupdatekludg4uhgcb0e1\SOLVIT_UFS_3_1_V6_TLC_128GB_P10.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacestoragefwupdatekludg4uhgcb0e1\SurfaceStorageFwUpdateKLUDG4UHGCB0E1.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacestoragefwupdatekludg4uhgcb0e1\SurfaceStorageFwUpdateKLUDG4UHGCB0E1.inf".
+SurfaceGo4\SurfaceUpdate\surfacestoragefwupdateklueg4rhgbb0e1256g".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacestoragefwupdateklueg4rhgbb0e1256g\SOLVIT_UFS_3_1_V6_TLC_256GB_P03.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacestoragefwupdateklueg4rhgbb0e1256g\SurfaceStorageFwUpdateKLUEG4RHGB-B0E1256G.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacestoragefwupdateklueg4rhgbb0e1256g\SurfaceStorageFwUpdateKLUEG4RHGB-B0E1256GPackage.cat".
+SurfaceGo4\SurfaceUpdate\surfacestoragefwupdatethgaf8g9t43bairb64g".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacestoragefwupdatethgaf8g9t43bairb64g\SurfaceStorageFwUpdateTHGAF8G9T43BAIRB64G.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacestoragefwupdatethgaf8g9t43bairb64g\SurfaceStorageFwUpdateTHGAF8G9T43BAIRBPackage.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacestoragefwupdatethgaf8g9t43bairb64g\UFS_FFU_FW_rev0300_180523_64GB.bin".
+SurfaceGo4\SurfaceUpdate\surfacestoragefwupdatethgjfat0t44".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacestoragefwupdatethgjfat0t44\install.json".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacestoragefwupdatethgjfat0t44\Kioxia_UFS3.1_BiCS5_rev1001_201210_BGA_128GB.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacestoragefwupdatethgjfat0t44\SurfaceStorageFwUpdateTHGJFAT0T44BAILB128G.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacestoragefwupdatethgjfat0t44\surfacestoragefwupdatethgjfat0t44bailbpackage.cat".
+SurfaceGo4\SurfaceUpdate\surfacestoragefwupdatethgjfgt1e45baipb256g".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacestoragefwupdatethgjfgt1e45baipb256g\SurfaceStorageFwUpdateTHGJFGT1E45BAIPB256G.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacestoragefwupdatethgjfgt1e45baipb256g\SurfaceStorageFwUpdateTHGJFGT1E45BAIPBPackage.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacestoragefwupdatethgjfgt1e45baipb256g\UFS_FFU_FW_rev0100_220428_BGA_256GB.bin".
+SurfaceGo4\SurfaceUpdate\surfacesystemmanagementframework".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacesystemmanagementframework\SurfaceSystemManagementFrameworkDriver.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacesystemmanagementframework\SurfaceSystemManagementFrameworkDriver.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacesystemmanagementframework\SurfaceSystemManagementFrameworkDriver.sys".
+SurfaceGo4\SurfaceUpdate\surfacesystemtelemetryusermode".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacesystemtelemetryusermode\SurfaceSystemTelemetryDriverUserMode.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacesystemtelemetryusermode\SurfaceSystemTelemetryDriverUserMode.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacesystemtelemetryusermode\SurfaceSystemTelemetryDriverUserMode.inf".
+SurfaceGo4\SurfaceUpdate\surfacethermalpolicy".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacethermalpolicy\SurfaceThermalPolicy.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacethermalpolicy\SurfaceThermalPolicy.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacethermalpolicy\SurfaceThermalPolicy.sys".
+SurfaceGo4\SurfaceUpdate\surfacethunderbolt4dockfwupdate".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacethunderbolt4dockfwupdate\SurfaceThunderbolt4DockFwUpdate.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacethunderbolt4dockfwupdate\SurfaceThunderbolt4DockFwUpdate.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacethunderbolt4dockfwupdate\SurfaceThunderbolt4Dock_1_AMC1.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacethunderbolt4dockfwupdate\SurfaceThunderbolt4Dock_1_AMC1.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacethunderbolt4dockfwupdate\SurfaceThunderbolt4Dock_1_AMC2.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacethunderbolt4dockfwupdate\SurfaceThunderbolt4Dock_1_AMC2.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacethunderbolt4dockfwupdate\SurfaceThunderbolt4Dock_2_UFPPD1.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacethunderbolt4dockfwupdate\SurfaceThunderbolt4Dock_2_UFPPD1.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacethunderbolt4dockfwupdate\SurfaceThunderbolt4Dock_2_UFPPD2.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacethunderbolt4dockfwupdate\SurfaceThunderbolt4Dock_2_UFPPD2.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacethunderbolt4dockfwupdate\SurfaceThunderbolt4Dock_3_U3HUB1.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacethunderbolt4dockfwupdate\SurfaceThunderbolt4Dock_3_U3HUB1.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacethunderbolt4dockfwupdate\SurfaceThunderbolt4Dock_4_AUDIOS1.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacethunderbolt4dockfwupdate\SurfaceThunderbolt4Dock_4_AUDIOS1.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacethunderbolt4dockfwupdate\SurfaceThunderbolt4Dock_6_TBT1.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacethunderbolt4dockfwupdate\SurfaceThunderbolt4Dock_6_TBT1.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacethunderbolt4dockfwupdate\SurfaceThunderbolt4Dock_7_DFPPD1.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacethunderbolt4dockfwupdate\SurfaceThunderbolt4Dock_7_DFPPD1.payload.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacethunderbolt4dockfwupdate\SurfaceThunderbolt4Dock_7_DFPPD2.offer.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\surfacethunderbolt4dockfwupdate\SurfaceThunderbolt4Dock_7_DFPPD2.payload.bin".
+SurfaceGo4\SurfaceUpdate\touchcapsule".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\touchcapsule\SurfaceTouch.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\touchcapsule\SurfaceTouch.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\touchcapsule\SurfaceTouch_6.4.56.0.bin".
+SurfaceGo4\SurfaceUpdate\tpmcapsule_nu".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\tpmcapsule_nu\install.json".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\tpmcapsule_nu\SurfaceTpm.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\tpmcapsule_nu\SurfaceTpm.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\tpmcapsule_nu\SurfaceTpm_7.2.3.1.bin".
+SurfaceGo4\SurfaceUpdate\tpmcapsule_nz".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\tpmcapsule_nz\install.json".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\tpmcapsule_nz\SurfaceTpm.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\tpmcapsule_nz\SurfaceTpm.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\tpmcapsule_nz\SurfaceTpm_7.55.8454.9750.bin".
+SurfaceGo4\SurfaceUpdate\ueficapsule".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\ueficapsule\SurfaceUEFI.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\ueficapsule\SurfaceUEFI.inf".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\ueficapsule\SurfaceUEFI_9.104.143_0.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\ueficapsule\SurfaceUEFI_9.104.143_0_integrity.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\ueficapsule\SurfaceUEFI_9.104.143_1.bin".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\ueficapsule\SurfaceUEFI_9.104.143_1_integrity.bin".
+SurfaceGo4\SurfaceUpdate\usbcardreader".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\usbcardreader\RsCRIcon.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\usbcardreader\RtsPer.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\usbcardreader\RtsPer64.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\usbcardreader\RtsPerDG.inf".
+SurfaceGo4\SurfaceUpdate\wifi08".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\wifi08\IntelIHVRouter08.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\wifi08\IntelIHVRouter10.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\wifi08\IntelIHVRouter14.dll".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\wifi08\Netwfw08.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\wifi08\Netwfw10.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\wifi08\netwfw14.dat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\wifi08\Netwtw08.cat".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\wifi08\Netwtw08.INF".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\wifi08\Netwtw08.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\wifi08\Netwtw10.sys".
+VERBOSE: Performing the operation "Remove File" on target "C:\Temp\SurfaceGo4\SurfaceUpdate\wifi08\Netwtw14.sys".
+
+Current Folders:
+gna
+managementengine
+msu53cx22x64sta
+msu56cx22x64sta
+surfaceacpiplatformextensiondriver
+surfacebattery
+surfacehotplug
+surfaceintegrationdriver
+SurfacePen217Integration
+surfaceservicenulldriver
+surfacesmfclient
+surfacesmfdisplayclient
+surfacevirtualfunctionenum
+**********************
+PowerShell transcript end
+End time: 20241018125407
+**********************

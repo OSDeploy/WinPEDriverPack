@@ -1,0 +1,51 @@
+; File:               SurfaceCoverClick.inf
+;
+; Description:        Driver installation file for Surface Cover Click driver.
+;
+; Copyright (C) Microsoft Corporation.  All Rights Reserved.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+[Version]
+Signature   = "$WINDOWS NT$"
+Class       = Extension
+ClassGuid   = {e2f84ce7-8efa-411c-aa69-97454ca4cb57}
+Provider    = %ManufacturerName%
+ExtensionId = {5BF171D8-E744-4C29-9036-2CE66C4F8D7E}
+DriverSet   = {8D1968A2-EC6D-4107-B007-E81D042E305B}
+DriverVer = 04/03/2020,2.23.139.0
+CatalogFile = SurfaceCoverClick.cat
+PnpLockdown=1
+
+[Manufacturer]
+%ManufacturerName% = Microsoft,NTamd64
+
+[Microsoft.NTamd64]
+%SurfaceCoverClick.DeviceDesc% = SurfaceCoverClick_Install,USB\VID_045E&PID_07DE
+%SurfaceCoverClick.DeviceDesc% = SurfaceCoverClick_Install,USB\VID_045E&PID_07DF
+%SurfaceCoverClick.DeviceDesc% = SurfaceCoverClick_Install,USB\VID_045E&PID_07DC
+%SurfaceCoverClick.DeviceDesc% = SurfaceCoverClick_Install,USB\VID_045E&PID_07DD
+%SurfaceCoverClick.DeviceDesc% = SurfaceCoverClick_Install,USB\VID_045E&PID_07E2
+%SurfaceCoverClick.DeviceDesc% = SurfaceCoverClick_Install,USB\VID_045E&PID_07E3
+%SurfaceCoverClick.DeviceDesc% = SurfaceCoverClick_Install,USB\VID_045E&PID_07E4
+%SurfaceCoverClick.DeviceDesc% = SurfaceCoverClick_Install,USB\VID_045E&PID_07E5
+%SurfaceCoverClick.DeviceDesc% = SurfaceCoverClick_Install,USB\VID_045E&PID_07E8
+%SurfaceCoverClick.DeviceDesc% = SurfaceCoverClick_Install,USB\VID_045E&PID_07E9
+%SurfaceCoverClick.DeviceDesc% = SurfaceCoverClick_Install,USB\VID_045E&PID_09C0
+%SurfaceCoverClick.DeviceDesc% = SurfaceCoverClick_Install,USB\VID_045E&PID_09C2
+%SurfaceCoverClick.DeviceDesc% = SurfaceCoverClick_Install,USB\VID_045E&PID_09C1
+%SurfaceCoverClick.DeviceDesc% = SurfaceCoverClick_Install,USB\VID_045E&PID_09C3
+
+[SurfaceCoverClick_Install]
+AddProperty = NoConnectSound_AddProperty,NoSafeRemovalRequired_AddProperty
+
+[NoConnectSound_AddProperty]
+NoConnectSound,,,,1
+
+[NoSafeRemovalRequired_AddProperty]
+{afd97640-86a3-4210-b67c-289c41aabe55},3,17,,0
+
+[Strings]
+; localizable strings
+ManufacturerName             = "Surface"
+SurfaceCoverClick.DeviceDesc = "Surface Cover Click"
