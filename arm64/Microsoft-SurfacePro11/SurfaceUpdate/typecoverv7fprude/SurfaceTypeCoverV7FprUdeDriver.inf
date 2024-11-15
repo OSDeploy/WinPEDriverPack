@@ -1,0 +1,61 @@
+;
+; SurfaceTypeCoverV7FprUdeDriver.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=USB
+ClassGuid={36FC9E60-C465-11CF-8056-444553540000} ;
+Provider=%ManufacturerName%
+CatalogFile=SurfaceTypeCoverV7FprUdeDriver.cat
+DriverVer = 07/10/2024,1.115.22.0
+PnpLockdown=1
+
+[DestinationDirs]
+DefaultDestDir = 13
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+SurfaceTypeCoverV7FprUdeDriver.sys  = 1,,
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTARM64.10.0...19041
+
+[Standard.NTARM64.10.0...19041]
+%SurfaceTypeCoverV7FprUdeDriver.DeviceDesc%=SurfaceTypeCoverV7FprUdeDriver_Device, {8203a233-a0ce-44ae-b67b-9ba128f5acc4}\Target_KIP&Category_FPR
+
+[SurfaceTypeCoverV7FprUdeDriver_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+SurfaceTypeCoverV7FprUdeDriver.sys
+
+;-------------- Service installation
+[SurfaceTypeCoverV7FprUdeDriver_Device.NT.Services]
+AddService = SurfaceTypeCoverV7FprUdeDriver,%SPSVCINST_ASSOCSERVICE%, SurfaceTypeCoverV7FprUdeDriver_Service_Inst
+
+; -------------- SurfaceTypeCoverV7FprUdeDriver driver install sections
+[SurfaceTypeCoverV7FprUdeDriver_Service_Inst]
+DisplayName    = %SurfaceTypeCoverV7FprUdeDriver.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %13%\SurfaceTypeCoverV7FprUdeDriver.sys
+
+[SurfaceTypeCoverV7FprUdeDriver_Device.NT.Wdf]
+KmdfService =  SurfaceTypeCoverV7FprUdeDriver, SurfaceTypeCoverV7FprUdeDriver_wdfsect
+[SurfaceTypeCoverV7FprUdeDriver_wdfsect]
+KmdfLibraryVersion = 1.15
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="Surface"
+DiskName = "SurfaceTypeCoverV7FprUdeDriver Installation Disk"
+SurfaceTypeCoverV7FprUdeDriver.DeviceDesc = "Surface Type Cover V7 Fingerprint UDE Controller"
+SurfaceTypeCoverV7FprUdeDriver.SVCDESC = "SurfaceTypeCoverV7FprUdeDriver Service"
